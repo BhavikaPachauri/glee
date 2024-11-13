@@ -49,15 +49,8 @@ const MainHeader = () => {
                                     <h1 className="font-medium lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] sm:mb-0 mb-1">
                                         Glee Biotech Limited
                                     </h1>
-                                    <p className="text-[15px] font-light text-white lg:pr-32">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an unknown printer took a galley of type and scrambled it to make a type
-                                        specimen book. It has survived not only five centuries, but also the leap into
-                                        electronic typesetting, remaining essentially unchanged. It was popularised in
-                                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker including
-                                        versions of Lorem Ipsum.
+                                    <p className="text-[16px] font-light text-white">
+                                        M/s GLEE BIOTECH LTD (GLEE) is the brain-child of its Promoters and the valuable association of their team members, who bring along more than 30 years’ of rich experience in the field of Pharmaceuticals Industry. GLEE was incorporated with an aim to improve human-lives by addressing their medical needs through development and manufacturing of meaningful healthcare products. The company identify, develop and supply genuine healthcare products ranging from Medicines, Drugs, Consumables, Implants, Masks, PPE Kits, Food products, Medical furniture and all other ancillary products.
                                     </p>
 
                                     <div className='flex gap-4 items-center lg:mt-8 mt-4 lg:justify-start justify-center' >

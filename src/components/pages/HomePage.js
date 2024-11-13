@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
 import MainHeader from "../MainHeader";
+import AboutUs from "../AboutUs";
 
 const HomePage = () => {
     const { pathname } = useLocation();
@@ -13,6 +14,7 @@ const HomePage = () => {
         <>
             <NavBar />
             <MainHeader />
+            <AboutUs />
         </>
     );
 };

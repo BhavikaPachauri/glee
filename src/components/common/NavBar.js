@@ -54,23 +54,25 @@ const NavBar = () => {
         )}
       </Link>
       {dropdownItems && (
-        <ul
-          className={`absolute top-full left-0 bg-white shadow-lg mt-2 py-2 w-48 rounded-md opacity-0 transform translate-y-4 transition-all duration-300 ease-in-out ${isDropdownOpen ? "opacity-100 translate-y-0" : ""
-            }`}
+  <ul
+    className={`absolute z-30 top-full left-0 bg-white shadow-lg mt-2 py-2 w-48 rounded-md transition-all duration-300 ease-in-out overflow-hidden
+      ${isDropdownOpen ? "opacity-100 max-h-[400px] translate-y-0" : "opacity-0 max-h-0 translate-y-4"}`}
+    style={{ transitionProperty: "opacity, transform, max-height" }}
+  >
+    {dropdownItems.map((item, index) => (
+      <li key={index}>
+        <Link
+          to={item.path}
+          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
+          onClick={() => setMenuOpen(false)}
         >
-          {dropdownItems.map((item, index) => (
-            <li key={index}>
-              <Link
-                to={item.path}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+          {item.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+)}
+
     </div>
   );
 

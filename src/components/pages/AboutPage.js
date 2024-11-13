@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
+import AboutBanner from "../AboutBanner";
+import AboutDetail from "../AboutDetail";
+import WhoWeAre from "../WhoWeAre";
 
 const AboutPage = () => {
     const { pathname } = useLocation();
@@ -11,6 +14,9 @@ const AboutPage = () => {
     return (
         <>
             <NavBar />
+            <AboutBanner />
+            <AboutDetail />
+            <WhoWeAre/>
         </>
     );
 };
