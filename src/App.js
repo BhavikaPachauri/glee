@@ -1,9 +1,11 @@
 import './App.css';
+import MainRoute from './components/common/MainRoute';
 
 function App() {
   return (
-   <>
-   hello</>
+    <>
+      <MainRoute />
+    </>
   );
 }
 
