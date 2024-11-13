@@ -4,6 +4,7 @@ import NavBar from "../common/NavBar";
 import AboutBanner from "../AboutBanner";
 import AboutDetail from "../AboutDetail";
 import WhoWeAre from "../WhoWeAre";
+import VisionMission from "../VisionMission";
 
 const AboutPage = () => {
     const { pathname } = useLocation();
@@ -16,7 +17,8 @@ const AboutPage = () => {
             <NavBar />
             <AboutBanner />
             <AboutDetail />
-            <WhoWeAre/>
+            <WhoWeAre />
+            <VisionMission />
         </>
     );
 };
