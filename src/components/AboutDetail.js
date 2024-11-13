@@ -6,7 +6,7 @@ import GradientLine from '../assets/images/png/GriadentLine.png'
 const AboutDetail = () => {
     return (
         <><div className="relative max-lg:py-14">
-            <img src={GradientLine} alt={GradientLine} className="absolute -bottom-12 left-0 w-full rotate-3" />
+            <img src={GradientLine} alt={GradientLine} className="absolute -bottom-12 left-0 w-full rotate-3 h-[87px]" />
             <div className="xl:max-w-[1365px] mx-auto px-3 lg:mt-[-90px]">
                 <div className="flex flex-wrap-reverse lg:gap-0 gap-5 items-center">
                     <div className="lg:w-1/2 flex lg:gap-5 gap-3 mx-auto">

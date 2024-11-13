@@ -4,7 +4,7 @@ import GradientLine from '../assets/images/png/GriadentLine.png'
 const WhoWeAre = () => {
     return (
         <><div className="bg-history bg-no-repeat bg-cover relative">
-            <img src={GradientLine} alt={GradientLine} className="absolute bottom-0 left-0 w-full -rotate-3" />
+            <img src={GradientLine} alt={GradientLine} className="absolute bottom-0 left-0 w-full -rotate-3 h-[87px]" />
             <div className="xl:max-w-[1365px] mx-auto px-3 py-[120px]">
                 <div className="flex flex-wrap items-center justify-between">
                     <div className="lg:w-[20%] w-full"
