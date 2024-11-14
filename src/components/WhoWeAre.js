@@ -3,7 +3,7 @@ import React from 'react'
 const WhoWeAre = () => {
     return (
         <><div className="bg-history bg-no-repeat bg-cover relative z-0">
-            <div className="xl:max-w-[1365px] mx-auto px-3 py-[120px]">
+            <div className="xl:max-w-[1365px] mx-auto px-3 lg:py-[120px] py-[140px]">
                 <div className="flex flex-wrap items-center justify-between">
                     <div className="lg:w-[20%] w-full"
                     ><h2 className="text-black text-[34px] leading-[120%] lg:mb-4 mb-5 lg:text-start text-center">Who we are & history</h2></div>

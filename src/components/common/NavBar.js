@@ -88,7 +88,7 @@ const NavBar = () => {
         </a>
 
         <ul
-          className={`flex gap-[57px] transition-all duration-300 ease-linear bg-white
+          className={`flex xl:gap-[57px] gap-[40px] transition-all duration-300 ease-linear bg-white
             ${isMenuOpen ? "left-0 z-30" : "left-[-100%]"} 
             max-lg:w-full max-lg:fixed max-lg:top-0 max-lg:min-h-screen 
             max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center bottom-0`}
@@ -147,7 +147,6 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* Scroll Progress Indicator */}
         <div
           className="h-[4px] bg-gradient-to-r from-transparent to-transparent fixed top-[105px] left-0 right-0"
           style={{ width: `${scrollProgress}%` }}

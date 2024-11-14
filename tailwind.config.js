@@ -14,6 +14,10 @@ module.exports = {
         'bgfull': '100% 100%'
 
       },
+      boxShadow: {
+        'cardshadow': '0px_4px_19.5px_0px_#00000040',
+
+      }
 
     },
   },
