@@ -10,14 +10,14 @@ const AboutDetail = () => {
             <div className="xl:max-w-[1365px] mx-auto px-3 lg:mt-[-90px]">
                 <div className="flex flex-wrap-reverse lg:gap-0 gap-5 items-center">
                     <div className="lg:w-1/2 flex lg:gap-5 gap-3 mx-auto">
-                        <div class="relative p-1.5 rounded-xl bg-gradient-border animate-gradient-border max-w-[280px] md:mt-[50px] mt-[25px]">
-                            <div class="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                                <img src={MedicineInHand} alt="Product Image" class="w-full h-auto rounded-lg scale-105" />
+                        <div className="relative p-1.5 rounded-xl bg-gradient-border animate-gradient-border max-w-[280px] md:mt-[50px] mt-[25px]">
+                            <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
+                                <img src={MedicineInHand} alt="Product Image" className="w-full h-auto rounded-lg scale-105" />
                             </div>
                         </div>
-                        <div class="relative p-1.5 rounded-xl bg-gradient-border animate-gradient-border max-w-[280px] md:mb-[50px] mb-[25px]">
-                            <div class="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                                <img src={WomenWithMedicine} alt="Product Image" class="w-full h-auto rounded-lg scale-105" />
+                        <div className="relative p-1.5 rounded-xl bg-gradient-border animate-gradient-border max-w-[280px] md:mb-[50px] mb-[25px]">
+                            <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
+                                <img src={WomenWithMedicine} alt="Product Image" className="w-full h-auto rounded-lg scale-105" />
                             </div>
                         </div>
                     </div>

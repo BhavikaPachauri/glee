@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import GleeLogo from "../../assets/images/png/footerLogo.png";
+import GleeLogoSmall from "../../assets/images/png/footer-logo.png";
 import PhoneIcon from "../../assets/images/png/phone-call.png";
 import MailIcon from "../../assets/images/png/email.png";
 import LinkedIn from "../../assets/images/png/linkedin.png";
@@ -16,35 +17,36 @@ const Footer = () => {
         <>
             <div className="animate-background pt-14">
                 <div className="xl:max-w-[1370px] mx-auto px-3">
-                    <div className="flex flex-wrap lg:flex-row border-b pb-11">
-                        <div className="lg:w-[25%] flex flex-col justify-between">
+                    <div className="flex flex-wrap justify-between border-b pb-11 lg:gap-0 gap-12">
+                        <div className="lg:w-[25%] md:w-[30%] w-full flex flex-col lg:gap-[62px] max-lg:order-1">
                             <a
                                 href="#"
                                 className="text-white text-4xl font-bold leading-none text-center"
                             >
-                                <img src={GleeLogo} className="max-w-[133px]" />
+                                <img src={GleeLogo} className="max-w-[133px] lg:block hidden" />
+                                <img src={GleeLogoSmall} className="sm:max-w-[300px] max-w-[265px] lg:hidden block" />
                             </a>
-                            <div className="flex gap-6">
+                            <div className="gap-6 lg:flex hidden">
                                 <a
                                     href="https://www.linkedin.com/company/glee-biotech-ltd/?trk=ppro_cprof&originalSubdomain=ae"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img src={LinkedIn} alt="LinkedIn" width={29} height={29} />
+                                    <img src={LinkedIn} alt="LinkedIn" width={29} height={29} className="transition-all duration-500 hover:-translate-y-2" />
                                 </a>
                                 <a
                                     href="mailto:info@gleebiotech.com"
                                     target="_blank"
                                     rel="noreferrer"
-                                ><img src={MailIcon} alt="MailIcon" width={29} height={29} />
+                                ><img src={MailIcon} alt="MailIcon" width={29} height={29} className="transition-all duration-500 hover:-translate-y-2" />
                                 </a>
                                 <a href="tel:+911244014675" target="_blank" rel="noreferrer">
-                                    <img src={PhoneIcon} alt="PhoneIcon" width={29} height={29} />
+                                    <img src={PhoneIcon} alt="PhoneIcon" width={29} height={29} className="transition-all duration-500 hover:-translate-y-2" />
                                 </a>
                             </div>
                         </div>
-                        <div className="lg:w-[25%]">
-                            <ul className="flex flex-col gap-[30px]">
+                        <div className="md:w-[25%] w-[40%] max-lg:order-2">
+                            <ul className="flex flex-col sm:gap-[30px] gap-5">
                                 <li><Link
                                     className="font-semibold text-[#91B7C7] text-[20px] pb-1.5"
                                 >
@@ -74,8 +76,8 @@ const Footer = () => {
 
                             </ul>
                         </div>
-                        <div className="lg:w-[25%]">
-                            <ul className="flex flex-col gap-[30px]">
+                        <div className="md:w-[25%] w-[40%] max-lg:order-3">
+                            <ul className="flex flex-col sm:gap-[30px] gap-5">
                                 <li> <Link
                                     className="font-semibold text-[#91B7C7] text-[20px] pb-1.5"
                                 >
@@ -105,25 +107,43 @@ const Footer = () => {
 
                             </ul>
                         </div>
-                        <div className="lg:w-[25%] flex flex-col justify-between">
+                        <div className="lg:w-[25%] w-[80%] flex flex-col justify-between max-lg:order-4">
                             <ul className="flex flex-col gap-[23px]">
-                                <p className="font-semibold text-[#91B7C7] text-[20px] pb-1.5">
+                                <p className="font-semibold text-[#91B7C7] text-[20px] pb-1.5 text-nowrap">
                                     NOT QUITE READY FOR GLEE?
                                 </p>
                                 <p className="font-medium text-white text-[20px]">
                                     Subscribe Us.
                                 </p>
+                                <div className="gap-6 lg:hidden flex">
+                                    <a
+                                        href="https://www.linkedin.com/company/glee-biotech-ltd/?trk=ppro_cprof&originalSubdomain=ae"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <img src={LinkedIn} alt="LinkedIn" width={29} height={29} className="transition-all duration-500 hover:-translate-y-2" />
+                                    </a>
+                                    <a
+                                        href="mailto:info@gleebiotech.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    ><img src={MailIcon} alt="MailIcon" width={29} height={29} className="transition-all duration-500 hover:-translate-y-2" />
+                                    </a>
+                                    <a href="tel:+911244014675" target="_blank" rel="noreferrer">
+                                        <img src={PhoneIcon} alt="PhoneIcon" width={29} height={29} className="transition-all duration-500 hover:-translate-y-2" />
+                                    </a>
+                                </div>
                                 <p className="text-white text-[15px]">
                                     Get the latest updates and Stay tuned.
                                 </p>
-                                <div class="flex items-center bg-[#F3F4F6] rounded-[3px] w-full">
+                                <div className="flex items-center bg-[#F3F4F6] rounded-[3px] w-full">
                                     <input
                                         type="email"
                                         placeholder="E-mail address"
-                                        class="bg-gray-100 text-gray-600 text-[12px] placeholder-[#9DA3AE] px-4 py-1.5 rounded-l-full focus:outline-none w-full"
+                                        className="bg-gray-100 text-gray-600 text-[12px] placeholder-[#9DA3AE] px-4 py-1.5 rounded-l-full focus:outline-none w-full"
                                     />
                                     <button
-                                        class="text-[#1F488E] hover:text-white hover:bg-[#1F488E] transition-all duration-300 ease-linear bg-white font-semibold text-sm px-1.5 py-2 rounded-[3px]"
+                                        className="text-[#1F488E] hover:text-white hover:bg-[#1F488E] transition-all duration-300 ease-linear bg-white font-semibold text-sm px-1.5 py-2 rounded-[3px]"
                                     >
                                         Subscribe
                                     </button>
@@ -131,7 +151,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <p className="text-center text-[15px] text-white py-11">
+                    <p className="text-center sm:text-[15px] text-[12px] text-white lg:py-11 py-7">
                         Copyright © <span id="year_change">{year} </span>
                         Glee Biotech limited All rights reserved
                     </p>

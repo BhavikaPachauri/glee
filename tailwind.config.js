@@ -8,6 +8,7 @@ module.exports = {
       backgroundImage: {
         'aboutbanner': "url('assets/images/png/AboutBanner.png')",
         'history': "url('assets/images/png/HistoryBackground.png')",
+        'getintouch': "url('assets/images/png/ContactBanner.png')",
 
       },
       backgroundSize: {

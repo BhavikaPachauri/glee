@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
 import MainHeader from "../MainHeader";
 import AboutUs from "../AboutUs";
+import Footer from "../common/Footer";
+import HomeProduct from "../HomeProduct";
 
 const HomePage = () => {
     const { pathname } = useLocation();
@@ -15,6 +17,8 @@ const HomePage = () => {
             <NavBar />
             <MainHeader />
             <AboutUs />
+            <HomeProduct />
+            <Footer />
         </>
     );
 };

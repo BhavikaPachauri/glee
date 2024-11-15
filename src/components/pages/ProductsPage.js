@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
+import Footer from "../common/Footer";
 
 const ProductsPage = () => {
     const { pathname } = useLocation();
@@ -11,6 +12,7 @@ const ProductsPage = () => {
     return (
         <>
             <NavBar />
+            <Footer/>
         </>
     );
 };
