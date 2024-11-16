@@ -36,7 +36,6 @@ const GetInTouch = () => {
         axios
             .post(apiUrl, values)
             .then((response) => {
-                // console.log("Success!", response.data);
                 setFormStatus("Form submitted successfully!");
                 resetForm();
                 setSubmitting(false);
@@ -54,7 +53,7 @@ const GetInTouch = () => {
 
     return (
         <>
-            <div className="bg-getintouch bg-no-repeat xl:bg-bgfull bg-cover xl:pb-[162px] lg:pb-28 pb-14">
+            <div className="bg-getintouch bg-no-repeat bg-cover xl:pb-[162px] lg:pb-28 pb-14 bg-blue-900">
                 <div className="xl:max-w-[1252px] mx-auto px-3 xl:pt-[74px] lg:pt-28 pt-14">
                     <h2 className="font-medium lg:text-[58px] text-center md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] mb-[19px]">
                         Contact Us

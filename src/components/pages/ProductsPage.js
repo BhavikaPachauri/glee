@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
 import Footer from "../common/Footer";
+import Products from "../Products";
 
 const ProductsPage = () => {
     const { pathname } = useLocation();
@@ -12,7 +13,8 @@ const ProductsPage = () => {
     return (
         <>
             <NavBar />
-            <Footer/>
+            <Products />
+            <Footer />
         </>
     );
 };
