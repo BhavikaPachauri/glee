@@ -1,6 +1,5 @@
 import React from 'react';
 import DummyImg from '../assets/images/png/DummyImg.png'
-import HomeProduct from '../components/HomeProduct'
 import ProductSlide from './common/ProductSlide';
 
 const ProductsDetails = () => {

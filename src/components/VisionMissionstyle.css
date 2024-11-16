@@ -27,11 +27,11 @@
     position: relative;
     z-index: 1;
   }
-  /* Moving gradient border effect */
+ 
 .gradient-border {
     position: relative;
     overflow: hidden;
-    border-radius: 12px; /* Match or slightly larger than image border-radius */
+    border-radius: 12px;
   }
   
   .gradient-border::before {
@@ -41,7 +41,7 @@
     left: -4px;
     right: -4px;
     bottom: -4px;
-    border-radius: 12px; /* Match container border-radius */
+    border-radius: 12px;
     padding: 2px;
     background: linear-gradient(
       90deg,
@@ -58,11 +58,11 @@
   
   .gradient-border > img {
     position: relative;
-    border-radius: 10px; /* Slightly smaller than the container to show the border */
+    border-radius: 10px; 
     z-index: 1;
   }
   
-  /* Keyframes for the border animation */
+
   @keyframes gradient-border-animation {
     0% {
       background-position: 0% 50%;
