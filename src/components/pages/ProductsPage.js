@@ -5,18 +5,18 @@ import Footer from "../common/Footer";
 import Products from "../Products";
 
 const ProductsPage = () => {
-    const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
-    return (
-        <>
-            <NavBar />
-            <Products />
-            <Footer />
-        </>
-    );
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return (
+    <>
+      <NavBar />
+      <Products />
+      <Footer />
+    </>
+  );
 };
 
 export default ProductsPage;
