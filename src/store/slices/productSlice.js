@@ -1,22 +1,28 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const login = createAsyncThunk("auth/login", async ({ email, password }) => {
-  const response = await axios.post("/api/login", { email, password });
-  return response.data;
+export const getProduct = createAsyncThunk("get/product", async () => {
+  const formData = new FormData();
+  formData.append("action", "get");
+  const response = await axios.post("https://api.plusdistribution.in/pdpl/glee-products", formData);
+  const {
+    response: { list },
+  } = response.data;
+  return list;
 });
 
 const productSlice = createSlice({
   name: "product",
   initialState: {
     products: [],
-    loading: false,
+    loading: true,
     selectedProduct: null,
     error: null,
   },
   reducers: {
     setProduct(state, action) {
       state.products = action.payload;
+      state.loading = false;
     },
     setSingleProduct(state, action) {
       state.selectedProduct = action.payload;
@@ -24,15 +30,15 @@ const productSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(login.pending, (state) => {
-        state.status = "loading";
+      .addCase(getProduct.pending, (state) => {
+        state.loading = true;
       })
-      .addCase(login.fulfilled, (state, action) => {
-        state.status = "succeeded";
-        state.user = action.payload;
+      .addCase(getProduct.fulfilled, (state, action) => {
+        state.loading = false;
+        state.products = action.payload;
       })
-      .addCase(login.rejected, (state, action) => {
-        state.status = "failed";
+      .addCase(getProduct.rejected, (state, action) => {
+        state.loading = false;
         state.error = action.error.message;
       });
   },

@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSingleProduct } from "../store/slices/productSlice";
-import { setProduct } from "../store/slices/productSlice";
-import productsList from "../components/common/Helpers";
 import DummyImg from "../assets/images/png/DummyImg.png";
 import ProductSlide from "./common/ProductSlide";
-
-let firstrender = true;
 
 const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -37,13 +33,6 @@ const Products = () => {
   const handleBackToProducts = () => {
     dispatch(setSingleProduct(null));
   };
-
-  useEffect(() => {
-    if (firstrender) {
-      dispatch(setProduct(productsList));
-      firstrender = false;
-    }
-  }, [dispatch]);
 
   if (selectedProduct) {
     return (
@@ -77,8 +66,8 @@ const Products = () => {
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
         <h2 className="text-black text-[34px] leading-[120%] mb-8 text-center">Products</h2>
         <div className="flex flex-wrap">
-          {currentProducts.map((product) => (
-            <div className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-100" key={product.id} onClick={() => handleProductClick(product)}>
+          {currentProducts.map((product, index) => (
+            <div className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-100" key={index} onClick={() => handleProductClick(product)}>
               <div className="xl:px-[15px] sm:px-3 px-2 mb-8">
                 <div className="bg-white rounded-lg md:p-6 p-4 min-h-[400px] w-full cursor-pointer group">
                   <div className="relative flex justify-center items-center h-48 bg-[#D9D9D9] rounded-[5px] overflow-hidden">
