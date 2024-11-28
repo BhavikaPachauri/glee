@@ -5,6 +5,7 @@ import MainHeader from "../MainHeader";
 import AboutUs from "../AboutUs";
 import Footer from "../common/Footer";
 import HomeProduct from "../HomeProduct";
+import Faqs from "../Faqs";
 
 const HomePage = () => {
   const { pathname } = useLocation();
@@ -18,6 +19,7 @@ const HomePage = () => {
       <MainHeader />
       <AboutUs />
       <HomeProduct />
+      <Faqs />
       <Footer />
     </>
   );

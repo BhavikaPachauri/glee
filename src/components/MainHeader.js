@@ -1,91 +1,105 @@
 import React, { useState } from "react";
-import Slider from 'react-slick';
-import BuildingImg from '../assets/images/png/BulidingImg.jpg';
-import { NextArrow, PrevArrow } from './Icons';
+import Slider from "react-slick";
+import HeroBanner from "../assets/images/png/HeroBanner.png";
+import { NextArrow, PrevArrow } from "./Icons";
 
 const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: false,
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
 };
 
+const slidesData = [
+  {
+    description:
+      "“Transforming lives through innovative and reliable healthcare solutions.”",
+  },
+  {
+    description:
+      "“Setting the standard in pharmaceutical and healthcare solutions.”",
+  },
+  {
+    description: "“Inspired by care, driven by expertise.”",
+  },
+  {
+    description: "“Your partner in comprehensive healthcare excellence.”",
+  },
+];
+
 const MainHeader = () => {
-    const slider = React.useRef(null);
-    const [prevClicked, setPrevClicked] = useState(false);
-    const [nextClicked, setNextClicked] = useState(false);
+  const slider = React.useRef(null);
+  const [prevClicked, setPrevClicked] = useState(false);
+  const [nextClicked, setNextClicked] = useState(false);
 
-    const handlePrevClick = () => {
-        setPrevClicked(true);
-        slider?.current?.slickPrev();
+  const handlePrevClick = () => {
+    setPrevClicked(true);
+    slider?.current?.slickPrev();
 
-        setTimeout(() => {
-            setPrevClicked(false);
-        }, 200);
-    };
+    setTimeout(() => {
+      setPrevClicked(false);
+    }, 200);
+  };
 
-    const handleNextClick = () => {
-        setNextClicked(true);
-        slider?.current?.slickNext();
+  const handleNextClick = () => {
+    setNextClicked(true);
+    slider?.current?.slickNext();
 
-        setTimeout(() => {
-            setNextClicked(false);
-        }, 200);
-    };
+    setTimeout(() => {
+      setNextClicked(false);
+    }, 200);
+  };
 
-
-    return (
-        <div className="w-full">
-            <Slider {...settings} ref={slider}>
-                {[...Array(3)].map((_, index) => (
-                    <div key={index} className="animate-background flex items-center lg:py-28 py-14">
-                        <div className="xl:max-w-[1157px] mx-auto px-3 w-full">
-                            <div className="flex flex-wrap items-center justify-between">
-                                <div className="w-full lg:w-[55%] text-center lg:text-left">
-                                    <h1 className="font-medium lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] sm:mb-0 mb-1">
-                                        Glee Biotech Limited
-                                    </h1>
-                                    <p className="text-[16px] font-light text-white">
-                                        M/s GLEE BIOTECH LTD (GLEE) is the brain-child of its Promoters and the valuable association of their team members, who bring along more than 30 years’ of rich experience in the field of Pharmaceuticals Industry. GLEE was incorporated with an aim to improve human-lives by addressing their medical needs through development and manufacturing of meaningful healthcare products. The company identify, develop and supply genuine healthcare products ranging from Medicines, Drugs, Consumables, Implants, Masks, PPE Kits, Food products, Medical furniture and all other ancillary products.
-                                    </p>
-
-                                    <div className='flex gap-4 items-center lg:mt-8 mt-4 lg:justify-start justify-center' >
-                                        <button
-                                            className={`cursor-pointer transition-all duration-300 ease-linear ${prevClicked ? "scale-110" : ""
-                                                }`}
-                                            onClick={handlePrevClick}
-                                        >
-                                            <PrevArrow />
-                                        </button>
-                                        <button
-                                            className={`cursor-pointer transition-all duration-300 ease-linear ${nextClicked ? "scale-110" : ""
-                                                }`}
-                                            onClick={handleNextClick}
-                                        >
-                                            <NextArrow />
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className="w-full lg:w-[40%] mt-8 lg:mt-0 flex flex-col justify-center lg:justify-end">
-                                    <img
-                                        src={BuildingImg}
-                                        alt="Building"
-                                        width={480}
-                                        height={411}
-                                        className="rounded-[10px] mx-auto"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </Slider>
+  return (
+    <div className="w-full">
+      <div className="animate-background flex items-center lg:py-36 py-20 relative">
+        <img
+          src={HeroBanner}
+          alt="HeroBanner"
+          className="w-full h-full absolute top-0 left-0 z-0"
+        />
+        <div className="xl:max-w-[1157px] mx-auto px-3 w-full relative z-10">
+          <Slider {...settings} ref={slider}>
+            {slidesData.map((slide, index) => (
+              <div
+                key={index}
+                className="w-full lg:w-[55%] text-center lg:text-left"
+              >
+                <h1 className="font-medium lg:text-[55px] md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] mb-[17px]">
+                  "Glee Biotech Limited"
+                </h1>
+                <p className="md:text-[40px] sm:text-[36px] text- leading-[128%] font-light text-white max-w-[667px]">
+                  {slide.description}
+                </p>
+              </div>
+            ))}
+          </Slider>
+          <div className="flex gap-4 items-center lg:mt-8 mt-4 lg:justify-start justify-center">
+            <button
+              className={`cursor-pointer transition-all duration-300 ease-linear ${
+                prevClicked ? "scale-110" : ""
+              }`}
+              onClick={handlePrevClick}
+            >
+              <PrevArrow />
+            </button>
+            <button
+              className={`cursor-pointer transition-all duration-300 ease-linear ${
+                nextClicked ? "scale-110" : ""
+              }`}
+              onClick={handleNextClick}
+            >
+              <NextArrow />
+            </button>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default MainHeader;

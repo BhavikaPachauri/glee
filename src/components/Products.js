@@ -36,23 +36,92 @@ const Products = () => {
 
   if (selectedProduct) {
     return (
-      <div className="bg-[#F3F4F6]">
-        <div className="xl:max-w-[1160px] mx-auto px-3 py-8">
-          <button onClick={handleBackToProducts} className="mb-4 px-4 py-2 bg-[#002347] text-white rounded">
-            Back to Products
-          </button>
-          <h2 className="text-black text-[34px] leading-[120%] lg:mb-[67px] mb-10 text-center">Product Details</h2>
-          <div className="flex flex-wrap items-center justify-between mb-10">
-            <div className="lg:w-[41%]">
-              <div className="bg-[#D9D9D9] rounded-[10px]">
-                <img src={selectedProduct.imageUrl || DummyImg} width={244} height={244} className="mx-auto" alt={selectedProduct.name} />
+      <div className="bg-[#F8F8FA]">
+        <div className="xl:max-w-[1320px] mx-auto px-3 md:py-16 py-10">
+          <div className="flex justify-between items-center md:mb-10 mb-7">
+            <h2 className="text-black sm:text-[40px] text-[30px] leading-[120%] text-center text-nowrap">Product Details</h2>
+            <button onClick={handleBackToProducts} className="px-4 py-2 bg-[#002347] text-white rounded">
+              Back to Products
+            </button>
+          </div>
+
+          <div className="flex flex-wrap justify-between lg:gap-0 gap-8 mb-10">
+            <div className="lg:w-[35%]">
+              <div className="bg-[#D9D9D9] rounded-[10px] h-full">
+                <img src={selectedProduct.prod_image_url[0] || DummyImg} className="mx-auto w-full h-full object-contain" alt={selectedProduct.prod_brand} />
               </div>
             </div>
-            <div className="lg:w-[50%]">
-              <h3 className="text-black text-[34px] leading-[120%] mb-2">{selectedProduct.name}</h3>
-              <p className="text-[12px] text-black font-normal mb-2">{selectedProduct.description}</p>
-              <p className="text-[24px] font-medium">Category</p>
-              <p className="text-[12px] font-normal">{selectedProduct.category}</p>
+            <div className="lg:w-[60%]">
+              <h3 className="text-black text-[30px] leading-[120%] mb-1">{selectedProduct.prod_brand}</h3>
+              <div>
+                <h3 className="text-[14px] font-normal text-black mb-1">
+                  <strong>Description:</strong>
+                </h3>
+                {selectedProduct.prod_des && selectedProduct.prod_des.length > 0 ? (
+                  selectedProduct.prod_des.map((desc, index) => (
+                    <p key={Math.random} className="text-[14px] text-black font-normal mb-2">
+                      {desc}
+                    </p>
+                  ))
+                ) : (
+                  <p className="text-[14px] text-black font-normal mb-2">
+                    No description available.
+                  </p>
+                )}
+              </div>
+              <p className="text-[20px] font-medium">Category</p>
+              <p className="text-[14px] font-normal mb-1">{selectedProduct.prod_category}</p>
+              <div>
+                <h3 className="text-[14px] font-normal text-black mb-1">
+                  <strong>Benefits:</strong>
+                </h3>
+                {selectedProduct.prod_benefits && selectedProduct.prod_benefits.length > 0 ? (
+                  selectedProduct.prod_benefits.map((benefit, index) => (
+                    <p key={index} className="text-[14px] font-normal text-black mb-1">
+                      {benefit}
+                    </p>
+                  ))
+                ) : (
+                  <p className="text-[14px] font-normal text-black mb-1">
+                    No benefits available.
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <h3 className="text-[14px] font-normal text-black mb-1">
+                  <strong>Side Effects:</strong>
+                </h3>
+                {selectedProduct.prod_side_effects && selectedProduct.prod_side_effects.length > 0 ? (
+                  selectedProduct.prod_side_effects.map((effect, index) => (
+                    <p key={index} className="text-[14px] font-normal text-black mb-1">
+                      {effect}
+                    </p>
+                  ))
+                ) : (
+                  <p className="text-[14px] font-normal text-black mb-1">
+                    No side effects listed.
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <h3 className="text-[14px] font-normal text-black mb-1">
+                  <strong>Uses:</strong>
+                </h3>
+                {selectedProduct.prod_uses && selectedProduct.prod_uses.length > 0 ? (
+                  selectedProduct.prod_uses.map((use, index) => (
+                    <p key={index} className="text-[14px] font-normal text-black mb-1">
+                      {use}
+                    </p>
+                  ))
+                ) : (
+                  <p className="text-[14px] font-normal text-black mb-1">
+                    No uses listed.
+                  </p>
+                )}
+              </div>
+
             </div>
           </div>
           <ProductSlide />
@@ -61,11 +130,11 @@ const Products = () => {
     );
   }
 
+
   return (
     <div className="bg-[#F3F4F6]">
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
-        <h2 className="text-black text-[34px] leading-[120%] mb-8 text-center">Products</h2>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap mt-5">
           {currentProducts.map((product, index) => (
             <div className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-100" key={index} onClick={() => handleProductClick(product)}>
               <div className="xl:px-[15px] sm:px-3 px-2 mb-8">
@@ -74,10 +143,11 @@ const Products = () => {
                     <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
                       <span className="text-white text-lg font-semibold">Product Details</span>
                     </button>
-                    <img src={product.imageUrl} alt={product.name} className="max-h-full mx-auto" width={146} />
+                    <img src={product.prod_image_url[0]} alt={product.prod_brand} className="max-h-full" width={146} />
                   </div>
-                  <h2 className="text-[20px] font-normal text-black mt-3.5">{product.name}</h2>
-                  <p className="text-base text-[#59606C] mt-1.5">{product.description}</p>
+                  <h2 className="text-[20px] font-normal text-black mt-3.5">{product.prod_brand
+                  }</h2>
+                  <p className="text-base text-[#59606C] mt-1.5">{product.prod_des}</p>
                 </div>
               </div>
             </div>
@@ -94,9 +164,8 @@ const Products = () => {
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
-              className={`px-4 py-2 mx-1 rounded ${
-                currentPage === i + 1 ? "bg-[#002347] text-white" : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-200"
-              }`}
+              className={`px-4 py-2 mx-1 rounded ${currentPage === i + 1 ? "bg-[#002347] text-white" : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-200"
+                }`}
               onClick={() => goToPage(i + 1)}
             >
               {i + 1}

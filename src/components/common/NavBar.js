@@ -6,7 +6,6 @@ const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isProductsDropdownOpen, setProductsDropdownOpen] = useState(false);
-  const [isCareerDropdownOpen, setCareerDropdownOpen] = useState(false);
 
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
@@ -71,7 +70,6 @@ const NavBar = () => {
           ))}
         </ul>
       )}
-
     </div>
   );
 
@@ -96,24 +94,13 @@ const NavBar = () => {
           {renderNavLink(
             "/products",
             "Products",
-            [
-              { path: "/products/medicine", label: "Medicine" },
-              { path: "/products/medicaldevices", label: "Medical Devices" },
-              { path: "/products/laboratory", label: "Laboratory" },
-            ],
-            isProductsDropdownOpen,
-            () => setProductsDropdownOpen(!isProductsDropdownOpen)
-          )}
-          {renderNavLink(
-            "/career",
-            "Career",
-            [
-              { path: "/career/job-openings", label: "Job Openings" },
-              { path: "/career/internships", label: "Internships" },
-              { path: "/career/benefits", label: "Benefits" },
-            ],
-            isCareerDropdownOpen,
-            () => setCareerDropdownOpen(!isCareerDropdownOpen)
+            // [
+            //   { path: "/products/medicine", label: "Medicine" },
+            //   { path: "/products/medicaldevices", label: "Medical Devices" },
+            //   { path: "/products/laboratory", label: "Laboratory" },
+            // ],
+            // isProductsDropdownOpen,
+            // () => setProductsDropdownOpen(!isProductsDropdownOpen)
           )}
           {renderNavLink("/contact", "Contact Us")}
         </ul>
@@ -135,13 +122,11 @@ const NavBar = () => {
             ></span>
             <span
               className={`transition-all duration-300 ease-linear rounded-3xl 
-                ${isMenuOpen ? "opacity-0" : "bg-[#002347] w-3/4 h-[4px]"}`}
-            ></span>
+                ${isMenuOpen ? "opacity-0" : "bg-[#002347] w-3/4 h-[4px]"}`}></span>
             <span
               className={`transition-all duration-300 ease-linear rounded-3xl 
                 ${isMenuOpen ? "rotate-[-50deg] translate-y-[50%]" : ""} 
-                bg-[#002347] w-full h-[4px]`}
-            ></span>
+                bg-[#002347] w-full h-[4px]`}></span>
           </div>
         </div>
 

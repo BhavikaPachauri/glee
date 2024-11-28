@@ -25,4 +25,4 @@ const HomeProduct = () => {
   );
 };
 
-export default HomeProduct;
+export default HomeProduct
