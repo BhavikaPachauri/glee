@@ -1,18 +1,27 @@
 import "./App.css";
 import MainRoute from "./components/common/MainRoute";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import productsList from "../src/components/common/Helpers";
 import { setProduct, getProduct } from "../src/store/slices/productSlice";
+import Loader from "./components/common/Loader";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  // -----------------------aos------------------------
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+
+  }, []);
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state.product);
   useEffect(() => {
-    // dispatch(setProduct(productsList));
     dispatch(getProduct());
   }, [dispatch]);
-  return <>{loading ? <div>Loading...</div> : <MainRoute />}</>;
+  return <>{loading ? <Loader/> : <MainRoute />}</>;
 }
 
 export default App;

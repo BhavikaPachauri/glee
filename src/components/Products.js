@@ -45,10 +45,10 @@ const Products = () => {
             </button>
           </div>
 
-          <div className="flex flex-wrap justify-between lg:gap-0 gap-8 mb-10">
+          <div className="flex flex-wrap justify-between lg:gap-0 gap-8 mb-14">
             <div className="lg:w-[35%]">
               <div className="bg-[#D9D9D9] rounded-[10px] h-full">
-                <img src={selectedProduct.prod_image_url[0] || DummyImg} className="mx-auto w-full h-full object-contain" alt={selectedProduct.prod_brand} />
+                <img src={selectedProduct.prod_image_url[0] || DummyImg} className="mx-auto w-full h-full object-contain bg-transparent" alt={selectedProduct.prod_brand} />
               </div>
             </div>
             <div className="lg:w-[60%]">
@@ -136,21 +136,23 @@ const Products = () => {
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
         <div className="flex flex-wrap mt-5">
           {currentProducts.map((product, index) => (
-            <div className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-100" key={index} onClick={() => handleProductClick(product)}>
-              <div className="xl:px-[15px] sm:px-3 px-2 mb-8">
-                <div className="bg-white rounded-lg md:p-6 p-4 min-h-[400px] w-full cursor-pointer group">
-                  <div className="relative flex justify-center items-center h-48 bg-[#D9D9D9] rounded-[5px] overflow-hidden">
-                    <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
-                      <span className="text-white text-lg font-semibold">Product Details</span>
-                    </button>
-                    <img src={product.prod_image_url[0]} alt={product.prod_brand} className="max-h-full" width={146} />
-                  </div>
-                  <h2 className="text-[20px] font-normal text-black mt-3.5">{product.prod_brand
-                  }</h2>
-                  <p className="text-base text-[#59606C] mt-1.5">{product.prod_des}</p>
-                </div>
-              </div>
-            </div>
+           <div className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-full" key={index} onClick={() => handleProductClick(product)}>
+           <div className="xl:px-[15px] sm:px-3 px-2 mb-8">
+             <div className="bg-white rounded-lg p-4 min-h-[400px] h-full flex flex-col justify-between w-full cursor-pointer group">
+               <div className="relative flex justify-center items-center h-48 bg-[#D9D9D9] rounded-[5px] overflow-hidden">
+                 <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
+                   <span className="text-white text-lg font-semibold">Product Details</span>
+                 </button>
+                 <img src={product.prod_image_url[0]} alt={product.prod_brand} className="max-h-full" width={146} />
+               </div>
+               <div className="flex flex-col mt-3.5">
+                 <h2 className="text-[18px] font-normal text-black">{product.prod_brand}</h2>
+                 <p className="text-[15px] text-[#59606C] mt-1.5">{product.prod_des[0]}</p>
+               </div>
+             </div>
+           </div>
+         </div>
+         
           ))}
         </div>
         <div className="flex justify-center items-center mt-6">

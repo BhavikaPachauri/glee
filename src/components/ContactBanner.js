@@ -9,7 +9,7 @@ const ContactBanner = () => {
                         Contact Us
 
                     </h2>
-                    <p className='text-base font-medium text-white'>You can put your feedback messages, and we will reach out to you soon.
+                    <p className='text-base font-medium text-white text-center'>You can put your feedback messages.
                     </p>
                 </div>
             </div>

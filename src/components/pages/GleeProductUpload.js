@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import NavBar from "../common/NavBar";
 import Footer from "../common/Footer";
 
+// TODO:Remove these Hardcoded Login Creds
 const AUTH_USERNAME = "admin";
 const AUTH_PASSWORD = "password123";
 const url = "https://api.plusdistribution.in/pdpl/glee-products";
