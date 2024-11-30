@@ -69,28 +69,26 @@ const MainHeader = () => {
                 key={index}
                 className="w-full lg:w-[55%] text-center lg:text-left"
               >
-                <h1 className="font-medium lg:text-[55px] md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] mb-[17px]">
+                <h1 className="font-medium lg:text-[55px] md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] mb-[17px]" data-aos="fade-down">
                   "Glee Biotech Limited"
                 </h1>
-                <p className="md:text-[40px] sm:text-[36px] text- leading-[128%] font-light text-white max-w-[667px]">
+                <p className="md:text-[40px] sm:text-[36px] text- leading-[128%] font-light text-white max-w-[667px]" data-aos="fade-down">
                   {slide.description}
                 </p>
               </div>
             ))}
           </Slider>
-          <div className="flex gap-4 items-center lg:mt-8 mt-4 lg:justify-start justify-center">
+          <div className="flex gap-4 items-center lg:mt-8 mt-4 lg:justify-start justify-center" data-aos="fade-down">
             <button
-              className={`cursor-pointer transition-all duration-300 ease-linear ${
-                prevClicked ? "scale-110" : ""
-              }`}
+              className={`cursor-pointer transition-all duration-300 ease-linear ${prevClicked ? "scale-110" : ""
+                }`}
               onClick={handlePrevClick}
             >
               <PrevArrow />
             </button>
             <button
-              className={`cursor-pointer transition-all duration-300 ease-linear ${
-                nextClicked ? "scale-110" : ""
-              }`}
+              className={`cursor-pointer transition-all duration-300 ease-linear ${nextClicked ? "scale-110" : ""
+                }`}
               onClick={handleNextClick}
             >
               <NextArrow />

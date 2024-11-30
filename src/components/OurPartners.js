@@ -68,10 +68,10 @@ const OurPartners = () => {
     return (
         <>
             <div className='xl:max-w-[1362px] mx-auto px-3 lg:py-[80px] py-14'>
-                <h2 className="text-black text-[34px] leading-[120%] mb-8 text-center">Our Partners</h2>
+                <h2 className="text-black text-[34px] leading-[120%] mb-8 text-center" data-aos="fade-down">Our Partners</h2>
                 <Slider {...settings}>
                     {logo.map((a, index) => (
-                        <div key={index} className="flex items-center">
+                        <div key={index} className="flex items-center" data-aos="fade-zoom">
                             <img
                                 src={a.image}
                                 alt="cardimg"

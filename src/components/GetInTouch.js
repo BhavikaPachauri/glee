@@ -71,13 +71,13 @@ const GetInTouch = () => {
       <div className="xl:max-w-[1252px] mx-auto px-3">
         <div className="flex flex-wrap justify-between items-center lg:gap-0 gap-10">
           <div className="xl:w-1/4 lg:w-[30%] w-full">
-            <h2 className="text-black sm:text-[40px] text-[34px] font-medium leading-[120%] mb-4 lg:text-start text-center">
+            <h2 className="text-black sm:text-[40px] text-[34px] font-medium leading-[120%] mb-4 lg:text-start text-center" data-aos="fade-right">
               Get In Touch
             </h2>
-            <p className="text-black text-[15px] mb-[26px] lg:text-start text-center">
-              We’re here to help! Contact us, and we’ll respond promptly.
+            <p className="text-black text-[15px] mb-[26px] lg:text-start text-center" data-aos="fade-right">
+              We’ re here to help! Contact us, and we’ll respond promptly.
             </p>
-            <p className="text-[16px] text-black font-bold">Address</p>
+            <p className="text-[16px] text-black font-bold" data-aos="fade-right">Address</p>
             <a
               href="https://www.google.com/maps/place/581,+Basement,+2,+Pace+City+I,+Sector+37,+Gurugram,+Haryana+122001"
               className="text-black text-[15px] mb-[20px] hover:text-blue-500 transition-all duration-300 ease-linear"
@@ -86,22 +86,22 @@ const GetInTouch = () => {
             >
               Plot no.581, Basement Pace City 2, Sector 37, Industrial Area, Gurugram 122004
             </a>
-            <p className="text-[16px] text-black font-bold mt-4">Email</p>
+            <p className="text-[16px] text-black font-bold mt-4" data-aos="fade-right">Email</p>
             <a
               href="mailto:info@gleebiotech.com"
               className="text-black text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear"
             >
               info@gleebiotech.com
             </a>
-            <p className="text-[16px] text-black font-bold mt-4">Phone</p>
+            <p className="text-[16px] text-black font-bold mt-4" data-aos="fade-right">Phone</p>
             <a
               href="tel:+911244014675"
               className="text-black text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear"
             >
               +911244014675
             </a>
-            <p className="text-black font-semibold text-[14px] mb-[26px] mt-5">Also available on:</p>
-            <div className="flex gap-[38px]">
+            <p className="text-black font-semibold text-[14px] mb-[26px] mt-5" data-aos="fade-right">Also available on:</p>
+            <div className="flex gap-[38px]" data-aos="fade-right">
               <a
                 href="https://www.whatsapp.com/"
                 target="_blank"
@@ -136,7 +136,7 @@ const GetInTouch = () => {
               </a>
             </div>
           </div>
-          <div className="xl:w-[37%] lg:w-[50%] w-full">
+          <div className="xl:w-[37%] lg:w-[50%] w-full" data-aos="fade-left">
             <div className="p-[6px] rounded-[31px] bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#ffffff] animate-gradient-border">
               <div className="sm:py-[34px] sm:px-[45px] p-4 bg-white rounded-[28px]">
                 <h2 className="text-[34px] text-center text-black mb-4">Send a message</h2>
@@ -213,8 +213,8 @@ const GetInTouch = () => {
             </div>
           </div>
         </div>
-        <div className="p-[4px] rounded-[30px] bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#ffffff] animate-gradient-border mt-10">
-          <div className="relative w-full rounded-[30px] bg-white" data-aos="fade-down">
+        <div className="p-[4px] rounded-[30px] bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#ffffff] animate-gradient-border mt-10" data-aos="fade-down">
+          <div className="relative w-full rounded-[30px] bg-white">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4961.434870431194!2d77.03534980180912!3d28.441449846327092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19b6ea67792d%3A0xe28bd8ef251ecf0f!2sGlee%20Biotech%20LTD!5e0!3m2!1sen!2sin!4v1728017477577!5m2!1sen!2sin"
               width="100%"

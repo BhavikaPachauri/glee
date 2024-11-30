@@ -1,7 +1,7 @@
 export const WebLogo = () => {
   return (
     <svg
-      className=" max-sm:w-[80px] me-[11px]"
+      className=" max-sm:w-[80px] w-[90px] me-[11px]"
       width="105"
       height="59"
       viewBox="0 0 105 59"

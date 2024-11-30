@@ -41,7 +41,7 @@ const Products = () => {
           <div className="flex justify-between items-center md:mb-10 mb-7">
             <h2 className="text-black sm:text-[40px] text-[30px] leading-[120%] text-center text-nowrap">Product Details</h2>
             <button onClick={handleBackToProducts} className="px-4 py-2 bg-[#002347] text-white rounded">
-              Back to Products
+              Back <span className="sm:bolck hidden">to Products</span>
             </button>
           </div>
 
@@ -136,23 +136,28 @@ const Products = () => {
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
         <div className="flex flex-wrap mt-5">
           {currentProducts.map((product, index) => (
-           <div className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-full" key={index} onClick={() => handleProductClick(product)}>
-           <div className="xl:px-[15px] sm:px-3 px-2 mb-8">
-             <div className="bg-white rounded-lg p-4 min-h-[400px] h-full flex flex-col justify-between w-full cursor-pointer group">
-               <div className="relative flex justify-center items-center h-48 bg-[#D9D9D9] rounded-[5px] overflow-hidden">
-                 <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
-                   <span className="text-white text-lg font-semibold">Product Details</span>
-                 </button>
-                 <img src={product.prod_image_url[0]} alt={product.prod_brand} className="max-h-full" width={146} />
-               </div>
-               <div className="flex flex-col mt-3.5">
-                 <h2 className="text-[18px] font-normal text-black">{product.prod_brand}</h2>
-                 <p className="text-[15px] text-[#59606C] mt-1.5">{product.prod_des[0]}</p>
-               </div>
-             </div>
-           </div>
-         </div>
-         
+            <div className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-full" data-aos="fade-zoom" key={index} onClick={() => handleProductClick(product)}>
+              <div className="xl:px-[15px] sm:px-3 px-2 mb-8">
+                <div className="bg-white rounded-lg p-4 min-h-[400px] h-full flex flex-col justify-between w-full cursor-pointer group">
+                  <div className="relative flex justify-center items-center h-48 bg-[#D9D9D9] rounded-[5px] overflow-hidden">
+                    <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
+                      <span className="text-white text-lg font-semibold">Product Details</span>
+                    </button>
+                    <div className="flex justify-center items-center h-48 bg-[#D9D9D9] rounded-[5px]">
+                      <img
+                        src={product.prod_image_url[0]}
+                        alt={product.prod_brand}
+                        className="max-h-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col mt-3.5">
+                    <h2 className="text-[18px] font-normal text-black">{product.prod_brand}</h2>
+                    <p className="text-[15px] text-[#59606C] mt-1.5">{product.prod_des[0]}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
         <div className="flex justify-center items-center mt-6">

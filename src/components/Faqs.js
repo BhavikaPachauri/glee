@@ -39,7 +39,7 @@ const Faqs = () => {
         <>
             <div className="px-3">
                 <div className="max-w-[984px] mx-auto px-3 bg-[#EDEDED] my-[64px] py-7 md:shadow-[6px_6px_30px_0px_#00000026] rounded-[40px]">
-                    <h2 className="text-[#1F488E] text-[34px] leading-[120%] mb-7 text-center">
+                    <h2 className="text-[#1F488E] text-[34px] leading-[120%] mb-7 text-center" data-aos="fade-down">
                         Frequently Asked Questions
                     </h2>
                     <div className="max-w-[793px] mx-auto w-full flex flex-col gap-[27px]">
