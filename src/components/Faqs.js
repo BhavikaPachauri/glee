@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AccordianArrow } from "./Icons"; // Ensure you have this icon or replace it with any other arrow icon.
+import { AccordianArrow } from "./Icons";
 
 const Faqs = () => {
     const [openAccordion, setOpenAccordion] = useState(null);

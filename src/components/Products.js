@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSingleProduct } from "../store/slices/productSlice";
-import DummyImg from "../assets/images/png/DummyImg.png";
 import ProductSlide from "./common/ProductSlide";
 
 const Products = () => {
@@ -10,7 +9,7 @@ const Products = () => {
   const productSlice = useSelector((state) => state.product);
   const { products, selectedProduct } = productSlice;
 
-  const itemsPerPage = 4;
+  const itemsPerPage = 12;
   const totalPages = Math.ceil(products.length / itemsPerPage);
   const currentProducts = products.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
@@ -48,7 +47,7 @@ const Products = () => {
           <div className="flex flex-wrap justify-between lg:gap-0 gap-8 mb-14">
             <div className="lg:w-[35%]">
               <div className="bg-[#D9D9D9] rounded-[10px] h-full">
-                <img src={selectedProduct.prod_image_url[0] || DummyImg} className="mx-auto w-full h-full object-contain bg-transparent" alt={selectedProduct.prod_brand} />
+                <img src={selectedProduct.prod_image_url[0]} className="mx-auto w-full h-full object-contain bg-transparent" alt={selectedProduct.prod_brand} />
               </div>
             </div>
             <div className="lg:w-[60%]">
