@@ -97,7 +97,8 @@ const GetInTouch = () => {
               className="text-white text-[18px] mb-[26px] lg:text-start text-center lg:max-w-[300px]"
               data-aos="fade-right"
             >
-              Connect with us for inquiries, support, or collaboration opportunities.
+              Connect with us for inquiries, support, or collaboration
+              opportunities.
             </p>
             <p
               className="text-[16px] text-white font-bold"
@@ -154,7 +155,7 @@ const GetInTouch = () => {
                 <Watsaap />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/gleebiotech/profilecard/?igsh=MTd5NnM5YXJrMGxtbg=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-linear hover:-translate-y-2"

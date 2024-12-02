@@ -24,7 +24,7 @@ const Footer = () => {
                                 className="text-white text-4xl font-bold leading-none text-center"
                             >
                                 <img src={GleeLogo} className="max-w-[133px] lg:block hidden" />
-                                <img src={GleeLogoSmall} className="sm:max-w-[300px] max-w-[265px] lg:hidden block" />
+                                <img src={GleeLogoSmall} className="sm:max-w-[300px] max-w-[220px] lg:hidden block" />
                             </a>
                             <div className="gap-6 lg:flex hidden">
                                 <a
