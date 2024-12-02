@@ -4,6 +4,7 @@ import { setSingleProduct } from "../store/slices/productSlice";
 import ProductSlide from "./common/ProductSlide";
 
 const Products = () => {
+  const [activeTab, setActiveTab] = useState("description");
   const [currentPage, setCurrentPage] = useState(1);
   const dispatch = useDispatch();
   const productSlice = useSelector((state) => state.product);
@@ -66,93 +67,150 @@ const Products = () => {
               <h3 className="text-black text-[30px] leading-[120%] mb-1">
                 {selectedProduct.prod_brand}
               </h3>
-              
-              <div>
-                <h3 className="text-[14px] font-normal text-black mb-1">
-                  <strong>Description:</strong>
-                </h3>
-                {selectedProduct.prod_des &&
-                selectedProduct.prod_des.length > 0 ? (
-                  selectedProduct.prod_des.map((desc, index) => (
-                    <p
-                      key={Math.random}
-                      className="text-[14px] text-black font-normal mb-2"
-                    >
-                      {desc}
-                    </p>
-                  ))
-                ) : (
-                  <p className="text-[14px] text-black font-normal mb-2">
-                    No description available.
-                  </p>
-                )}
+              <div className="flex mb-4 gap-4">
+                <button
+                  className={`pt-2 pb-1 text-base font-normal text-black ${
+                    activeTab === "description"
+                      ? "border-b-4 border-b-[#1F488E]"
+                      : "border-b-4 border-b-[#FAFAFA]"
+                  }`}
+                  onClick={() => setActiveTab("description")}
+                >
+                  Description
+                </button>
+                <button
+                  className={`pt-2 pb-1 text-base font-normal text-black ${
+                    activeTab === "details"
+                      ? "border-b-4 border-b-[#1F488E]"
+                      : "border-b-4 border-b-[#FAFAFA]"
+                  }`}
+                  onClick={() => setActiveTab("details")}
+                >
+                  Details
+                </button>
               </div>
-              <p className="text-[20px] font-medium">Category</p>
-              <p className="text-[14px] font-normal mb-1">
-                {selectedProduct.prod_category}
-              </p>
-              <div>
-                <h3 className="text-[14px] font-normal text-black mb-1">
-                  <strong>Benefits:</strong>
-                </h3>
-                {selectedProduct.prod_benefits &&
-                selectedProduct.prod_benefits.length > 0 ? (
-                  selectedProduct.prod_benefits.map((benefit, index) => (
-                    <p
-                      key={index}
-                      className="text-[14px] font-normal text-black mb-1"
-                    >
-                      {benefit}
+              {activeTab === "description" && (
+                <div>
+                  <h3 className="text-[14px] font-normal text-black mb-1">
+                    <strong>Description:</strong>
+                  </h3>
+                  {selectedProduct.prod_des &&
+                  selectedProduct.prod_des.length > 0 ? (
+                    selectedProduct.prod_des.map((desc, index) => (
+                      <p
+                        key={index} // Using index as the key. Prefer a unique identifier if available.
+                        className="text-[14px] text-black font-normal mb-2"
+                      >
+                        {desc}
+                      </p>
+                    ))
+                  ) : (
+                    <p className="text-[14px] text-black font-normal mb-2">
+                      No description available.
                     </p>
-                  ))
-                ) : (
-                  <p className="text-[14px] font-normal text-black mb-1">
-                    No benefits available.
+                  )}
+                  <p className="text-[20px] font-medium">Category</p>
+                  <p className="text-[14px] font-normal mb-1">
+                    {selectedProduct.prod_category}
                   </p>
-                )}
-              </div>
+                </div>
+              )}
 
-              <div>
-                <h3 className="text-[14px] font-normal text-black mb-1">
-                  <strong>Side Effects:</strong>
-                </h3>
-                {selectedProduct.prod_side_effects &&
-                selectedProduct.prod_side_effects.length > 0 ? (
-                  selectedProduct.prod_side_effects.map((effect, index) => (
-                    <p
-                      key={index}
-                      className="text-[14px] font-normal text-black mb-1"
-                    >
-                      {effect}
-                    </p>
-                  ))
-                ) : (
-                  <p className="text-[14px] font-normal text-black mb-1">
-                    No side effects listed.
-                  </p>
-                )}
-              </div>
+              {activeTab === "details" && (
+                <div>
+                  <div>
+                    <h3 className="text-[14px] font-normal text-black mb-1">
+                      <strong>Description:</strong>
+                    </h3>
+                    {selectedProduct.prod_des &&
+                    selectedProduct.prod_des.length > 0 ? (
+                      selectedProduct.prod_des.map((desc, index) => (
+                        <p
+                          key={index}
+                          className="text-[14px] text-black font-normal mb-2"
+                        >
+                          {desc}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="text-[14px] text-black font-normal mb-2">
+                        No description available.
+                      </p>
+                    )}
+                  </div>
 
-              <div>
-                <h3 className="text-[14px] font-normal text-black mb-1">
-                  <strong>Uses:</strong>
-                </h3>
-                {selectedProduct.prod_uses &&
-                selectedProduct.prod_uses.length > 0 ? (
-                  selectedProduct.prod_uses.map((use, index) => (
-                    <p
-                      key={index}
-                      className="text-[14px] font-normal text-black mb-1"
-                    >
-                      {use}
+                  <div>
+                    <p className="text-[20px] font-medium">Category</p>
+                    <p className="text-[14px] font-normal mb-1">
+                      {selectedProduct.prod_category ||
+                        "No category available."}
                     </p>
-                  ))
-                ) : (
-                  <p className="text-[14px] font-normal text-black mb-1">
-                    No uses listed.
-                  </p>
-                )}
-              </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-[14px] font-normal text-black mb-1">
+                      <strong>Benefits:</strong>
+                    </h3>
+                    {selectedProduct.prod_benefits &&
+                    selectedProduct.prod_benefits.length > 0 ? (
+                      selectedProduct.prod_benefits.map((benefit, index) => (
+                        <p
+                          key={index}
+                          className="text-[14px] font-normal text-black mb-1"
+                        >
+                          {benefit}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="text-[14px] font-normal text-black mb-1">
+                        No benefits available.
+                      </p>
+                    )}
+                  </div>
+
+                  <div>
+                    <h3 className="text-[14px] font-normal text-black mb-1">
+                      <strong>Side Effects:</strong>
+                    </h3>
+                    {selectedProduct.prod_side_effects &&
+                    selectedProduct.prod_side_effects.length > 0 ? (
+                      selectedProduct.prod_side_effects.map((effect, index) => (
+                        <p
+                          key={index}
+                          className="text-[14px] font-normal text-black mb-1"
+                        >
+                          {effect}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="text-[14px] font-normal text-black mb-1">
+                        No side effects listed.
+                      </p>
+                    )}
+                  </div>
+
+                  <div>
+                    <h3 className="text-[14px] font-normal text-black mb-1">
+                      <strong>Uses:</strong>
+                    </h3>
+                    {selectedProduct.prod_uses &&
+                    selectedProduct.prod_uses.length > 0 ? (
+                      selectedProduct.prod_uses.map((use, index) => (
+                        <p
+                          key={index}
+                          className="text-[14px] font-normal text-black mb-1"
+                        >
+                          {use}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="text-[14px] font-normal text-black mb-1">
+                        No uses listed.
+                      </p>
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           <h3 className="text-[34px] text-black py-6">Related Products</h3>
