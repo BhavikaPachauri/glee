@@ -17,12 +17,14 @@ const AboutPage = () => {
     return (
         <>
             <NavBar />
+            <div className="overflow-hidden">
             <AboutBanner />
             <AboutDetail />
             <WhoWeAre />
             <VisionMission />
             <OurPartners/>
             <Footer />
+            </div>
         </>
     );
 };

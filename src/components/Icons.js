@@ -107,6 +107,23 @@ export const NextArrow = () => {
     </svg>
   );
 };
+export const MoreIcon1 = () => {
+  return (
+    <svg
+      className="group-hover:-translate-x-[2px] transition-all duration-300 ease-linear rotate-180"
+      width="6"
+      height="13"
+      viewBox="0 0 6 13"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.272267 10.6741C-0.0887249 11.0861 -0.0887244 11.7682 0.260234 12.1803C0.621226 12.6066 1.18678 12.6066 1.53574 12.1803L5.73527 7.24956C5.90374 7.05062 6 6.78064 6 6.49645C6 6.21226 5.90374 5.94227 5.73527 5.74334L1.53574 0.81261C1.36727 0.599467 1.13865 0.5 0.910019 0.5C0.669358 0.5 0.44073 0.599467 0.260234 0.81261C-0.0887244 1.2389 -0.0887249 1.90675 0.272267 2.31883L3.82202 6.49645L0.272267 10.6741Z"
+        fill="#1F52A9"
+      />
+    </svg>
+  );
+};
 export const MoreIcon = () => {
   return (
     <svg
@@ -218,7 +235,54 @@ export const NextArrow1 = () => {
     </div>
   );
 };
-
+export const BackToTop = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z"
+        fill="white"
+        stroke="url(#paint0_linear_2037_152)"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M22 16.3008L16 10.3008L10 16.3008" fill="white" />
+      <path
+        d="M22 16.3008L16 10.3008L10 16.3008"
+        stroke="#1F488E"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M16 22.3008V10.3008"
+        stroke="#1F488E"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_2037_152"
+          x1="16"
+          y1="1"
+          x2="16"
+          y2="31"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.437725" stop-color="#1F488E" />
+          <stop offset="1" stop-color="#727272" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
 export const PrevArrow1 = () => {
   return (
     <svg

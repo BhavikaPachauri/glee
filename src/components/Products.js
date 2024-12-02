@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSingleProduct } from "../store/slices/productSlice";
 import ProductSlide from "./common/ProductSlide";
+import { MoreIcon1 } from "./Icons";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState("description");
@@ -41,20 +42,46 @@ const Products = () => {
     return (
       <div className="bg-[#F8F8FA]">
         <div className="xl:max-w-[1320px] mx-auto px-3 md:py-16 py-10">
-          <div className="flex justify-between items-center md:mb-10 mb-7">
-            <h2 className="text-black sm:text-[42px] text-[30px] leading-[120%] text-center text-nowrap">
-              Product Details
-            </h2>
+          <div className="md:flex justify-center items-start md:mb-10 mb-7">
             <button
               onClick={handleBackToProducts}
-              className="px-4 py-2 bg-[#002347] text-white rounded"
+              data-aos="fade-left"
+              className="text-[15px] font-normal pt-4 text-[#1F52A9] items-center gap-1 justify-center group sm:flex hidden"
             >
-              Back <span className="sm:bolck hidden">to Products</span>
+              <span>
+                <MoreIcon1 />
+              </span>
+              Back
+            </button>
+            <div className="w-full">
+              <h2
+                className="text-[#1F488E] sm:text-[40px] text-[30px] leading-[120%] text-center text-nowrap sm:mb-[15px] mb-2"
+                data-aos="fade-down"
+              >
+                Product Details
+              </h2>
+              <p
+                className="text-[#59606C] text-[16px] font-normal pb-[17px] border-b border-b-[#C6C6C6] text-center"
+                data-aos="fade-down"
+              >
+                Discover quality products tailored for your needs and lasting
+                performance.
+              </p>
+            </div>
+            <button
+              onClick={handleBackToProducts}
+              data-aos="fade-left"
+              className="text-[15px] font-normal text-[#1F52A9] items-center gap-1 justify-center group mt-3 sm:hidden flex"
+            >
+              <span>
+                <MoreIcon1 />
+              </span>
+              Back
             </button>
           </div>
 
           <div className="flex flex-wrap justify-between lg:gap-0 gap-8 mb-14">
-            <div className="lg:w-[35%]">
+            <div className="lg:w-[35%]" data-aos="fade-right">
               <div className="bg-[#f4f4f4] rounded-[10px] h-full">
                 <img
                   src={selectedProduct.prod_image_url[0]}
@@ -63,27 +90,27 @@ const Products = () => {
                 />
               </div>
             </div>
-            <div className="lg:w-[60%]">
-              <h3 className="text-black text-[30px] leading-[120%] mb-1">
+            <div className="lg:w-[60%]" data-aos="fade-left">
+              <h3 className="text-black sm:text-[30px] text-[24px] leading-[120%] mb-1">
                 {selectedProduct.prod_brand}
               </h3>
               <div className="flex mb-4 gap-4">
                 <button
-                  className={`pt-2 pb-1 text-base font-normal text-black ${
-                    activeTab === "description"
-                      ? "border-b-4 border-b-[#1F488E]"
-                      : "border-b-4 border-b-[#FAFAFA]"
-                  }`}
+                  className={`relative pt-2 pb-1 text-base font-normal text-black after:absolute after:transition-all after:duration-300 after:h-1 after:rounded-[4px] 
+          after:bg-gradient-to-r after:from-[#6aaeca] after:via-[#1F488E] after:to-[#727272] after:left-0 after:-bottom-0 ${
+            activeTab === "description" ? "after:right-0" : "after:right-full"
+          }`}
                   onClick={() => setActiveTab("description")}
                 >
                   Description
                 </button>
                 <button
-                  className={`pt-2 pb-1 text-base font-normal text-black ${
-                    activeTab === "details"
-                      ? "border-b-4 border-b-[#1F488E]"
-                      : "border-b-4 border-b-[#FAFAFA]"
-                  }`}
+                  className={`relative pt-2 pb-1 text-base font-normal text-black after:absolute after:transition-all after:duration-300 after:h-1 after:rounded-[4px] 
+                    after:bg-gradient-to-r after:from-[#6aaeca] after:via-[#1F488E] after:to-[#727272] after:left-0 after:-bottom-0 ${
+                      activeTab === "details"
+                        ? "after:right-0"
+                        : "after:right-full"
+                    }`}
                   onClick={() => setActiveTab("details")}
                 >
                   Details
@@ -98,7 +125,7 @@ const Products = () => {
                   selectedProduct.prod_des.length > 0 ? (
                     selectedProduct.prod_des.map((desc, index) => (
                       <p
-                        key={index} // Using index as the key. Prefer a unique identifier if available.
+                        key={index}
                         className="text-[14px] text-black font-normal mb-2"
                       >
                         {desc}
@@ -109,7 +136,7 @@ const Products = () => {
                       No description available.
                     </p>
                   )}
-                  <p className="text-[20px] font-medium">Category</p>
+                  <p className="text-[16px] font-medium">Category</p>
                   <p className="text-[14px] font-normal mb-1">
                     {selectedProduct.prod_category}
                   </p>
@@ -140,7 +167,7 @@ const Products = () => {
                   </div>
 
                   <div>
-                    <p className="text-[20px] font-medium">Category</p>
+                    <p className="text-[16px] font-medium">Category</p>
                     <p className="text-[14px] font-normal mb-1">
                       {selectedProduct.prod_category ||
                         "No category available."}
@@ -213,7 +240,9 @@ const Products = () => {
               )}
             </div>
           </div>
-          <h3 className="text-[34px] text-black py-6">Related Products</h3>
+          <h3 className="text-[34px] text-black py-6" data-aos="fade-right">
+            Related Products
+          </h3>
           <ProductSlide />
         </div>
       </div>
@@ -223,10 +252,16 @@ const Products = () => {
   return (
     <div className="bg-[#F3F4F6]">
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
-        <h3 className="lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-[#1F488E]">
+        <h3
+          className="lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-[#1F488E] lg:text-start text-center"
+          data-aos="fade-down"
+        >
           Explore Our Range
         </h3>
-        <p className="text-[#59606C] text-[16px] font-normal pb-4 border-b border-b-[#C6C6C6]">
+        <p
+          className="text-[#59606C] text-[16px] font-normal pb-4 border-b border-b-[#C6C6C6] lg:text-start text-center"
+          data-aos="fade-down"
+        >
           Discover quality products tailored for your needs and lasting
           performance.
         </p>
@@ -234,11 +269,13 @@ const Products = () => {
           {currentProducts.map((product, index) => (
             <div
               className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-full"
-              data-aos="fade-zoom"
               key={index}
               onClick={() => handleProductClick(product)}
             >
-              <div className="xl:px-[15px] sm:px-3 px-2 mb-8">
+              <div
+                className="xl:px-[15px] sm:px-3 px-2 mb-8"
+                data-aos="fade-zoom"
+              >
                 <div className="bg-white rounded-lg p-4 min-h-[400px] h-full flex flex-col justify-between w-full cursor-pointer group">
                   <div className="relative flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px] overflow-hidden">
                     <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { useSelector, useDispatch } from "react-redux";
 import { NextArrow1, PrevArrow1 } from "../Icons";

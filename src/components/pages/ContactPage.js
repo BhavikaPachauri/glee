@@ -5,19 +5,20 @@ import Footer from "../common/Footer";
 import GetInTouch from "../GetInTouch";
 
 const ContactPage = () => {
-    const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
-    return (
-        <>
-            <NavBar />
-            <GetInTouch />
-            <Footer />
-
-        </>
-    );
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return (
+    <>
+      <NavBar />
+      <div className="overflow-hidden">
+        <GetInTouch />
+        <Footer />
+      </div>
+    </>
+  );
 };
 
 export default ContactPage;

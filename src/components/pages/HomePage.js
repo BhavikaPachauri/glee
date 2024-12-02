@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
 import MainHeader from "../MainHeader";
@@ -16,11 +16,13 @@ const HomePage = () => {
   return (
     <>
       <NavBar />
-      <MainHeader />
-      <AboutUs />
-      <HomeProduct />
-      <Faqs />
-      <Footer />
+      <div className="overflow-hidden">
+        <MainHeader />
+        <AboutUs />
+        <HomeProduct />
+        <Faqs />
+        <Footer />
+      </div>
     </>
   );
 };

@@ -13,8 +13,10 @@ const ProductsPage = () => {
   return (
     <>
       <NavBar />
-      <Products />
-      <Footer />
+      <div className="overflow-hidden">
+        <Products />
+        <Footer />
+      </div>
     </>
   );
 };

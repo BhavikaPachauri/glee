@@ -16,18 +16,44 @@ const settings = {
 
 const slidesData = [
   {
-    description:
-      "“Transforming lives through innovative and reliable healthcare solutions.”",
+    description: (
+      <>
+        Redefining Critical Care In{" "}
+        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
+        Multi-Faceted Approach That Incorporates Advancements In Technology,
+        Innovative Strategies Enhance Patient Outcomes.
+      </>
+    ),
   },
   {
-    description:
-      "“Setting the standard in pharmaceutical and healthcare solutions.”",
+    description: (
+      <>
+        Redefining Critical Care In{" "}
+        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
+        Multi-Faceted Approach That Incorporates Advancements In Technology,
+        Innovative Strategies Enhance Patient Outcomes.
+      </>
+    ),
   },
   {
-    description: "“Inspired by care, driven by expertise.”",
+    description: (
+      <>
+        Redefining Critical Care In{" "}
+        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
+        Multi-Faceted Approach That Incorporates Advancements In Technology,
+        Innovative Strategies Enhance Patient Outcomes.
+      </>
+    ),
   },
   {
-    description: "“Your partner in comprehensive healthcare excellence.”",
+    description: (
+      <>
+        Redefining Critical Care In{" "}
+        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
+        Multi-Faceted Approach That Incorporates Advancements In Technology,
+        Innovative Strategies Enhance Patient Outcomes.
+      </>
+    ),
   },
 ];
 
@@ -56,7 +82,7 @@ const MainHeader = () => {
 
   return (
     <div className="w-full">
-      <div className="animate-background flex items-center lg:py-36 py-20 relative">
+      <div className="animate-background flex items-center lg:pt-[140px] lg:pb-[70px] py-20 relative">
         <img
           src={HeroBanner}
           alt="HeroBanner"
@@ -69,31 +95,45 @@ const MainHeader = () => {
                 key={index}
                 className="w-full lg:w-[55%] text-center lg:text-left"
               >
-                <h1 className="font-medium lg:text-[55px] md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] mb-[17px]" data-aos="fade-down">
-                  "Glee Biotech Limited"
+                <h1
+                  className="font-medium lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-white leading-[125%] mb-[17px]"
+                  data-aos="fade-down"
+                >
+                  Glee Biotech Limited
                 </h1>
-                <p className="md:text-[40px] sm:text-[36px] text- leading-[128%] font-light text-white max-w-[667px]" data-aos="fade-down">
+                <p
+                  className="sm:text-[24px] text-[20px] leading-[128%] font-light text-white max-w-[714px]"
+                  data-aos="fade-down"
+                >
                   {slide.description}
                 </p>
               </div>
             ))}
           </Slider>
-          <div className="flex gap-4 items-center lg:mt-8 mt-4 lg:justify-start justify-center" data-aos="fade-down">
+          <div
+            className="flex gap-4 items-center lg:mt-8 mt-4 lg:justify-start justify-center lg:mb-[150px] mb-20"
+            data-aos="fade-down"
+          >
             <button
-              className={`cursor-pointer transition-all duration-300 ease-linear ${prevClicked ? "scale-110" : ""
-                }`}
+              className={`cursor-pointer transition-all duration-300 ease-linear ${
+                prevClicked ? "scale-110" : ""
+              }`}
               onClick={handlePrevClick}
             >
               <PrevArrow />
             </button>
             <button
-              className={`cursor-pointer transition-all duration-300 ease-linear ${nextClicked ? "scale-110" : ""
-                }`}
+              className={`cursor-pointer transition-all duration-300 ease-linear ${
+                nextClicked ? "scale-110" : ""
+              }`}
               onClick={handleNextClick}
             >
               <NextArrow />
             </button>
           </div>
+          <p className="sm:text-[24px] text-[20px] font-normal italic text-end">
+            “Redefining the future of Critical Care.”
+          </p>
         </div>
       </div>
     </div>

@@ -27,7 +27,13 @@ const NavBar = () => {
     return () => document.body.classList.remove("overflow-hidden");
   }, [isMenuOpen]);
 
-  const renderNavLink = (path, label, dropdownItems, isDropdownOpen, toggleDropdown) => (
+  const renderNavLink = (
+    path,
+    label,
+    dropdownItems,
+    isDropdownOpen,
+    toggleDropdown
+  ) => (
     <div
       className="relative group"
       onMouseEnter={toggleDropdown}
@@ -44,8 +50,9 @@ const NavBar = () => {
         {label}
         {dropdownItems && (
           <span
-            className={`ml-2 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""
-              }`}
+            className={`ml-2 transition-transform duration-300 ${
+              isDropdownOpen ? "rotate-180" : ""
+            }`}
           >
             ▼
           </span>
@@ -54,7 +61,11 @@ const NavBar = () => {
       {dropdownItems && (
         <ul
           className={`absolute z-30 top-full left-0 bg-white shadow-lg mt-2 py-2 w-48 rounded-md transition-all duration-300 ease-in-out overflow-hidden
-      ${isDropdownOpen ? "opacity-100 max-h-[400px] translate-y-0" : "opacity-0 max-h-0 translate-y-4"}`}
+      ${
+        isDropdownOpen
+          ? "opacity-100 max-h-[400px] translate-y-0"
+          : "opacity-0 max-h-0 translate-y-4"
+      }`}
           style={{ transitionProperty: "opacity, transform, max-height" }}
         >
           {dropdownItems.map((item, index) => (
@@ -76,7 +87,10 @@ const NavBar = () => {
   return (
     <div className="shadow-xl sticky top-0 z-20 bg-white">
       <nav className="flex justify-between items-center xl:max-w-[1364px] mx-auto p-3">
-        <a href="/" className="text-base flex items-center text-[#A3A3A3] font-bold">
+        <a
+          href="/"
+          className="text-base flex items-center text-[#A3A3A3] font-bold"
+        >
           <WebLogo />
           <span className="max-sm:hidden">
             Glee<span className="text-[#1F488E] mx-[3px]">Biotech</span>Ltd.
@@ -93,7 +107,7 @@ const NavBar = () => {
           {renderNavLink("/aboutus", "About Us")}
           {renderNavLink(
             "/products",
-            "Products",
+            "Products"
             // [
             //   { path: "/products/medicine", label: "Medicine" },
             //   { path: "/products/medicaldevices", label: "Medical Devices" },
@@ -106,10 +120,13 @@ const NavBar = () => {
         </ul>
 
         <div className="flex items-center gap-3">
-          <a href="tel:911244014675" className="max-sm:hidden relative inline-block text-white text-[15px] py-[9.4px] px-[21.85px] leading-[18.75px] rounded-full text-lg
+          <a
+            href="tel:911244014675"
+            className="max-sm:hidden relative inline-block text-white text-[15px] py-[9.4px] px-[21.85px] leading-[18.75px] rounded-full text-lg
                        bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#727272] bg-[length:200%_200%] bg-left transition-all duration-500 ease-out
-                       hover:bg-right">
-            0124-4013-4675
+                       hover:bg-right"
+          >
+            +91-124-401-4675
           </a>
           <div
             onClick={() => setMenuOpen(!isMenuOpen)}
@@ -122,11 +139,13 @@ const NavBar = () => {
             ></span>
             <span
               className={`transition-all duration-300 ease-linear rounded-3xl 
-                ${isMenuOpen ? "opacity-0" : "bg-[#002347] w-3/4 h-[4px]"}`}></span>
+                ${isMenuOpen ? "opacity-0" : "bg-[#002347] w-3/4 h-[4px]"}`}
+            ></span>
             <span
               className={`transition-all duration-300 ease-linear rounded-3xl 
                 ${isMenuOpen ? "rotate-[-50deg] translate-y-[50%]" : ""} 
-                bg-[#002347] w-full h-[4px]`}></span>
+                bg-[#002347] w-full h-[4px]`}
+            ></span>
           </div>
         </div>
 
