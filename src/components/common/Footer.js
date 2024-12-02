@@ -99,13 +99,13 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/"
+                  <a
+                    href="#faq"
                     className="text-[#F3F4F6] text-[15px] after:w-0 after:h-[2px] after:bg-white after:absolute relative after:left-0 after:bottom-[-2px] hover:after:w-full after:duration-500 after:ease-in-out"
                   >
                     {" "}
                     FAQs
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -119,11 +119,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/products"
                     className="text-[#F3F4F6] text-[15px] after:w-0 after:h-[2px] after:bg-white after:absolute relative after:left-0 after:bottom-[-2px] hover:after:w-full after:duration-500 after:ease-in-out"
                   >
                     {" "}
-                    Security
+                    Products
                   </Link>
                 </li>
                 <li>

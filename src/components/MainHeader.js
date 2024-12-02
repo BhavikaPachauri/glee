@@ -28,30 +28,28 @@ const slidesData = [
   {
     description: (
       <>
-        Redefining Critical Care In{" "}
-        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
-        Multi-Faceted Approach That Incorporates Advancements In Technology,
-        Innovative Strategies Enhance Patient Outcomes.
+        We Thrive For Integration of Advanced Technologies And Digital Platforms
+        To <span className="text-[#6BD4FF] font-medium">REINFORCE</span> The
+        Delivery Of Critical Care Services In India .
       </>
     ),
   },
   {
     description: (
       <>
-        Redefining Critical Care In{" "}
-        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
-        Multi-Faceted Approach That Incorporates Advancements In Technology,
-        Innovative Strategies Enhance Patient Outcomes.
+        We Aim To Foster{" "}
+        <span className="text-[#6BD4FF] font-medium">COLLABORATION</span>{" "}
+        Amongst Various Healthcare Professionals To Optimise Patient Care .
       </>
     ),
   },
   {
     description: (
       <>
-        Redefining Critical Care In{" "}
-        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
-        Multi-Faceted Approach That Incorporates Advancements In Technology,
-        Innovative Strategies Enhance Patient Outcomes.
+        We Strive To Provide{" "}
+        <span className="text-[#6BD4FF] font-medium">COMPREHENSIVE</span> And
+        Effective Management Options For Critical Care Patient Leading To Better
+        Outcomes And Thus Assuring Utmost Satisfaction For Patients.
       </>
     ),
   },
