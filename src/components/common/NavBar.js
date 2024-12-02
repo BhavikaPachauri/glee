@@ -5,7 +5,6 @@ import { WebLogo } from "../Icons";
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [isProductsDropdownOpen, setProductsDropdownOpen] = useState(false);
 
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
@@ -105,17 +104,7 @@ const NavBar = () => {
         >
           {renderNavLink("/", "Home")}
           {renderNavLink("/aboutus", "About Us")}
-          {renderNavLink(
-            "/products",
-            "Products"
-            // [
-            //   { path: "/products/medicine", label: "Medicine" },
-            //   { path: "/products/medicaldevices", label: "Medical Devices" },
-            //   { path: "/products/laboratory", label: "Laboratory" },
-            // ],
-            // isProductsDropdownOpen,
-            // () => setProductsDropdownOpen(!isProductsDropdownOpen)
-          )}
+          {renderNavLink("/products", "Products")}
           {renderNavLink("/contact", "Contact Us")}
         </ul>
 
@@ -150,7 +139,7 @@ const NavBar = () => {
         </div>
 
         <div
-          className="h-[4px] bg-gradient-to-r from-transparent to-transparent fixed top-[105px] left-0 right-0"
+          className="h-[4px] bg-[#03317F] fixed top-[83px] left-0 right-0"
           style={{ width: `${scrollProgress}%` }}
         ></div>
       </nav>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSingleProduct } from "../store/slices/productSlice";
 import ProductSlide from "./common/ProductSlide";
-import { MoreIcon1 } from "./Icons";
+import { MoreIcon1, NextArrow1, PrevArrow1 } from "./Icons";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState("description");
@@ -273,10 +273,25 @@ const Products = () => {
               onClick={() => handleProductClick(product)}
             >
               <div
-                className="xl:px-[15px] sm:px-3 px-2 mb-8"
+                className="px-1 mb-8"
                 data-aos="fade-zoom"
               >
-                <div className="bg-white rounded-lg p-4 min-h-[400px] h-full flex flex-col justify-between w-full cursor-pointer group">
+                  <div className="bg-white rounded-lg p-3 min-h-[400px] cursor-pointer hover:scale-[0.98] hover:shadow-md transition-all duration-300 ease-linear">
+                  <div className="flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px]">
+                    <img
+                      src={product.prod_image_url[0]}
+                      alt={product.prod_brand}
+                      className="max-h-full"
+                    />
+                  </div>
+                  <h2 className="text-[20px] font-normal text-black mt-3.5">
+                    {product.prod_brand}
+                  </h2>
+                  <p className="text-[14px] text-[#59606C] mt-1.5">
+                    {product.prod_des[0]}
+                  </p>
+                </div>
+                {/* <div className="bg-white rounded-lg p-4 min-h-[400px] h-full flex flex-col justify-between w-full cursor-pointer group">
                   <div className="relative flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px] overflow-hidden">
                     <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
                       <span className="text-white text-lg font-semibold">
@@ -299,29 +314,31 @@ const Products = () => {
                       {product.prod_des[0]}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
         </div>
         <div className="flex justify-center items-center mt-6">
           <button
-            className={`px-4 py-2 mx-1 rounded ${
+            className={`relative w-[35px] h-[35px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
               currentPage === 1
-                ? "bg-gray-300 cursor-not-allowed"
-                : "bg-[#002347] text-white hover:bg-[#1b4b73]"
+                ? "bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-not-allowed"
+                : "bg-gradient-to-b from-[#1F488E] to-[#727272]"
             }`}
             onClick={goToPreviousPage}
             disabled={currentPage === 1}
           >
-            Previous
+            <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
+              <PrevArrow1 />
+            </div>
           </button>
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
-              className={`px-4 py-2 mx-1 rounded ${
+              className={`px-4 py-2 mx-1 rounded-full w-[35px] flex justify-center items-center h-[35px] ${
                 currentPage === i + 1
-                  ? "bg-[#002347] text-white"
+                  ? "bg-[#1F488E] text-white"
                   : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-200"
               }`}
               onClick={() => goToPage(i + 1)}
@@ -330,15 +347,17 @@ const Products = () => {
             </button>
           ))}
           <button
-            className={`px-4 py-2 mx-1 rounded ${
+            className={`relative w-[35px] h-[35px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
               currentPage === totalPages
-                ? "bg-gray-300 cursor-not-allowed"
-                : "bg-[#002347] text-white hover:bg-[#1b4b73]"
+                ? "bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-not-allowed "
+                : "bg-gradient-to-b from-[#1F488E] to-[#727272]"
             }`}
             onClick={goToNextPage}
             disabled={currentPage === totalPages}
           >
-            Next
+            <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
+              <NextArrow1 />
+            </div>
           </button>
         </div>
       </div>

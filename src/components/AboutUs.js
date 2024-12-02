@@ -21,7 +21,7 @@ const AboutUs = () => {
               className="md:absolute top-6 2xl:right-0 right-3"
             >
               <Link
-                to="/products"
+                to="/aboutus"
                 className="text-[15px] font-normal text-[#1F52A9] flex items-center gap-1 justify-center group"
               >
                 See more
