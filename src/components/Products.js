@@ -126,18 +126,18 @@ const Products = () => {
                     selectedProduct.prod_des.map((desc, index) => (
                       <p
                         key={index}
-                        className="text-[14px] text-black font-normal mb-2"
+                        className="text-[14px] text-[#525252] font-normal mb-2"
                       >
                         {desc}
                       </p>
                     ))
                   ) : (
-                    <p className="text-[14px] text-black font-normal mb-2">
+                    <p className="text-[14px] text-[#525252] font-normal mb-2">
                       No description available.
                     </p>
                   )}
                   <p className="text-[16px] font-medium">Category</p>
-                  <p className="text-[14px] font-normal mb-1">
+                  <p className="text-[14px] text-[#525252] font-normal mb-1">
                     {selectedProduct.prod_category}
                   </p>
                 </div>
@@ -154,13 +154,13 @@ const Products = () => {
                       selectedProduct.prod_des.map((desc, index) => (
                         <p
                           key={index}
-                          className="text-[14px] text-black font-normal mb-2"
+                          className="text-[14px] text-[#525252] font-normal mb-2"
                         >
                           {desc}
                         </p>
                       ))
                     ) : (
-                      <p className="text-[14px] text-black font-normal mb-2">
+                      <p className="text-[14px] text-[#525252] font-normal mb-2">
                         No description available.
                       </p>
                     )}
@@ -168,7 +168,7 @@ const Products = () => {
 
                   <div>
                     <p className="text-[16px] font-medium">Category</p>
-                    <p className="text-[14px] font-normal mb-1">
+                    <p className="text-[14px] font-normal mb-1 text-[#525252]">
                       {selectedProduct.prod_category ||
                         "No category available."}
                     </p>
@@ -183,13 +183,13 @@ const Products = () => {
                       selectedProduct.prod_benefits.map((benefit, index) => (
                         <p
                           key={index}
-                          className="text-[14px] font-normal text-black mb-1"
+                          className="text-[14px] font-normal text-[#525252] mb-1"
                         >
                           {benefit}
                         </p>
                       ))
                     ) : (
-                      <p className="text-[14px] font-normal text-black mb-1">
+                      <p className="text-[14px] font-normal text-[#525252] mb-1">
                         No benefits available.
                       </p>
                     )}
@@ -204,13 +204,13 @@ const Products = () => {
                       selectedProduct.prod_side_effects.map((effect, index) => (
                         <p
                           key={index}
-                          className="text-[14px] font-normal text-black mb-1"
+                          className="text-[14px] font-normal text-[#525252] mb-1"
                         >
                           {effect}
                         </p>
                       ))
                     ) : (
-                      <p className="text-[14px] font-normal text-black mb-1">
+                      <p className="text-[14px] font-normal text-[#525252] mb-1">
                         No side effects listed.
                       </p>
                     )}
@@ -225,13 +225,13 @@ const Products = () => {
                       selectedProduct.prod_uses.map((use, index) => (
                         <p
                           key={index}
-                          className="text-[14px] font-normal text-black mb-1"
+                          className="text-[14px] font-normal text-bl[#525252]ack mb-1"
                         >
                           {use}
                         </p>
                       ))
                     ) : (
-                      <p className="text-[14px] font-normal text-black mb-1">
+                      <p className="text-[14px] font-normal text-[#525252] mb-1">
                         No uses listed.
                       </p>
                     )}
@@ -253,13 +253,13 @@ const Products = () => {
     <div className="bg-[#F3F4F6]">
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
         <h3
-          className="lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-[#1F488E] lg:text-start text-center"
+          className="lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-[#1F488E] text-center"
           data-aos="fade-down"
         >
           Explore Our Range
         </h3>
         <p
-          className="text-[#59606C] text-[16px] font-normal pb-4 border-b border-b-[#C6C6C6] lg:text-start text-center"
+          className="text-[#59606C] text-[16px] font-normal pb-4 border-b border-b-[#C6C6C6] text-center"
           data-aos="fade-down"
         >
           Discover quality products tailored for your needs and lasting
