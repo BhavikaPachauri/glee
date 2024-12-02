@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
 import Footer from "../common/Footer";
 import GetInTouch from "../GetInTouch";
-import ContactBanner from "../ContactBanner";
 
 const ContactPage = () => {
     const { pathname } = useLocation();
@@ -14,7 +13,6 @@ const ContactPage = () => {
     return (
         <>
             <NavBar />
-            <ContactBanner />
             <GetInTouch />
             <Footer />
 

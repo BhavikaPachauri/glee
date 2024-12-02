@@ -59,39 +59,25 @@ export const ProductSlide = () => {
       navigate("/products");
     }
     if (location.pathname === "/products") {
-      window.scrollTo(0, 300);
+      window.scrollTo(0, 0);
     }
   };
 
   return (
     <>
       <div className="relative">
-        <button
-          className={` sm:block hidden absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer transition-transform duration-200 ${prevClicked ? "scale-110" : ""
-            }`}
-          onClick={handlePrevClick}
-        >
-          <PrevArrow1 />
-        </button>
-        <button
-          className={`sm:block hidden absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer transition-transform duration-200 ${nextClicked ? "scale-110" : ""
-            }`}
-          onClick={handleNextClick}
-        >
-          <NextArrow1 />
-        </button>
-        <Slider {...settings} ref={slider} className="sm:mx-5">
+        <Slider {...settings} ref={slider}>
           {products.map((product, index) => (
             <div
               key={product.id}
-              className="px-2"
+              className="px-1"
               onClick={() => {
                 selctedProduct(product);
               }}
             >
               <div data-aos="fade-down">
                 <div className="bg-white rounded-lg p-3 min-h-[400px] cursor-pointer hover:scale-[0.98] hover:shadow-md transition-all duration-300 ease-linear">
-                  <div className="flex justify-center items-center h-48 bg-[#D9D9D9] rounded-[5px]">
+                  <div className="flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px]">
                     <img
                       src={product.prod_image_url[0]}
                       alt={product.prod_brand}
@@ -109,20 +95,30 @@ export const ProductSlide = () => {
             </div>
           ))}
         </Slider>
-        <div className="sm:hidden mt-6 justify-end gap-5 flex">
+        <div className="mt-6 justify-end gap-3.5 flex">
           <button
-            className={`w-12 h-12 rounded bg-white flex justify-center items-center border border-black p-2 cursor-pointer transition-transform duration-200 ${prevClicked ? "scale-110" : ""
-              }`}
+            className={`relative w-[32px] h-[32px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] cursor-pointer transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
+              prevClicked
+                ? "scale-110 bg-gradient-to-b from-[#1F488E] to-[#727272]"
+                : ""
+            }`}
             onClick={handlePrevClick}
           >
-            <PrevArrow1 />
+            <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
+              <PrevArrow1 />
+            </div>
           </button>
           <button
-            className={`w-12 h-12 rounded bg-white flex justify-center items-center border border-black p-2 cursor-pointer transition-transform duration-200 ${nextClicked ? "scale-110" : ""
-              }`}
+            className={`relative w-[32px] h-[32px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] cursor-pointer transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
+              nextClicked
+                ? "scale-110 bg-gradient-to-b from-[#1F488E] to-[#727272]"
+                : ""
+            }`}
             onClick={handleNextClick}
           >
-            <NextArrow1 />
+            <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
+              <NextArrow1 />
+            </div>
           </button>
         </div>
       </div>

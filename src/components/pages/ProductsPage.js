@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
 import Footer from "../common/Footer";
 import Products from "../Products";
-import ProductBanner from "../ProductBanner";
 
 const ProductsPage = () => {
   const { pathname } = useLocation();
@@ -14,7 +13,6 @@ const ProductsPage = () => {
   return (
     <>
       <NavBar />
-      <ProductBanner />
       <Products />
       <Footer />
     </>
