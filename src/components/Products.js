@@ -272,12 +272,12 @@ const Products = () => {
               key={index}
               onClick={() => handleProductClick(product)}
             >
-              <div
-                className="px-1 mb-8"
-                data-aos="fade-zoom"
-              >
-                  <div className="bg-white rounded-lg p-3 min-h-[400px] cursor-pointer hover:scale-[0.98] hover:shadow-md transition-all duration-300 ease-linear">
-                  <div className="flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px]">
+              <div className="px-1 mb-8" data-aos="fade-zoom">
+                <div className="bg-white rounded-lg p-3 min-h-[400px] cursor-pointer transition-all duration-300 ease-linear group">
+                  <div className="relative overflow-hidden flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px]">
+                    <button className="text-white text-lg font-semibold absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
+                      Product Details
+                    </button>
                     <img
                       src={product.prod_image_url[0]}
                       alt={product.prod_brand}
@@ -291,30 +291,6 @@ const Products = () => {
                     {product.prod_des[0]}
                   </p>
                 </div>
-                {/* <div className="bg-white rounded-lg p-4 min-h-[400px] h-full flex flex-col justify-between w-full cursor-pointer group">
-                  <div className="relative flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px] overflow-hidden">
-                    <button className="absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
-                      <span className="text-white text-lg font-semibold">
-                        Product Details
-                      </span>
-                    </button>
-                    <div className="flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px]">
-                      <img
-                        src={product.prod_image_url[0]}
-                        alt={product.prod_brand}
-                        className="max-h-full"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex flex-col mt-3.5">
-                    <h2 className="text-[18px] font-normal text-black">
-                      {product.prod_brand}
-                    </h2>
-                    <p className="text-[15px] text-[#59606C] mt-1.5">
-                      {product.prod_des[0]}
-                    </p>
-                  </div>
-                </div> */}
               </div>
             </div>
           ))}
