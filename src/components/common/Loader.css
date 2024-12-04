@@ -1,56 +1,17 @@
-/* ---------------------preloader--------------------------- */
-.circle {
-  transform-origin: 50%;
-  animation: circle 0.5s alternate infinite ease;
+.loader {
+  --c: no-repeat linear-gradient(#ffffff 0 0);
+  background: var(--c), var(--c), black;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
 }
-@keyframes circle {
+@keyframes l16 {
   0% {
-    top: 60px;
-    height: 5px;
-    border-radius: 50px 50px 25px 25px;
-    transform: scaleX(1.7);
+    background-position: -150% 0, -150% 0;
   }
-  40% {
-    height: 20px;
-    border-radius: 50%;
-    transform: scaleX(1);
+  66% {
+    background-position: 250% 0, -150% 0;
   }
   100% {
-    top: 0%;
+    background-position: 250% 0, 250% 0;
   }
-}
-.circle:nth-child(2) {
-  left: 45%;
-  animation-delay: 0.1s;
-}
-.circle:nth-child(3) {
-  left: auto;
-  right: 15%;
-  animation-delay: 0.2s;
-}
-.shadow {
-  transform-origin: 50%;
-  animation: shadow 0.5s alternate infinite ease;
-}
-@keyframes shadow {
-  0% {
-    transform: scaleX(1.5);
-  }
-  40% {
-    transform: scaleX(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scaleX(0.2);
-    opacity: 0.4;
-  }
-}
-.shadow:nth-child(4) {
-  left: 45%;
-  animation-delay: 0.1s;
-}
-.shadow:nth-child(5) {
-  left: auto;
-  right: 15%;
-  animation-delay: 0.2s;
 }

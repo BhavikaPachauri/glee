@@ -1,16 +1,16 @@
 import React from "react";
 import "../common/Loader.css";
+import Preloader from "../../assets/images/png/footerLogo.png";
+import LoaderBar from "./LoaderBar";
 
 const Loader = () => {
   return (
-    <div className="wrapper w-[150px] h-[60px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-      <div className="circle w-[20px] h-[20px] absolute rounded-[50%] bg-black left-[15%]"></div>
-      <div className="circle w-[20px] h-[20px] absolute rounded-[50%] bg-black left-[15%]"></div>
-      <div className="circle w-[20px] h-[20px] absolute rounded-[50%] bg-black left-[15%]"></div>
-      <div className="shadow w-[20px] h-[4px] rounded-[50%] bg-black absolute top-[62px] z-[-1] left-[15%] blur-[1px]"></div>
-      <div className="shadow w-[20px] h-[4px] rounded-[50%] bg-black absolute top-[62px] z-[-1] left-[15%] blur-[1px]"></div>
-      <div className="shadow w-[20px] h-[4px] rounded-[50%] bg-black absolute top-[62px] z-[-1] left-[15%] blur-[1px]"></div>
-    </div>
+    <>
+      <div className="w-full h-screen flex flex-col gap-5 justify-center items-center fixed bg-[#1f488e]">
+        <img src={Preloader} alt="Loader" className="max-w-[110px] w-full" />
+        <LoaderBar />
+      </div>
+    </>
   );
 };
 
