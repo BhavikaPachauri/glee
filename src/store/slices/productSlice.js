@@ -4,7 +4,10 @@ import axios from "axios";
 export const getProduct = createAsyncThunk("get/product", async () => {
   const formData = new FormData();
   formData.append("action", "get");
-  const response = await axios.post("https://api.plusdistribution.in/pdpl/glee-products", formData);
+  const response = await axios.post(
+    "https://api.plusdistribution.in/pdpl/glee-products",
+    formData
+  );
   const {
     response: { list },
   } = response.data;
@@ -34,8 +37,11 @@ const productSlice = createSlice({
         state.loading = true;
       })
       .addCase(getProduct.fulfilled, (state, action) => {
-        state.loading = false;
         state.products = action.payload;
+        // setTimeout(() => {
+        //   state.loading = false;
+        // }, 100);
+        state.loading = false;
       })
       .addCase(getProduct.rejected, (state, action) => {
         state.loading = false;

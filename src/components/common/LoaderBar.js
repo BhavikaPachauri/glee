@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setProduct, getProduct } from "../../store/slices/productSlice";
+import { getProduct } from "../../store/slices/productSlice";
+
 function LoaderBar() {
   const [count, setCount] = useState(0);
+  const [isComplete, setIsComplete] = useState(false);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const animationDuration = 500;
@@ -12,12 +15,13 @@ function LoaderBar() {
     let currentCount = 0;
 
     const intervalId = setInterval(() => {
+      currentCount += increment;
+      const newValue = Math.min(Math.round(currentCount), 100);
+      setCount(newValue);
+
       if (currentCount >= 100) {
         clearInterval(intervalId);
-      } else {
-        currentCount += increment;
-        const newValue = Math.min(Math.round(currentCount), 100);
-        setCount(newValue);
+        setIsComplete(true);
       }
     }, 1000 / frameRate);
 
@@ -25,13 +29,14 @@ function LoaderBar() {
       clearInterval(intervalId);
     };
   }, []);
-  const dispatch = useDispatch();
+
   useEffect(() => {
-    if (count === 100) {
-      console.log(count);
-      dispatch(getProduct());
+    if (isComplete) {
+      setTimeout(() => {
+        dispatch(getProduct());
+      }, 400);
     }
-  }, [count, dispatch]);
+  }, [isComplete, count, dispatch]);
 
   return (
     <div className="flex items-center justify-center flex-col">
