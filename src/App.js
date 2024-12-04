@@ -32,9 +32,7 @@ function App() {
   }, []);
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state.product);
-  useEffect(() => {
-    dispatch(getProduct());
-  }, [dispatch]);
+  
   return (
     <>
       {loading ? (
