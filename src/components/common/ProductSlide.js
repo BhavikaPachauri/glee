@@ -103,6 +103,8 @@ export const ProductSlide = () => {
                 : ""
             }`}
             onClick={handlePrevClick}
+            aria-label="Previous"
+            type="button"
           >
             <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
               <PrevArrow1 />
@@ -115,6 +117,8 @@ export const ProductSlide = () => {
                 : ""
             }`}
             onClick={handleNextClick}
+            aria-label="Next"
+            type="button"
           >
             <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
               <NextArrow1 />

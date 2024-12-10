@@ -113,10 +113,12 @@ const MainHeader = () => {
             data-aos="fade-down"
           >
             <button
-              className={`cursor-pointer transition-all duration-300 ease-linear ${
+              className={`cursor-pointer transition-transform duration-300 ease-linear ${
                 prevClicked ? "scale-110" : ""
               }`}
               onClick={handlePrevClick}
+              aria-label="Previous"
+              type="button"
             >
               <PrevArrow />
             </button>
@@ -125,6 +127,8 @@ const MainHeader = () => {
                 nextClicked ? "scale-110" : ""
               }`}
               onClick={handleNextClick}
+               aria-label="Next"
+              type="button"
             >
               <NextArrow />
             </button>
