@@ -87,7 +87,7 @@ const NavBar = () => {
     <div className="shadow-xl sticky top-0 z-20 bg-white">
       <nav className="flex justify-between items-center xl:max-w-[1364px] mx-auto p-3">
         <a
-          href="/"
+          href="/" aria-label="Website Logo"
           className="text-base flex items-center text-[#A3A3A3] font-bold"
         >
           <WebLogo />
