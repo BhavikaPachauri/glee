@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import GleeLogo from "../../assets/images/png/footerLogo.png";
-import GleeLogoSmall from "../../assets/images/png/footer-logo.png";
-import PhoneIcon from "../../assets/images/png/phone-call.png";
-import MailIcon from "../../assets/images/png/email.png";
-import LinkedIn from "../../assets/images/png/linkedin.png";
+import GleeLogo from "../../assets/images/webp/footerLogo.webp";
+import GleeLogoSmall from "../../assets/images/webp/footer-logo.webp";
+import PhoneIcon from "../../assets/images/webp/phone-call.webp";
+import MailIcon from "../../assets/images/webp/email.webp";
+import LinkedIn from "../../assets/images/webp/linkedin.webp";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Preloader from "../../assets/images/png/footerLogo.png";
+import Preloader from "../../assets/images/webp/footerLogo.webp";
 import LoaderBar from "./LoaderBar";
 
 const Loader = () => {

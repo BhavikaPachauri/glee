@@ -1,6 +1,6 @@
 import React from 'react'
-import GradientLine from '../assets/images/png/GriadentLine.png'
-import MissionVisionImg from '../assets/images/png/missionVisionImg.png'
+import GradientLine from '../assets/images/webp/GriadentLine.webp'
+import MissionVisionImg from '../assets/images/webp/missionVisionImg.webp'
 import '../components/VisionMissionstyle.css'
 
 const VisionMission = () => {

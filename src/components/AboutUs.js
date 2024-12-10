@@ -1,6 +1,6 @@
 import React from "react";
-import MedicineInHand from "../assets/images/png/MedicineInhand.png";
-import WomenWithMedicine from "../assets/images/png/WomenWithMedicine.png";
+import MedicineInHand from "../assets/images/webp/MedicineInhand.webp";
+import WomenWithMedicine from "../assets/images/webp/WomenWithMedicine.webp";
 import { Link } from "react-router-dom";
 import { MoreIcon } from "./Icons";
 

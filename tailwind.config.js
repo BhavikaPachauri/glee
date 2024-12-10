@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        aboutbanner: "url('assets/images/png/AboutBanner.png')",
-        history: "url('assets/images/png/HistoryBackground.png')",
-        getintouch: "url('assets/images/png/ContactBanner.png')",
+        aboutbanner: "url('assets/images/webp/AboutBanner.webp')",
+        history: "url('assets/images/webp/HistoryBackground.webp')",
+        getintouch: "url('assets/images/webp/ContactBanner.webp')",
       },
       backgroundSize: {
         bgfull: "100% 100%",

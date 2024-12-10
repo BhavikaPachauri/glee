@@ -1,4 +1,4 @@
-import DummyImg from "../../assets/images/png/DummyImg.png";
+import DummyImg from "../../assets/images/webp/DummyImg.webp";
 
 const products = [
   {

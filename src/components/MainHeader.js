@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import HeroBanner from "../assets/images/png/HeroBanner.png";
+import HeroBanner from "../assets/images/webp/HeroBanner.webp";
 import { NextArrow, PrevArrow } from "./Icons";
 
 const settings = {

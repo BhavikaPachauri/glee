@@ -1,7 +1,7 @@
 import React from 'react'
-import MedicineInHand from '../assets/images/png/MedicineInhand.png'
-import WomenWithMedicine from '../assets/images/png/WomenWithMedicine.png'
-import GradientLine from '../assets/images/png/GriadentLine.png'
+import MedicineInHand from '../assets/images/webp/MedicineInhand.webp'
+import WomenWithMedicine from '../assets/images/webp/WomenWithMedicine.webp'
+import GradientLine from '../assets/images/webp/GriadentLine.webp'
 
 const AboutDetail = () => {
     return (
