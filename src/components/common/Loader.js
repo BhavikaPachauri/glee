@@ -1,5 +1,4 @@
 import React from "react";
-import "../common/Loader.css";
 import Preloader from "../../assets/images/png/footerLogo.png";
 import LoaderBar from "./LoaderBar";
 
