@@ -248,24 +248,24 @@ export const BackToTop = () => {
         d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z"
         fill="white"
         stroke="url(#paint0_linear_2037_152)"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+         strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path d="M22 16.3008L16 10.3008L10 16.3008" fill="white" />
       <path
         d="M22 16.3008L16 10.3008L10 16.3008"
         stroke="#1F488E"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+         strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16 22.3008V10.3008"
         stroke="#1F488E"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+         strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -276,8 +276,8 @@ export const BackToTop = () => {
           y2="31"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.437725" stop-color="#1F488E" />
-          <stop offset="1" stop-color="#727272" />
+          <stop offset="0.437725" stopColor="#1F488E" />
+          <stop offset="1" stopColor="#727272" />
         </linearGradient>
       </defs>
     </svg>
@@ -296,23 +296,23 @@ export const PrevArrow1 = () => {
       <path
         d="M7.30005 13.0005L1.30005 7.00049L7.30005 1.00049"
         fill="white"
-        fill-opacity="0.5"
+        fillOpacity="0.5"
       />
       <path
         className="group-hover:stroke-[#1F488E] transition-all duration-300 ease-linear"
         d="M7.30005 13.0005L1.30005 7.00049L7.30005 1.00049"
         stroke="#AAABAB"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+         strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         className="group-hover:stroke-[#1F488E] transition-all duration-300 ease-linear"
         d="M13.3003 7.00049H1.30029"
         stroke="#AAABAB"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+         strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

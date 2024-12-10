@@ -38,9 +38,6 @@ const productSlice = createSlice({
       })
       .addCase(getProduct.fulfilled, (state, action) => {
         state.products = action.payload;
-        // setTimeout(() => {
-        //   state.loading = false;
-        // }, 100);
         state.loading = false;
       })
       .addCase(getProduct.rejected, (state, action) => {
