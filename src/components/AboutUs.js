@@ -31,7 +31,7 @@ const AboutUs = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-wrap-reverse lg:gap-0 gap-5 items-center max-w-[1019px] mx-auto">
+          <div className="flex flex-wrap lg:gap-0 gap-5 items-center max-w-[1019px] mx-auto">
             <div className="lg:w-1/2 flex lg:gap-5 gap-3 mx-auto">
               <div
                 className="relative p-1.5 rounded-xl bg-gradient-border animate-gradient-border max-w-[280px] md:mt-[50px] mt-[25px]"
@@ -59,13 +59,17 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="lg:w-[45%]" data-aos="fade-down">
-              <p className="text-[#59606C] text-[16px] lg:text-start md:text-center">
-                M/s GLEE BIOTECH LTD (GLEE) is the visionary creation of its
-                esteemed Promoters and a dedicated team, who collectively bring
-                over 30 years of extensive experience in the Pharmaceutical
-                Industry. At GLEE, our mission is to enhance and improve human
-                lives by addressing medical needs with high-quality, meaningful
-                healthcare products.
+              <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%] lg:text-start md:text-center">
+                M/s GLEE BIOTECH LTD (GLEE) is the brain-child of its Promoters
+                and the valuable association of their team members, who bring
+                along more than 30 years’ of rich experience in the field of
+                Pharmaceuticals Industry. GLEE was incorporated with an aim to
+                improve human-lives by addressing their medical needs through
+                development and manufacturing of meaningful healthcare products.
+                The company identify, develop and supply genuine healthcare
+                products ranging from Medicines, Drugs, Consumables, Implants,
+                Masks, PPE Kits, Food products, Medical furniture and all other
+                ancillary products.
               </p>
             </div>
           </div>

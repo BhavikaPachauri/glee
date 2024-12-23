@@ -1,19 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setSingleProduct } from "../store/slices/productSlice";
+import { setSingleProduct, setCategory } from "../store/slices/productSlice";
 import ProductSlide from "./common/ProductSlide";
 import { MoreIcon1, NextArrow1, PrevArrow1 } from "./Icons";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState("description");
+  const [activeTab1, setActiveTab1] = useState("All");
+
   const [currentPage, setCurrentPage] = useState(1);
   const dispatch = useDispatch();
   const productSlice = useSelector((state) => state.product);
-  const { products, selectedProduct } = productSlice;
+  const { products, selectedProduct, selectedCategory, categoryWiseProducts } =
+    productSlice;
+  const categories = [
+    "All",
+    "Injection",
+    "Tablet",
+    "Syrup",
+    "New",
+    "Sale",
+    "Available Today",
+  ];
+  const filteredProducts =
+    activeTab1 === "All"
+      ? products
+      : products.filter((product) => product.category === activeTab1);
 
   const itemsPerPage = 12;
   const totalPages = Math.ceil(products.length / itemsPerPage);
-  const currentProducts = products.slice(
+  const currentProducts = categoryWiseProducts.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -37,6 +53,10 @@ const Products = () => {
   const handleBackToProducts = () => {
     dispatch(setSingleProduct(null));
   };
+  // useEffect(() => {
+  //   dispatch(setCategory(activeTab1));
+  //   dispatch;
+  // }, [activeTab1]);
 
   if (selectedProduct) {
     return (
@@ -265,7 +285,24 @@ const Products = () => {
           Discover quality products tailored for your needs and lasting
           performance.
         </p>
-        <div className="flex flex-wrap lg:mt-10 mt-5">
+        <div className="flex flex-wrap gap-4 justify-center py-6">
+          {categories.map((category, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                setActiveTab1(category);
+              }}
+              className={`px-[30px] py-[9.2px] rounded-[30px] text-[16px] font-normal border border-solid ${
+                activeTab1 === category
+                  ? "bg-[#1F488E] border-[#1F488E] text-white"
+                  : "bg-transparent text-black border-black"
+              } transition duration-300`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+        <div className="flex flex-wrap mt-5">
           {currentProducts.map((product, index) => (
             <div
               className="xl:w-[25%] lg:w-[33.33%] sm:w-[50%] w-full"

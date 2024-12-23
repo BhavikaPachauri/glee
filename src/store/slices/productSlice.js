@@ -21,6 +21,8 @@ const productSlice = createSlice({
     loading: true,
     selectedProduct: null,
     error: null,
+    selectedCategory: "All",
+    categoryWiseProducts: [],
   },
   reducers: {
     setProduct(state, action) {
@@ -29,6 +31,16 @@ const productSlice = createSlice({
     },
     setSingleProduct(state, action) {
       state.selectedProduct = action.payload;
+    },
+    setCategory(state, action) {
+      state.selectedCategory = action.payload;
+    },
+    setCategoryProducts(state, action) {
+      if (state.selectedCategory === "All") {
+        state.categoryWiseProducts = state.products;
+      } else {
+        state.categoryWiseProducts = action.payload;
+      }
     },
   },
   extraReducers: (builder) => {
@@ -47,6 +59,7 @@ const productSlice = createSlice({
   },
 });
 
-export const { setProduct, setSingleProduct } = productSlice.actions;
+export const { setProduct, setSingleProduct, setCategory,setCategoryProducts } =
+  productSlice.actions;
 
 export default productSlice.reducer;

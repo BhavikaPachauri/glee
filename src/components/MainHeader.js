@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import HeroBanner from "../assets/images/webp/HeroBanner.webp";
+import HeroBanner from "../assets/images/webp/HeroBanner.png";
 import { NextArrow, PrevArrow } from "./Icons";
 
 const settings = {
@@ -127,14 +127,14 @@ const MainHeader = () => {
                 nextClicked ? "scale-110" : ""
               }`}
               onClick={handleNextClick}
-               aria-label="Next"
+              aria-label="Next"
               type="button"
             >
               <NextArrow />
             </button>
           </div>
           <p className="sm:text-[24px] text-[20px] font-normal italic text-end">
-            “Redefining the future of Critical Care.”
+            “Saving Life In A Better Way”
           </p>
         </div>
       </div>
