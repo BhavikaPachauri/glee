@@ -53,7 +53,6 @@ const GetInTouch = () => {
         setFormStatus("Something went wrong. Please try again later.");
       }
     } catch (error) {
-      console.error("Error submitting the form:", error);
       setFormStatus("Something went wrong. Please try again later.");
     }
   };

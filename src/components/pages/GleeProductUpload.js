@@ -81,7 +81,6 @@ export default function ProductUploadForm() {
         resetForm();
       }
     } catch (error) {
-      console.error(error);
       setMessage({ type: "error", text: "Error uploading product. Please try again." });
     } finally {
       setLoading(false);

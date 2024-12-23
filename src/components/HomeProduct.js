@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProductSlide from "./common/ProductSlide";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { MoreIcon } from "./Icons";
+import { setCategory } from "../store/slices/productSlice";
 
 const HomeProduct = () => {
+  const dispatch = useDispatch();
   return (
     <>
       <div className="bg-[#F8F8FA]">
@@ -16,7 +18,12 @@ const HomeProduct = () => {
             >
               Products
             </h2>
-            <div data-aos="fade-left">
+            <div
+              data-aos="fade-left"
+              onClick={() => {
+                dispatch(setCategory("All"));
+              }}
+            >
               <Link
                 to="/products"
                 className="text-[15px] font-normal text-[#1F52A9] flex items-center gap-1 justify-center group"

@@ -1,14 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Category1 from "../assets/images/webp/Category1.png";
 import Category2 from "../assets/images/webp/Category2.png";
 import Category3 from "../assets/images/webp/Category3.png";
+import { useDispatch } from "react-redux";
+import { setCategory } from "../store/slices/productSlice";
 
 const ProductCategory = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const categories = [
     { id: 1, img: Category1, label: "Injection" },
     { id: 2, img: Category2, label: "Tablet" },
     { id: 3, img: Category3, label: "Syrup" },
   ];
+
+  const handleCategoryClick = (label) => {
+    navigate(`/products`);
+    dispatch(setCategory(label))
+  };
 
   return (
     <div className="xl:max-w-[1320px] mx-auto px-3">
@@ -23,7 +34,13 @@ const ProductCategory = () => {
         data-aos="fade-down"
       >
         {categories.map((category) => (
-          <div key={category.id} className="md:w-[31.5%] sm:w-[48%] w-full">
+          <div
+            key={category.id}
+            className="md:w-[31.5%] sm:w-[48%] w-full"
+            onClick={() => {
+              handleCategoryClick(category.label);
+            }}
+          >
             <div className="relative overflow-hidden rounded-[15px] group cursor-pointer">
               <img
                 src={category.img}

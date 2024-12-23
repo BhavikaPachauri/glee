@@ -1,34 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setSingleProduct, setCategory } from "../store/slices/productSlice";
+import {
+  setSingleProduct,
+  setCategory,
+  setCategoryProducts,
+} from "../store/slices/productSlice";
 import ProductSlide from "./common/ProductSlide";
 import { MoreIcon1, NextArrow1, PrevArrow1 } from "./Icons";
 
 const Products = () => {
+  const productSlice = useSelector((state) => state.product);
+  const { selectedProduct, categoryWiseProducts, selectedCategory } =
+    productSlice;
+
   const [activeTab, setActiveTab] = useState("description");
-  const [activeTab1, setActiveTab1] = useState("All");
+  const [activeTab1, setActiveTab1] = useState(selectedCategory);
 
   const [currentPage, setCurrentPage] = useState(1);
   const dispatch = useDispatch();
-  const productSlice = useSelector((state) => state.product);
-  const { products, selectedProduct, selectedCategory, categoryWiseProducts } =
-    productSlice;
-  const categories = [
-    "All",
-    "Injection",
-    "Tablet",
-    "Syrup",
-    "New",
-    "Sale",
-    "Available Today",
-  ];
-  const filteredProducts =
-    activeTab1 === "All"
-      ? products
-      : products.filter((product) => product.category === activeTab1);
+
+  const categories = ["All", "Injection", "Tablet", "Syrup", "Gel", "Cream"];
 
   const itemsPerPage = 12;
-  const totalPages = Math.ceil(products.length / itemsPerPage);
+  const totalPages = Math.ceil(categoryWiseProducts.length / itemsPerPage);
   const currentProducts = categoryWiseProducts.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
@@ -53,10 +47,6 @@ const Products = () => {
   const handleBackToProducts = () => {
     dispatch(setSingleProduct(null));
   };
-  // useEffect(() => {
-  //   dispatch(setCategory(activeTab1));
-  //   dispatch;
-  // }, [activeTab1]);
 
   if (selectedProduct) {
     return (
@@ -291,6 +281,7 @@ const Products = () => {
               key={index}
               onClick={() => {
                 setActiveTab1(category);
+                dispatch(setCategory(category));
               }}
               className={`px-[30px] py-[9.2px] rounded-[30px] text-[16px] font-normal border border-solid ${
                 activeTab1 === category

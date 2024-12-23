@@ -27,6 +27,7 @@ const productSlice = createSlice({
   reducers: {
     setProduct(state, action) {
       state.products = action.payload;
+      state.categoryWiseProducts = action.payload;
       state.loading = false;
     },
     setSingleProduct(state, action) {
@@ -34,10 +35,16 @@ const productSlice = createSlice({
     },
     setCategory(state, action) {
       state.selectedCategory = action.payload;
+      if (state.selectedCategory === "All") {
+        state.categoryWiseProducts = state.products;
+      } else {
+        state.categoryWiseProducts = state.products.filter(
+          (prd) => prd.prod_category === state.selectedCategory
+        );
+      }
     },
     setCategoryProducts(state, action) {
       if (state.selectedCategory === "All") {
-        state.categoryWiseProducts = state.products;
       } else {
         state.categoryWiseProducts = action.payload;
       }
@@ -50,6 +57,7 @@ const productSlice = createSlice({
       })
       .addCase(getProduct.fulfilled, (state, action) => {
         state.products = action.payload;
+        state.categoryWiseProducts = action.payload;
         state.loading = false;
       })
       .addCase(getProduct.rejected, (state, action) => {
@@ -59,7 +67,11 @@ const productSlice = createSlice({
   },
 });
 
-export const { setProduct, setSingleProduct, setCategory,setCategoryProducts } =
-  productSlice.actions;
+export const {
+  setProduct,
+  setSingleProduct,
+  setCategory,
+  setCategoryProducts,
+} = productSlice.actions;
 
 export default productSlice.reducer;
