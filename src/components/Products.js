@@ -235,7 +235,7 @@ const Products = () => {
                       selectedProduct.prod_uses.map((use, index) => (
                         <p
                           key={index}
-                          className="text-[14px] font-normal text-bl[#525252]ack mb-1"
+                          className="text-[14px] font-normal text-[#525252] mb-1"
                         >
                           {use}
                         </p>

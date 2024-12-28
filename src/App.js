@@ -6,7 +6,8 @@ import { setProduct, getProduct } from "../src/store/slices/productSlice";
 import Loader from "./components/common/Loader";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BackToTop } from './components/Icons';
+import { BackToTop } from "./components/Icons";
+import Maintenance from "./components/Maintenance";
 
 function App() {
   // --------------------back-to-top-----------------------------
@@ -30,9 +31,17 @@ function App() {
       once: true,
     });
   }, []);
+
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state.product);
-  
+
+  // Temporary maintenance state (adjust logic as needed)
+  const isUnderMaintenance = false; // Change to true when maintenance mode is active
+
+  if (isUnderMaintenance) {
+    return <Maintenance />;
+  }
+
   return (
     <>
       {loading ? (
