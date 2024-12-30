@@ -156,9 +156,6 @@ const Footer = () => {
                 <li className="font-semibold text-[#91B7C7] text-[20px] sm:pb-1.5 text-nowrap">
                   CONTACT INFORMATION
                 </li>
-                <li className="font-medium text-white text-[20px]">
-                  Registered Office
-                </li>
                 <li className="gap-6 lg:hidden flex">
                   <a
                     href="https://www.linkedin.com/company/glee-biotech-ltd/?trk=ppro_cprof&originalSubdomain=ae"
@@ -209,6 +206,15 @@ const Footer = () => {
                 <li>
                   <a href="mailto:info@gleebiotech.com" target="_blank">
                     E-mail:info@gleebiotech.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-white text-[15px]"
+                    target="_blank"
+                    href="tel: +911244014675"
+                  >
+                    +911244014675
                   </a>
                 </li>
               </ul>

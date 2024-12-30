@@ -18,38 +18,42 @@ const slidesData = [
   {
     description: (
       <>
-        Redefining Critical Care In{" "}
-        <span className="text-[#6BD4FF] font-medium">INDIA</span> With A
-        Multi-Faceted Approach That Incorporates Advancements In Technology,
-        Innovative Strategies Enhance Patient Outcomes.
+        Dedicated to delivering high-quality pharmaceutical products since 2020,
+        M/s Glee Biotech Ltd commits to{" "}
+        <span className="text-[#6BD4FF] font-medium">excellence</span> in the
+        healthcare industry.
       </>
     ),
   },
   {
     description: (
       <>
-        We Thrive For Integration of Advanced Technologies And Digital Platforms
-        To <span className="text-[#6BD4FF] font-medium">REINFORCE</span> The
-        Delivery Of Critical Care Services In India .
+        {" "}
+        We specialize in a
+        <span className="text-[#6BD4FF] font-medium"> comprehensive</span> range
+        of healthcare solutions, including medicines, injectables, surgical
+        supplies, and more.
       </>
     ),
   },
   {
     description: (
       <>
-        We Aim To Foster{" "}
-        <span className="text-[#6BD4FF] font-medium">COLLABORATION</span>{" "}
-        Amongst Various Healthcare Professionals To Optimise Patient Care .
+        We aim to foster{" "}
+        <span className="text-[#6BD4FF] font-medium">collaboration</span>{" "}
+        amongst various healthcare professionals to optimise patient care .
       </>
     ),
   },
   {
     description: (
       <>
-        We Strive To Provide{" "}
-        <span className="text-[#6BD4FF] font-medium">COMPREHENSIVE</span> And
-        Effective Management Options For Critical Care Patient Leading To Better
-        Outcomes And Thus Assuring Utmost Satisfaction For Patients.
+        Our focus on stringent quality standards and regulatory compliance
+        ensures that every product meets the{" "}
+        <span className="text-[#6BD4FF] font-medium">
+          highest industry benchmarks
+        </span>{" "}
+        for safety and efficacy.
       </>
     ),
   },
@@ -134,7 +138,7 @@ const MainHeader = () => {
             </button>
           </div>
           <p className="sm:text-[24px] text-[20px] font-normal italic text-end">
-            “Saving Life In A Better Way”
+            “Saving life in a better way”
           </p>
         </div>
       </div>

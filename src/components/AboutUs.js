@@ -60,16 +60,14 @@ const AboutUs = () => {
             </div>
             <div className="lg:w-[45%]" data-aos="fade-down">
               <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%] lg:text-start md:text-center">
-                M/s GLEE BIOTECH LTD (GLEE) is the brain-child of its Promoters
-                and the valuable association of their team members, who bring
-                along more than 30 years’ of rich experience in the field of
-                Pharmaceuticals Industry. GLEE was incorporated with an aim to
-                improve human-lives by addressing their medical needs through
-                development and manufacturing of meaningful healthcare products.
-                The company identify, develop and supply genuine healthcare
-                products ranging from Medicines, Drugs, Consumables, Implants,
-                Masks, PPE Kits, Food products, Medical furniture and all other
-                ancillary products.
+                M/s Glee Biotech Ltd (GLEE), established in 2020 in Gurugram,
+                Haryana, is a leader in pharmaceuticals, specializing in
+                high-quality injectables and surgical solutions. Our 25,000
+                square feet warehouse guarantees top-notch quality. We are
+                committed to enhancing patient health with essential products
+                such as medicines, consumables, masks, and PPE kits, serving
+                critical care and anesthesia needs. GLEE is your trusted partner
+                in healthcare excellence.
               </p>
             </div>
           </div>

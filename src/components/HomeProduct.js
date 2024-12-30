@@ -39,9 +39,9 @@ const HomeProduct = () => {
             className="text-[#59606C] text-base font-normal mb-[18px]"
             data-aos="fade-right"
           >
-            Discover our range designed to highlight key benefit or solution,
-            With features, we ensure [specific value , durability, style,
-            performance].
+            Explore our collection designed to emphasize key benefits and
+            solutions, ensuring specific value, durability, style, and
+            performance.
           </p>
           <ProductSlide />
           <div id="faq"></div>
