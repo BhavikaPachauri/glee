@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Category1 from "../assets/images/webp/Category1.png";
-import Category2 from "../assets/images/webp/Category2.png";
-import Category3 from "../assets/images/webp/Category3.png";
+import Category1 from "../assets/images/webp/Category1.webp";
+import Category2 from "../assets/images/webp/Category2.webp";
+import Category3 from "../assets/images/webp/Category3.webp";
 import { useDispatch } from "react-redux";
 import { setCategory } from "../store/slices/productSlice";
 

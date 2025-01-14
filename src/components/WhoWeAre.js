@@ -19,14 +19,12 @@ const WhoWeAre = () => {
                 className="text-[16px] text-[#59606C] leading-[125%] lg:mb-0 mb-5 lg:text-start text-center"
                 data-aos="fade-up"
               >
-                GLEE BIOTECH LTD is a dedicated healthcare solutions provider
-                committed to enhancing human well-being. With over 30 years of
-                industry experience, our expert team specializes in sourcing and
-                delivering high-quality healthcare products. Our offerings
-                include medicines, medical consumables, implants, PPE kits, food
-                products, and medical furniture. Although we do not manufacture
-                these products, we guarantee their quality through trusted
-                partnerships.
+                Glee Biotech Ltd is one of the fastest-growing pharmaceutical
+                companies, boasting over 30 years of experience in the critical
+                care segment. We specialize in sourcing and delivering
+                high-quality healthcare products, which include medical
+                consumables, implants, PPE kits, food products, and medical
+                furniture.
               </p>
             </div>
             <div className="lg:w-[33%] sm:w-[90%] mx-auto">
@@ -34,12 +32,10 @@ const WhoWeAre = () => {
                 className="text-[16px] text-[#59606C] leading-[125%] lg:text-start text-center"
                 data-aos="fade-down"
               >
-                GLEE BIOTECH LTD was founded by visionary promoters and an
-                experienced team with decades of expertise in the pharmaceutical
-                industry. Driven by our mission to improve human lives, we have
-                established ourselves as a trusted name in healthcare. We are
-                continuously committed to providing meaningful and reliable
-                healthcare solutions.
+                We aim to further consolidate our presence by introducing a
+                diverse portfolio of high-quality products in gastroenterology,
+                oncology, and virology. Our commitment is to save lives more
+                effectively.
               </p>
             </div>
           </div>

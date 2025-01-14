@@ -5,6 +5,7 @@ import PhoneIcon from "../../assets/images/webp/phone-call.webp";
 import MailIcon from "../../assets/images/webp/email.webp";
 import LinkedIn from "../../assets/images/webp/linkedin.webp";
 import { Link } from "react-router-dom";
+import { CallIcon, LocationIcon, EmailIcon } from "../Icons";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
@@ -95,7 +96,7 @@ const Footer = () => {
                 <li>
                   {" "}
                   <Link
-                    to="/about"
+                    to="/aboutus"
                     className="text-[#F3F4F6] text-[15px] after:w-0 after:h-[2px] after:bg-white after:absolute relative after:left-0 after:bottom-[-2px] hover:after:w-full after:duration-500 after:ease-in-out"
                   >
                     {" "}
@@ -195,26 +196,32 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="text-white text-[15px]"
-                    target="_blank"
-                    href="https://www.google.com/maps/place/Glee+Biotech+LTD/@28.4409584,77.0370194,17z/data=!3m2!4b1!5s0x390d1876c5f94b7f:0xd48f8b6e1eae4d79!4m6!3m5!1s0x390d19b6ea67792d:0xe28bd8ef251ecf0f!8m2!3d28.4409584!4d77.0395943!16s%2Fg%2F11pkd43f64?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                    className="text-white text-[15px] flex gap-2 items-start"
+                    href="tel: +911244014675"
                   >
-                    315, 3rd Floor, SAS Towers, Medicity, Sector 38, Gurugram,
-                    Haryana 122001
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@gleebiotech.com" target="_blank">
-                    E-mail:info@gleebiotech.com
+                    <CallIcon />
+                    +911244014675
                   </a>
                 </li>
                 <li>
                   <a
-                    className="text-white text-[15px]"
+                    href="mailto:info@gleebiotech.com"
                     target="_blank"
-                    href="tel: +911244014675"
+                    className="text-white text-[15px] flex gap-2 items-start"
                   >
-                    +911244014675
+                    <EmailIcon />
+                    info@gleebiotech.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-white text-[15px] flex gap-2 items-start"
+                    target="_blank"
+                    href="https://www.google.com/maps/place/Glee+Biotech+LTD/@28.4409584,77.0370194,17z/data=!3m2!4b1!5s0x390d1876c5f94b7f:0xd48f8b6e1eae4d79!4m6!3m5!1s0x390d19b6ea67792d:0xe28bd8ef251ecf0f!8m2!3d28.4409584!4d77.0395943!16s%2Fg%2F11pkd43f64?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    <LocationIcon />
+                    315, 3rd Floor, SAS Towers, Medicity, Sector 38, Gurugram,
+                    Haryana 122001
                   </a>
                 </li>
               </ul>

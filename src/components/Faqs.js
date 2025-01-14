@@ -11,22 +11,22 @@ const Faqs = () => {
     {
       title: "What is GLEE Biotech Ltd. (GLEE)?",
       content:
-        "GLEE Biotech Ltd. is a forward-thinking pharmaceutical and healthcare company founded by experienced professionals with over 30 years of expertise in the pharmaceutical industry. The company focuses on improving human lives by addressing medical needs through the development and supply of genuine healthcare products.",
+        "GLEE Biotech Ltd. is the visionary creation of its esteemed promoters and a dedicated team, who collectively bring over 30 years of extensive experience in the pharmaceutical industry. It is one of the Fastest Growing Pharmaceutical Companies in the critical care Segment with an all-India presence.",
     },
     {
       title: "Where is GLEE Biotech located?",
       content:
-        "GLEE Biotech operates in 315, 3rd Floor, SAS Towers, Medcity, Sector-38, Gurugram-122001, Haryana. For more details about our headquarters or operational facilities, please contact our support team or visit our website.",
+        "GLEE Biotech is located at 315, 3rd Floor, SAS Towers, Medicity, Sector 38, Gurugram, Haryana. For more information about our headquarters or operational facilities, please contact our support team or visit our website.",
     },
     {
       title: "How does GLEE Biotech ensure product quality?",
       content:
-        "GLEE is committed to quality and compliance, following strict quality assurance protocols and regulatory standards in all stages of manufacturing, and supply.",
+        "GLEE is dedicated to maintaining high quality and compliance standards by adhering to strict quality assurance protocols and regulatory requirements throughout all stages of manufacturing and supply. Our products are certified with WHO-GMP and ISO 9001:2015. Our primary goal is to provide quality medicines to our esteemed medical community at affordable prices.",
     },
     {
       title: "How does GLEE Biotech contribute to the healthcare ecosystem?",
       content:
-        "GLEE Biotech supports the healthcare ecosystem by: Offering high-quality, reliable healthcare products. Collaborating with healthcare providers to improve patient care. Innovating through R&D to address emerging medical needs. Ensuring affordability and accessibility of its products.",
+        "GLEE Biotech supports the healthcare ecosystem by Offering high-quality, reliable healthcare products. We have a diverse portfolio with quality products in critical care, Gastroenterology, Oncology, and virology.",
     },
     {
       title: "What sets GLEE Biotech apart from its competitors?",

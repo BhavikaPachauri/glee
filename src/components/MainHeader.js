@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import HeroBanner from "../assets/images/webp/HeroBanner.png";
+import HeroBanner from "../assets/images/webp/HeroBanner.webp";
 import { NextArrow, PrevArrow } from "./Icons";
 
 const settings = {
@@ -32,7 +32,7 @@ const slidesData = [
         We specialize in a
         <span className="text-[#6BD4FF] font-medium"> comprehensive</span> range
         of healthcare solutions, including medicines, injectables, surgical
-        supplies, and more.
+        supplies.
       </>
     ),
   },
@@ -48,12 +48,14 @@ const slidesData = [
   {
     description: (
       <>
-        Our focus on stringent quality standards and regulatory compliance
-        ensures that every product meets the{" "}
+        Our focus on stringent quality standards and regulatory compliance our
+        focus on stringent quality standards and regulatory compliance with{" "}
         <span className="text-[#6BD4FF] font-medium">
-          highest industry benchmarks
+          {" "}
+          WHO_GMP&ISO 9001:2015 CERTIFICATIONS
         </span>{" "}
-        for safety and efficacy.
+        THAT ensures, every product meets High Quality standards for safety &
+        efficacy.
       </>
     ),
   },
@@ -104,7 +106,7 @@ const MainHeader = () => {
                   Glee Biotech Limited
                 </h1>
                 <p
-                  className="sm:text-[24px] text-[20px] leading-[128%] font-light text-white max-w-[714px]"
+                  className="sm:text-[22px] text-[20px] leading-[128%] font-light text-white max-w-[730px]"
                   data-aos="fade-down"
                 >
                   {slide.description}
@@ -137,8 +139,8 @@ const MainHeader = () => {
               <NextArrow />
             </button>
           </div>
-          <p className="sm:text-[24px] text-[20px] font-normal italic text-end">
-            “Saving life in a better way”
+          <p className="sm:text-[24px] text-[20px] font-normal italic text-end flex justify-end">
+            “life to lives...”
           </p>
         </div>
       </div>
