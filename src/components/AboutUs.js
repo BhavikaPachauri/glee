@@ -22,7 +22,7 @@ const AboutUs = () => {
                 to="/aboutus"
                 className="text-[15px] font-normal text-[#1F52A9] flex items-center gap-1 justify-center group"
               >
-                See more
+                Explore
                 <span>
                   <MoreIcon />
                 </span>
