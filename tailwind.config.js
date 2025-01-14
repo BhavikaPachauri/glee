@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        aboutbanner: "url('assets/images/webp/AboutBanner.webp')",
-        history: "url('assets/images/webp/HistoryBackground.webp')",
-        getintouch: "url('assets/images/webp/ContactBanner.webp')",
+        aboutbanner:
+          "url('https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/mjQk6gi0Qk.webp')",
+        history:
+          "url('https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/93sbLkCAiK.webp')",
+        getintouch:
+          "url('https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/lnwu0wWvQG.webp')",
       },
       backgroundSize: {
         bgfull: "100% 100%",

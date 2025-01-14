@@ -1,6 +1,4 @@
 import React from "react";
-import GradientLine from "../assets/images/webp/GriadentLine.webp";
-import MissionVisionImg from "../assets/images/webp/missionVisionImg.webp";
 import "../components/VisionMissionstyle.css";
 
 const VisionMission = () => {
@@ -8,8 +6,8 @@ const VisionMission = () => {
     <>
       <div className="bg-[#EFEFEF] relative z-[1] lg:pb-[37px] lg:pt-5 py-20">
         <img
-          src={GradientLine}
-          alt={GradientLine}
+          src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/QXx0jIccHU.webp"
+          alt="GradientLine"
           className="absolute lg:-top-[36px] -top-20 left-0 w-full lg:-rotate-3 h-[87px]"
         />
         <div className="xl:max-w-[1110px] mx-auto px-3">
@@ -33,7 +31,7 @@ const VisionMission = () => {
               data-aos="fade-down"
             >
               <img
-                src={MissionVisionImg}
+                src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/s4rUh5WHds.webp"
                 alt="MissionVisionImg"
                 className="xl:max-w-[378px] w-full shadow-lg scale-[0.98] cursor-pointer rounded-[10px]"
               />

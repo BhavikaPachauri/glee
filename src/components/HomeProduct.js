@@ -28,7 +28,7 @@ const HomeProduct = () => {
                 to="/products"
                 className="text-[15px] font-normal text-[#1F52A9] flex items-center gap-1 justify-center group"
               >
-                See more
+                See all
                 <span>
                   <MoreIcon />
                 </span>

@@ -1,8 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Category1 from "../assets/images/webp/Category1.webp";
-import Category2 from "../assets/images/webp/Category2.webp";
-import Category3 from "../assets/images/webp/Category3.webp";
 import { useDispatch } from "react-redux";
 import { setCategory } from "../store/slices/productSlice";
 
@@ -11,14 +8,26 @@ const ProductCategory = () => {
   const dispatch = useDispatch();
 
   const categories = [
-    { id: 1, img: Category1, label: "Injection" },
-    { id: 2, img: Category2, label: "Tablet" },
-    { id: 3, img: Category3, label: "Syrup" },
+    {
+      id: 1,
+      img: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/Yz2thy1qAC.webp",
+      label: "Injection",
+    },
+    {
+      id: 2,
+      img: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/GdmV9UWiTV.webp",
+      label: "Tablet",
+    },
+    {
+      id: 3,
+      img: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/3IG5BliZO5.webp",
+      label: "Syrup",
+    },
   ];
 
   const handleCategoryClick = (label) => {
     navigate(`/products`);
-    dispatch(setCategory(label))
+    dispatch(setCategory(label));
   };
 
   return (

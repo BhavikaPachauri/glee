@@ -1,6 +1,4 @@
 import React from "react";
-import MedicineInHand from "../assets/images/webp/MedicineInhand.webp";
-import WomenWithMedicine from "../assets/images/webp/WomenWithMedicine.webp";
 import { Link } from "react-router-dom";
 import { MoreIcon } from "./Icons";
 
@@ -39,7 +37,7 @@ const AboutUs = () => {
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
                   <img
-                    src={MedicineInHand}
+                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/JYIEIKDqke.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"
                   />
@@ -51,7 +49,7 @@ const AboutUs = () => {
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
                   <img
-                    src={WomenWithMedicine}
+                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/qj2RooDnFi.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"
                   />

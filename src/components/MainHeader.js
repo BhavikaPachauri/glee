@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import HeroBanner from "../assets/images/webp/HeroBanner.webp";
 import { NextArrow, PrevArrow } from "./Icons";
 
 const settings = {
@@ -88,7 +87,7 @@ const MainHeader = () => {
     <div className="w-full">
       <div className="animate-background flex items-center lg:pt-[140px] lg:pb-[70px] py-20 relative">
         <img
-          src={HeroBanner}
+          src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/1zgLbTjhS9.webp"
           alt="HeroBanner"
           className="w-full h-full absolute top-0 left-0 z-0"
         />

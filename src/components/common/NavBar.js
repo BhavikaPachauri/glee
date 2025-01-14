@@ -26,18 +26,8 @@ const NavBar = () => {
     return () => document.body.classList.remove("overflow-hidden");
   }, [isMenuOpen]);
 
-  const renderNavLink = (
-    path,
-    label,
-    dropdownItems,
-    isDropdownOpen,
-    toggleDropdown
-  ) => (
-    <div
-      className="relative group"
-      onMouseEnter={toggleDropdown}
-      onMouseLeave={toggleDropdown}
-    >
+  const renderNavLink = (path, label) => (
+    <li className="relative group">
       <Link
         to={path}
         className={`text-[15px] text-black flex items-center transition-all duration-300 relative 
@@ -47,47 +37,16 @@ const NavBar = () => {
           hover:after:right-0 after:-bottom-1`}
       >
         {label}
-        {dropdownItems && (
-          <span
-            className={`ml-2 transition-transform duration-300 ${
-              isDropdownOpen ? "rotate-180" : ""
-            }`}
-          >
-            ▼
-          </span>
-        )}
       </Link>
-      {dropdownItems && (
-        <ul
-          className={`absolute z-30 top-full left-0 bg-white shadow-lg mt-2 py-2 w-48 rounded-md transition-all duration-300 ease-in-out overflow-hidden
-      ${
-        isDropdownOpen
-          ? "opacity-100 max-h-[400px] translate-y-0"
-          : "opacity-0 max-h-0 translate-y-4"
-      }`}
-          style={{ transitionProperty: "opacity, transform, max-height" }}
-        >
-          {dropdownItems.map((item, index) => (
-            <li key={index}>
-              <Link
-                to={item.path}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    </li>
   );
 
   return (
     <div className="shadow-xl sticky top-0 z-20 bg-white">
       <nav className="flex justify-between items-center xl:max-w-[1364px] mx-auto p-3">
         <a
-          href="/" aria-label="Website Logo"
+          href="/"
+          aria-label="Website Logo"
           className="text-base flex items-center text-[#A3A3A3] font-bold"
         >
           <WebLogo />

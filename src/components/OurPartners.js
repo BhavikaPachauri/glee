@@ -1,31 +1,24 @@
 import React from 'react'
 import Slider from "react-slick";
-import Client1 from "../assets/images/webp/glee.webp";
-import Client2 from "../assets/images/webp/doufill.webp";
-import Client3 from "../assets/images/webp/gvanco.webp";
-import Client4 from "../assets/images/webp/czinc.webp";
-import Client6 from "../assets/images/webp/aimbact.webp";
-import Client7 from "../assets/images/webp/thiatec.webp";
-
 const OurPartners = () => {
     const logo = [
         {
-            image: Client7,
+            image: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/UrUSy3viCF.webp",
         },
         {
-            image: Client2,
+            image: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/poo3jiFTpT.webp",
         },
         {
-            image: Client3,
+            image: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/6jCag5QnzG.webp",
         },
         {
-            image: Client4,
+            image: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/rH8PRpOpsh.webp",
         },
         {
-            image: Client6,
+            image: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/dtM27bchRt.webp",
         },
         {
-            image: Client1,
+            image: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/KgtuNl7aLw.webp",
         },
     ];
     const settings = {

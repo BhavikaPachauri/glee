@@ -1,15 +1,12 @@
 import React from "react";
-import MedicineInHand from "../assets/images/webp/MedicineInhand.webp";
-import WomenWithMedicine from "../assets/images/webp/WomenWithMedicine.webp";
-import GradientLine from "../assets/images/webp/GriadentLine.webp";
 
 const AboutDetail = () => {
   return (
     <>
       <div className="relative max-lg:py-14 z-[1]">
         <img
-          src={GradientLine}
-          alt={GradientLine}
+          src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/QXx0jIccHU.webp"
+          alt="GradientLine"
           className="absolute lg:-bottom-12 -bottom-20 left-0 w-full lg:rotate-3 h-[87px]"
         />
         <div className="xl:max-w-[1365px] mx-auto px-3 lg:mt-[-90px]">
@@ -21,7 +18,7 @@ const AboutDetail = () => {
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
                   <img
-                    src={MedicineInHand}
+                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/JYIEIKDqke.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"
                   />
@@ -33,7 +30,7 @@ const AboutDetail = () => {
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
                   <img
-                    src={WomenWithMedicine}
+                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/qj2RooDnFi.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"
                   />

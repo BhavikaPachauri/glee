@@ -1,9 +1,4 @@
 import React, { useState, useEffect } from "react";
-import GleeLogo from "../../assets/images/webp/footerLogo.webp";
-import GleeLogoSmall from "../../assets/images/webp/footer-logo.webp";
-import PhoneIcon from "../../assets/images/webp/phone-call.webp";
-import MailIcon from "../../assets/images/webp/email.webp";
-import LinkedIn from "../../assets/images/webp/linkedin.webp";
 import { Link } from "react-router-dom";
 import { CallIcon, LocationIcon, EmailIcon } from "../Icons";
 
@@ -25,12 +20,12 @@ const Footer = () => {
                 className="text-white text-4xl font-bold leading-none text-center"
               >
                 <img
-                  src={GleeLogo}
+                  src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/ZajgnpYEp0.webp"
                   alt="GleeLogoSmall"
                   className="max-w-[133px] lg:block hidden"
                 />
                 <img
-                  src={GleeLogoSmall}
+                  src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/vhb6buV8Oq.webp"
                   alt="GleeLogoSmall"
                   className="sm:max-w-[300px] max-w-[220px] lg:hidden block"
                 />
@@ -46,7 +41,7 @@ const Footer = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src={LinkedIn}
+                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/DOTMGYA1eh.webp"
                     alt="LinkedIn"
                     width={29}
                     height={29}
@@ -59,7 +54,7 @@ const Footer = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src={MailIcon}
+                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/FdxrYWtXRA.webp"
                     alt="MailIcon"
                     width={29}
                     height={29}
@@ -68,7 +63,7 @@ const Footer = () => {
                 </a>
                 <a href="tel:+911244014675" target="_blank" rel="noreferrer">
                   <img
-                    src={PhoneIcon}
+                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/v7IfkPAIci.webp"
                     alt="PhoneIcon"
                     width={29}
                     height={29}
@@ -164,7 +159,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <img
-                      src={LinkedIn}
+                      src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/DOTMGYA1eh.webp"
                       alt="LinkedIn"
                       width={29}
                       height={29}
@@ -177,7 +172,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <img
-                      src={MailIcon}
+                      src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/FdxrYWtXRA.webp"
                       alt="MailIcon"
                       width={29}
                       height={29}
@@ -186,7 +181,7 @@ const Footer = () => {
                   </a>
                   <a href="tel:+911244014675" target="_blank" rel="noreferrer">
                     <img
-                      src={PhoneIcon}
+                      src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/v7IfkPAIci.webp"
                       alt="PhoneIcon"
                       width={29}
                       height={29}
