@@ -85,12 +85,7 @@ const MainHeader = () => {
 
   return (
     <div className="w-full">
-      <div className="animate-background flex items-center lg:pt-[140px] lg:pb-[70px] py-20 relative">
-        <img
-          src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/1zgLbTjhS9.webp"
-          alt="HeroBanner"
-          className="w-full h-full absolute top-0 left-0 z-0"
-        />
+      <div className="bg-herobanner bg-cover bg-center flex items-center lg:pt-[140px] lg:pb-[70px] py-20 relative">
         <div className="xl:max-w-[1157px] mx-auto px-3 w-full relative z-10">
           <Slider {...settings} ref={slider}>
             {slidesData.map((slide, index) => (
@@ -138,7 +133,7 @@ const MainHeader = () => {
               <NextArrow />
             </button>
           </div>
-          <p className="sm:text-[24px] text-[20px] font-normal italic text-end flex justify-end">
+          <p className="sm:text-[24px] text-white text-[20px] font-normal italic text-end flex justify-end">
             “life to lives...”
           </p>
         </div>
