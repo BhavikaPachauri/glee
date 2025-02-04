@@ -125,7 +125,7 @@ const GetInTouch = () => {
               className="text-[15px] text-white font-bold mt-3"
               data-aos="fade-right"
             >
-            Warehouse :{" "}
+              Warehouse :{" "}
             </p>
             <a
               href="https://www.google.com/maps/place/581,+Basement,+2,+Pace+City+I,+Sector+37,+Gurugram,+Haryana+122001"
