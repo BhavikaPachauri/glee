@@ -19,7 +19,7 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const dispatch = useDispatch();
 
-  const categories = ["All", "Injection", "Tablet", "Syrup", "Gel", "Cream"];
+  const categories = ["All", "Injection", "Tablet", "Syrup"];
 
   const itemsPerPage = 12;
   const totalPages = Math.ceil(categoryWiseProducts.length / itemsPerPage);
