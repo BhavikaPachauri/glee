@@ -100,10 +100,32 @@ const GetInTouch = () => {
               opportunities.
             </p>
             <p
-              className="text-[16px] text-white font-bold"
+              className="text-[18px] text-white font-bold"
               data-aos="fade-right"
             >
               Address
+            </p>
+            <p
+              className="text-[15px] text-white font-bold"
+              data-aos="fade-right"
+            >
+              Corporate Office :{" "}
+            </p>
+            <a
+              href="https://www.google.com/maps/place/SAS+Tower/@28.4409488,77.0367062,17z/data=!3m1!4b1!4m6!3m5!1s0x390d18695c471015:0xa44b7b144935cae4!8m2!3d28.4409488!4d77.0392811!16s%2Fg%2F11byp844cp?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+              className="text-white text-[15px] pb-[20px] hover:text-blue-500 transition-all duration-300 ease-linear"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram,
+              Haryana- 122001
+            </a>
+            <br />
+            <p
+              className="text-[15px] text-white font-bold mt-3"
+              data-aos="fade-right"
+            >
+            Warehouse :{" "}
             </p>
             <a
               href="https://www.google.com/maps/place/581,+Basement,+2,+Pace+City+I,+Sector+37,+Gurugram,+Haryana+122001"
@@ -115,7 +137,7 @@ const GetInTouch = () => {
               Gurugram 122004
             </a>
             <p
-              className="text-[16px] text-white font-bold mt-4"
+              className="text-[18px] text-white font-bold mt-4"
               data-aos="fade-right"
             >
               Email
@@ -127,7 +149,7 @@ const GetInTouch = () => {
               info@gleebiotech.com
             </a>
             <p
-              className="text-[16px] text-white font-bold mt-4"
+              className="text-[18px] text-white font-bold mt-4"
               data-aos="fade-right"
             >
               Phone
@@ -139,7 +161,7 @@ const GetInTouch = () => {
               +911244014675
             </a>
             <p
-              className="text-white font-semibold text-[14px] mb-[26px] mt-5"
+              className="text-white font-semibold text-[16px] mb-[26px] mt-5"
               data-aos="fade-right"
             >
               Also available on:
