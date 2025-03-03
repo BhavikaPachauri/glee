@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Facebook, Instragram, LinkedIn, Watsaap } from "./Icons";
 import "../components/GetInTouch.css";
+import axios from "axios";
 
 const GetInTouch = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -34,18 +35,17 @@ const GetInTouch = () => {
     const contactData = { ...values, code: "pdpl" };
 
     try {
-      const response = await fetch(
-        "https://api.plusdistribution.in/pdpl/contact-us",
+      const response = await axios.post(
+        "http://localhost:5000/contact-us",
+        contactData,
         {
-          method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(contactData),
         }
       );
 
-      if (response.ok) {
+      if (response.status === 200) {
         setIsSubmitted(true);
         setFormStatus("Your message has been sent successfully!");
         resetForm();
@@ -168,7 +168,8 @@ const GetInTouch = () => {
             </p>
             <div className="flex gap-[38px]" data-aos="fade-right">
               <a
-                href="https://www.whatsapp.com/"
+                href="https://wa.me/7082109519
+"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-linear hover:-translate-y-2"
@@ -176,7 +177,7 @@ const GetInTouch = () => {
                 <Watsaap />
               </a>
               <a
-                href="https://www.instagram.com/gleebiotech/profilecard/?igsh=MTd5NnM5YXJrMGxtbg=="
+                href="https://www.instagram.com/glee_biotech/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-linear hover:-translate-y-2"
@@ -184,7 +185,7 @@ const GetInTouch = () => {
                 <Instragram />
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/profile.php?id=61573612209416#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-linear hover:-translate-y-2"
@@ -192,7 +193,7 @@ const GetInTouch = () => {
                 <Facebook />
               </a>
               <a
-                href="https://www.linkedin.com/company/glee-biotech-ltd/?trk=ppro_cprof&originalSubdomain=ae"
+                href="https://www.linkedin.com/company/glee-biotech/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-linear hover:-translate-y-2"
@@ -279,19 +280,15 @@ const GetInTouch = () => {
                           className="text-red-500 text-sm"
                         />
                       </div>
-
                       <div className="flex justify-center items-center">
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="relative inline-block text-white text-[15px] py-[9.4px] px-[45.85px] leading-[18.75px] rounded-full text-lg
-                       bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#727272] bg-[length:200%_200%] bg-left transition-all duration-500 ease-out
-                       hover:bg-right "
+                          className="relative inline-block text-white text-[15px] py-[9.4px] px-[45.85px] leading-[18.75px] rounded-full text-lg bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#727272] bg-[length:200%_200%] bg-left transition-all duration-500 ease-out hover:bg-right "
                         >
                           {isSubmitting ? "Submitting..." : "Send"}
                         </button>
                       </div>
-
                       {formStatus && (
                         <div className="mt-4 text-center text-green-500">
                           {formStatus}

@@ -39,34 +39,29 @@
           const siteMeta = data.response.metaInf.find((site) => site.site_name === "gleebiotech.com");
 
           if (siteMeta) {
-            // Update the title tag
+    
             document.title = siteMeta.meta_title;
 
-            // Modify the description meta tag
             const metaDescription = document.querySelector('meta[name="description"]');
             if (metaDescription) {
               metaDescription.setAttribute("content", siteMeta.meta_desc);
             }
 
-            // Modify the keywords meta tag
             const metaKeywords = document.querySelector('meta[name="keywords"]');
             if (metaKeywords) {
               metaKeywords.setAttribute("content", siteMeta.meta_key);
             }
 
-            // Modify the title meta tag
             const metaTitle = document.querySelector('meta[name="title"]');
             if (metaTitle) {
               metaTitle.setAttribute("content", siteMeta.meta_title);
             }
 
-            // Add a new meta tag for author
             const metaAuthor = document.createElement("meta");
             metaAuthor.name = "author";
             metaAuthor.content = "John Doe";
             document.head.appendChild(metaAuthor);
 
-            // Update the Open Graph image
             const metaOgImage = document.querySelector('meta[property="og:image"]');
             if (metaOgImage) {
               metaOgImage.setAttribute("content", siteMeta.meta_image || "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/KxHa8MHegS.png");

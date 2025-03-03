@@ -36,7 +36,7 @@ const Footer = () => {
               </p>
               <div className="gap-6 lg:flex hidden">
                 <a
-                  href="https://www.linkedin.com/company/glee-biotech-ltd/?trk=ppro_cprof&originalSubdomain=ae"
+                  href="https://www.linkedin.com/company/glee-biotech/?viewAsMember=true"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -222,7 +222,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <p className="text-center sm:text-[15px] text-[12px] text-white lg:py-11 py-7">
+          <p className="text-center sm:text-[15px] text-[12px] text-white py-7">
             Copyright © <span id="year_change">{year} </span>
             Glee Biotech limited All rights reserved
           </p>
