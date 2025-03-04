@@ -36,7 +36,7 @@ const GetInTouch = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/send-email",
+        "https://api.plusdistribution.in/pdpl/sakshi/send-email-glee",
         contactData,
         {
           headers: {

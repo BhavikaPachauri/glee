@@ -4,7 +4,7 @@ const CountdownPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
   const [timeLeft, setTimeLeft] = useState(() => {
-    const eventDate = new Date("2025-03-06T00:00:00").getTime();
+    const eventDate = new Date("2025-03-07T00:00:00").getTime();
     const now = new Date().getTime();
     return Math.max(Math.floor((eventDate - now) / 1000), 0);
   });
@@ -88,7 +88,7 @@ const CountdownPopup = () => {
             <div className="mt-4 bg-blue-100 p-3 rounded-lg text-sm sm:text-base">
               📅{" "}
               <strong>
-                {timeLeft <= 0 ? "Ongoing ⏳" : "6th - 9th March 2025"}
+                {timeLeft <= 0 ? "Ongoing ⏳" : "7th - 9th March 2025"}
               </strong>
               <br />
               📍 <strong>Kochi, Kerala</strong>
