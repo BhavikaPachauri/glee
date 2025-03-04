@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../common/NavBar";
-import MainHeader from "../MainHeader";
+// import MainHeader from "../MainHeader";
 import AboutUs from "../AboutUs";
 import Footer from "../common/Footer";
 import HomeProduct from "../HomeProduct";
@@ -20,7 +20,7 @@ const HomePage = () => {
       <NavBar />
       <div className="overflow-hidden">
         <EventBanner/>
-        <MainHeader />
+        {/* <MainHeader /> */}
         <AboutUs />
         <ProductCategory />
         <HomeProduct />
