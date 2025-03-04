@@ -100,7 +100,7 @@ const MainHeader = () => {
                   Glee Biotech Limited
                 </h1>
                 <p
-                  className="sm:text-[22px] text-[20px] leading-[128%] font-light text-white max-w-[730px]"
+                  className="sm:text-[22px] text-[18px] leading-[128%] font-light text-white max-w-[730px]"
                   data-aos="fade-down"
                 >
                   {slide.description}
@@ -133,9 +133,14 @@ const MainHeader = () => {
               <NextArrow />
             </button>
           </div>
-          <p className="sm:text-[24px] text-white text-[20px] font-normal italic text-end flex justify-end">
-            “life to lives...”
-          </p>
+          <div className="sm:text-[24px] text-white text-[20px] font-normal italic text-end flex justify-end">
+            <span>“</span>
+            <img
+              src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/XTH9cSbDfS.png"
+              width={300} className="md:w-[300px] w-[200px]"
+            />
+            <span>”</span>
+          </div>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Footer from "../common/Footer";
 import HomeProduct from "../HomeProduct";
 import Faqs from "../Faqs";
 import ProductCategory from "../ProductCategory";
+import EventBanner from "../common/EventBanner";
 
 const HomePage = () => {
   const { pathname } = useLocation();
@@ -18,6 +19,7 @@ const HomePage = () => {
     <>
       <NavBar />
       <div className="overflow-hidden">
+        <EventBanner/>
         <MainHeader />
         <AboutUs />
         <ProductCategory />

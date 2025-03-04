@@ -21,10 +21,8 @@ const VisionMission = () => {
                   Vision
                 </h2>
                 <p className="text-[16px] text-[#59606C] leading-[125%] max-lg:text-center">
-                  Our vision at GLEE BIOTECH LTD is to be a trusted leader in
-                  high-quality healthcare products, enhancing lives worldwide by
-                  delivering reliable and innovative solutions that address
-                  critical medical needs.
+                  Our Vision is Life to lives .. Touching lives globally through
+                  quality & affordable healthcare solutions.
                 </p>
               </div>
             </div>
@@ -47,9 +45,8 @@ const VisionMission = () => {
                   Mission
                 </h2>
                 <p className="text-[16px] text-[#59606C] leading-[125%] max-lg:text-center">
-                  To enhance well-being by delivering authentic healthcare
-                  products through trusted partnerships, ensuring top quality
-                  and safety to impact global healthcare meaningfully.
+                  To deliver high quality products and to become fastest growing
+                  healthcare organization.
                 </p>
               </div>
             </div>

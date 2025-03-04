@@ -8,6 +8,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { BackToTop } from "./components/Icons";
 import Maintenance from "./components/Maintenance";
+import CountdownPopup from "./components/common/CountdownPopup";
+
 
 function App() {
   // --------------------back-to-top-----------------------------
@@ -48,17 +50,21 @@ function App() {
         <Loader />
       ) : (
         <>
-          <MainRoute />
-          <button
-            className={`${
-              backToTop
-                ? "fixed bottom-4 right-4 animate-backtotop shadow-sm cursor-pointer z-10"
-                : "hidden"
-            }`}
-            onClick={() => top()}
-          >
-            <BackToTop />
-          </button>
+          <CountdownPopup />
+          <div>
+            {" "}
+            <MainRoute />
+            <button
+              className={`${
+                backToTop
+                  ? "fixed bottom-4 right-4 animate-backtotop shadow-sm cursor-pointer z-10"
+                  : "hidden"
+              }`}
+              onClick={() => top()}
+            >
+              <BackToTop />
+            </button>
+          </div>
         </>
       )}
     </>
