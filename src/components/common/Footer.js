@@ -154,7 +154,7 @@ const Footer = () => {
                 </li>
                 <li className="gap-6 lg:hidden flex">
                   <a
-                    href="https://www.linkedin.com/company/glee-biotech-ltd/?trk=ppro_cprof&originalSubdomain=ae"
+                    href="https://www.linkedin.com/company/glee-biotech/?viewAsMember=true"
                     target="_blank"
                     rel="noreferrer"
                   >
