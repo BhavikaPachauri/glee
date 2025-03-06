@@ -13,7 +13,7 @@ const MainRoute = () => {
       <Route path="aboutus" element={<AboutPage />} />
       <Route path="products" element={<ProductsPage />} />
       <Route path="contact" element={<ContactPage />} />
-      <Route path="admin" element={<GleeProductPage />} />
+      <Route path="produpload" element={<GleeProductPage />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
