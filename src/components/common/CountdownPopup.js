@@ -3,11 +3,7 @@ import { useState, useEffect } from "react";
 const CountdownPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(() => {
-    const eventDate = new Date("2025-03-07T00:00:00").getTime();
-    const now = new Date().getTime();
-    return Math.max(Math.floor((eventDate - now) / 1000), 0);
-  });
+  const [isEventOver, setIsEventOver] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -17,26 +13,6 @@ const CountdownPopup = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
-  useEffect(() => {
-    if (timeLeft <= 0) return;
-
-    const interval = setInterval(() => {
-      setTimeLeft((prev) => Math.max(prev - 1, 0));
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [timeLeft]);
-
-  const formatTime = (seconds) => {
-    if (seconds <= 0) return "Ongoing ⏳";
-
-    const days = Math.floor(seconds / (24 * 60 * 60));
-    const hours = Math.floor((seconds % (24 * 60 * 60)) / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    const secs = seconds % 60;
-    return `${days}d ${hours}h ${minutes}m ${secs}s`;
-  };
 
   const closePopup = () => {
     setFadeIn(false);
@@ -76,34 +52,27 @@ const CountdownPopup = () => {
             </div>
 
             <h2 className="text-2xl font-bold text-gray-800">
-              🚀 Countdown Alert 🚀
-              <br /> {formatTime(timeLeft)}
+              🎉 Event Completed! 🎉
             </h2>
+
             <p className="mt-4 text-gray-600 text-sm sm:text-base">
-              The excitement is building as <strong>Glee Biotech Ltd.</strong>{" "}
-              welcomes you to <strong>STALL SP-3</strong> at
-              <strong> ISCCM 2025</strong> in Kochi, Kerala!
+              <strong>Glee Biotech Ltd.</strong> was proud to be a{" "}
+              <strong>partner</strong> at <strong>ISCCM 2025</strong> in Kochi, Kerala! 
             </p>
 
-            <div className="mt-4 bg-blue-100 p-3 rounded-lg text-sm sm:text-base">
-              📅{" "}
-              <strong>
-                {timeLeft <= 0 ? "Ongoing ⏳" : "7th - 9th March 2025"}
-              </strong>
+            <div className="mt-4 bg-green-100 p-3 rounded-lg text-sm sm:text-base">
+              ✅ <strong>Event Successfully Concluded</strong>
               <br />
               📍 <strong>Kochi, Kerala</strong>
             </div>
 
             <p className="mt-4 text-gray-600 text-sm sm:text-base">
-              Join us to explore{" "}
-              <strong>
-                cutting-edge innovations in critical care medicine
-              </strong>{" "}
-              and network with industry leaders.
+              Thank you all Delegates who visited <strong>STALL SP-3</strong> and engaged with us. 
+              We appreciate your support in advancing <strong>critical care medicine</strong>! 🚀
             </p>
 
             <p className="mt-2 text-blue-600 font-semibold text-sm sm:text-base">
-              Let's push the boundaries of healthcare together! 🚑👨‍⚕️
+              Stay tuned for our upcoming innovations! 🚑👨‍⚕️
             </p>
           </div>
         </div>
