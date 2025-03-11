@@ -1,13 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
 
-const images = [
-  "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/bXPtUf4x42.jpg",
-  "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/Xxtph8NKda.jpg",
-  "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/2WBUKPyAYv.jpg",
-];
-
 const EventBanner = () => {
+  const images = [
+    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/ZfrMqhH3tZ.jpg",
+    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/eWj74ZvbFE.jpg",
+    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/UAbqjZRo3O.jpg",
+  ];
+
   const settings = {
     dots: false,
     infinite: true,

@@ -2,14 +2,12 @@ import "./App.css";
 import MainRoute from "./components/common/MainRoute";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setProduct, getProduct } from "../src/store/slices/productSlice";
+// import { setProduct, getProduct } from "../src/store/slices/productSlice";
 import Loader from "./components/common/Loader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BackToTop } from "./components/Icons";
 import Maintenance from "./components/Maintenance";
-import CountdownPopup from "./components/common/CountdownPopup";
-
 
 function App() {
   // --------------------back-to-top-----------------------------
@@ -50,7 +48,6 @@ function App() {
         <Loader />
       ) : (
         <>
-          <CountdownPopup />
           <div>
             {" "}
             <MainRoute />

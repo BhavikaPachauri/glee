@@ -8,6 +8,7 @@ import HomeProduct from "../HomeProduct";
 import Faqs from "../Faqs";
 import ProductCategory from "../ProductCategory";
 import EventBanner from "../common/EventBanner";
+import CountdownPopup from "../common/CountdownPopup";
 
 const HomePage = () => {
   const { pathname } = useLocation();
@@ -17,15 +18,18 @@ const HomePage = () => {
   }, [pathname]);
   return (
     <>
-      <NavBar />
-      <div className="overflow-hidden">
-        <EventBanner/>
-        {/* <MainHeader /> */}
-        <AboutUs />
-        <ProductCategory />
-        <HomeProduct />
-        <Faqs />
-        <Footer />
+      <CountdownPopup />
+      <div>
+        <NavBar />
+        <div className="overflow-hidden">
+          <EventBanner />
+          {/* <MainHeader /> */}
+          <AboutUs />
+          <ProductCategory />
+          <HomeProduct />
+          <Faqs />
+          <Footer />
+        </div>
       </div>
     </>
   );

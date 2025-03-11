@@ -5,7 +5,7 @@ import { MoreIcon } from "./Icons";
 const AboutUs = () => {
   return (
     <>
-      <div className="max-lg:py-14">
+      <div className="max-lg:py-14 max-sm:py-10">
         <div className="xl:max-w-[1414px] mx-auto px-3 lg:my-[74px]">
           <div className="max-md:flex justify-between items-center md:relative">
             <h2
