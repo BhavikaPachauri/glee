@@ -10,7 +10,7 @@ const ProductCategory = () => {
   const categories = [
     {
       id: 1,
-      img: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/Yz2thy1qAC.webp",
+      img: "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/qVpGdJdrxg.webp",
       label: "Injection",
     },
     {

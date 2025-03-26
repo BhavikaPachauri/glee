@@ -3,9 +3,9 @@ import Slider from "react-slick";
 
 const EventBanner = () => {
   const images = [
-    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/ZfrMqhH3tZ.jpg",
-    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/eWj74ZvbFE.jpg",
-    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/UAbqjZRo3O.jpg",
+    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/nO0as0SqWC.webp",
+    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/cb3fyPJQQD.webp",
+    "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/Cf3A5Nqe2Q.webp",
   ];
 
   const settings = {
@@ -20,14 +20,14 @@ const EventBanner = () => {
   };
 
   return (
-    <div className="bg-[#1f488e]">
+    <div className="bg-[#1f488e] max-sm:h-[200px]">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
             <img
               src={image}
               alt={`Event Banner ${index + 1}`}
-              className="w-full md:h-screen-minus-83 h-auto"
+              className="w-full md:h-[89vh] h-auto"
             />
           </div>
         ))}
