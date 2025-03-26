@@ -7,7 +7,7 @@ import Footer from "../common/Footer";
 import HomeProduct from "../HomeProduct";
 import Faqs from "../Faqs";
 import ProductCategory from "../ProductCategory";
-// import EventBanner from "../common/EventBanner";
+import EventBanner from "../common/EventBanner";
 import CountdownPopup from "../common/CountdownPopup";
 
 const HomePage = () => {
@@ -22,7 +22,7 @@ const HomePage = () => {
       <div>
         <NavBar />
         <div className="overflow-hidden">
-          {/* <EventBanner /> */}
+          <EventBanner />
           <MainHeader />
           <AboutUs />
           <ProductCategory />
