@@ -1,21 +1,26 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import AboutPage from "../pages/AboutPage";
-import ProductsPage from "../pages/ProductsPage";
-import ContactPage from "../pages/ContactPage";
-import GleeProductPage from "../pages/GleeProductUpload";
+
+const HomePage = lazy(() => import("../pages/HomePage"));
+const AboutPage = lazy(() => import("../pages/AboutPage"));
+const ProductsPage = lazy(() => import("../pages/ProductsPage"));
+const ContactPage = lazy(() => import("../pages/ContactPage"));
+const GleeProductPage = lazy(() => import("../pages/GleeProductUpload"));
+
+const Loading = () => <div></div>;
 
 const MainRoute = () => {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="aboutus" element={<AboutPage />} />
-      <Route path="products" element={<ProductsPage />} />
-      <Route path="contact" element={<ContactPage />} />
-      <Route path="produpload" element={<GleeProductPage />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <Suspense fallback={<Loading />}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="aboutus" element={<AboutPage />} />
+        <Route path="products" element={<ProductsPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="produpload" element={<GleeProductPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Suspense>
   );
 };
 

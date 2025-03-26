@@ -139,6 +139,7 @@ const Footer = () => {
                   <a
                     href="mailto:info@gleebiotech.com"
                     target="_blank"
+                    rel="noreferrer"
                     className="text-[#F3F4F6] text-[15px] after:w-0 after:h-[2px] after:bg-white after:absolute relative after:left-0 after:bottom-[-2px] hover:after:w-full after:duration-500 after:ease-in-out"
                   >
                     {" "}
@@ -202,6 +203,7 @@ const Footer = () => {
                   <a
                     href="mailto:info@gleebiotech.com"
                     target="_blank"
+                    rel="noreferrer"
                     className="text-white text-[15px] flex gap-2 items-start"
                   >
                     <EmailIcon />
@@ -212,6 +214,7 @@ const Footer = () => {
                   <a
                     className="text-white text-[15px] flex gap-2 items-start"
                     target="_blank"
+                    rel="noreferrer"
                     href="https://www.google.com/maps/place/Glee+Biotech+LTD/@28.4409584,77.0370194,17z/data=!3m2!4b1!5s0x390d1876c5f94b7f:0xd48f8b6e1eae4d79!4m6!3m5!1s0x390d19b6ea67792d:0xe28bd8ef251ecf0f!8m2!3d28.4409584!4d77.0395943!16s%2Fg%2F11pkd43f64?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
                   >
                     <LocationIcon />
