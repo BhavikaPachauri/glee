@@ -16,12 +16,6 @@ module.exports = {
       backgroundSize: {
         bgfull: "100% 100%",
       },
-      boxShadow: {
-        cardshadow: "0px_4px_19.5px_0px_#00000040",
-      },
-      height: {
-        "screen-minus-83": "calc(100vh - 83px)",
-      },
       keyframes: {
         backtotop: {
           "0%, 100%": { transform: "translateY(0)" },

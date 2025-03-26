@@ -78,7 +78,8 @@ export const ProductSlide = () => {
               <div data-aos="fade-down">
                 <div className="bg-white rounded-lg p-3 min-h-[400px] cursor-pointer hover:scale-[0.98] hover:shadow-md transition-all duration-300 ease-linear">
                   <div className="flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px]">
-                    <img loading="lazy" 
+                    <img
+                      loading="lazy"
                       src={product.prod_image_url[0]}
                       alt={product.prod_brand}
                       className="max-h-full"
