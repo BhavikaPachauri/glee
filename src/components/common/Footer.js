@@ -11,7 +11,7 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="animate-background pt-14">
+      <div className="animate-background relative overflow-hidden pt-14">
         <div className="xl:max-w-[1370px] mx-auto px-3">
           <div className="flex flex-wrap justify-between border-b pb-11 lg:gap-0 gap-12">
             <div className="lg:w-[25%] md:w-[30%] w-full flex flex-col gap-5 max-lg:order-1">

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Facebook, Instragram, LinkedIn, Watsaap } from "./Icons";
-import "../components/GetInTouch.css";
 import axios from "axios";
 
 const GetInTouch = () => {

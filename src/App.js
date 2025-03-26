@@ -2,7 +2,6 @@ import "./App.css";
 import MainRoute from "./components/common/MainRoute";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { setProduct, getProduct } from "../src/store/slices/productSlice";
 import Loader from "./components/common/Loader";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,8 +34,7 @@ function App() {
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state.product);
 
-  // Temporary maintenance state (adjust logic as needed)
-  const isUnderMaintenance = false; // Change to true when maintenance mode is active
+  const isUnderMaintenance = false;
 
   if (isUnderMaintenance) {
     return <Maintenance />;
@@ -49,7 +47,6 @@ function App() {
       ) : (
         <>
           <div>
-            {" "}
             <MainRoute />
             <button
               className={`${

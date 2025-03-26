@@ -20,7 +20,7 @@ module.exports = {
         cardshadow: "0px_4px_19.5px_0px_#00000040",
       },
       height: {
-        'screen-minus-83': 'calc(100vh - 83px)',
+        "screen-minus-83": "calc(100vh - 83px)",
       },
       keyframes: {
         backtotop: {
