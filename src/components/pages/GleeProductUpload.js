@@ -266,7 +266,7 @@ export default function ProductUploadForm() {
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                           {imagePreviews.map((preview, index) => (
                             <div key={index} className="relative">
-                              <img src={preview} alt={`Preview ${index + 1}`} className="w-full h-32 object-cover rounded-md" />
+                              <img loading="lazy"  src={preview} alt={`Preview ${index + 1}`} className="w-full h-32 object-cover rounded-md" />
                               <button
                                 type="button"
                                 onClick={() => removeImage(index, setFieldValue, values)}

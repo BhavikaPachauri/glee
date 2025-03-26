@@ -135,7 +135,7 @@ const MainHeader = () => {
           </div>
           <div className="sm:text-[24px] text-white text-[20px] font-normal italic text-end flex justify-end">
             <span>“</span>
-            <img
+            <img loading="lazy" 
               src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/XTH9cSbDfS.png"
               width={300} className="md:w-[300px] w-[200px]"
             />

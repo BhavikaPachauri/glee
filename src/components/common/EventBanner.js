@@ -24,10 +24,10 @@ const EventBanner = () => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <img
+            <img loading="lazy" 
               src={image}
               alt={`Event Banner ${index + 1}`}
-              className="w-full md:h-[89vh] h-auto"
+              className="w-full md:h-[88vh] h-auto object-cover"
             />
           </div>
         ))}

@@ -71,7 +71,6 @@ export const {
   setProduct,
   setSingleProduct,
   setCategory,
-  setCategoryProducts,
 } = productSlice.actions;
 
 export default productSlice.reducer;

@@ -74,7 +74,7 @@ const OurPartners = () => {
               }}
             >
               <div className="flex items-center" data-aos="fade-zoom">
-                <img
+                <img loading="lazy" 
                   src={product.prod_image_url}
                   alt="cardimg"
                   width={100}

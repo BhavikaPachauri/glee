@@ -50,8 +50,9 @@ const NavBar = () => {
           className="text-base flex items-center text-[#A3A3A3] font-bold"
         >
           <WebLogo />
-          <span className="max-sm:hidden">
+          <span className="max-sm:hidden font-bold text-[#9e9d9d]">
             Glee<span className="text-[#1F488E] mx-[3px]">Biotech</span>Ltd.
+           
           </span>
         </a>
 

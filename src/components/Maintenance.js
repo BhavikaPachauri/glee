@@ -6,7 +6,7 @@ const Maintenance = () => {
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto p-6 shadow-lg rounded-lg bg-white">
        
         <div className="relative w-full max-w-md mb-8">
-          <img
+          <img loading="lazy" 
             src="https://i.ibb.co/301jytm/maintenance-system-illustration-vector.jpg"
             alt="maintenance"
             className="rounded-lg shadow-md mx-auto"

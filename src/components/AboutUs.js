@@ -36,7 +36,7 @@ const AboutUs = () => {
                 data-aos="fade-down"
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                  <img
+                  <img loading="lazy" 
                     src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/5URa2f2eNL.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"
@@ -48,7 +48,7 @@ const AboutUs = () => {
                 data-aos="fade-up"
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                  <img
+                  <img loading="lazy" 
                     src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/urL3SRqwc8.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"

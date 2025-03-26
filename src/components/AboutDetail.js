@@ -4,7 +4,7 @@ const AboutDetail = () => {
   return (
     <>
       <div className="relative max-lg:py-14 z-[1]">
-        <img
+        <img loading="lazy" 
           src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/QXx0jIccHU.webp"
           alt="GradientLine"
           className="absolute lg:-bottom-12 -bottom-20 left-0 w-full lg:rotate-3 h-[87px]"
@@ -17,7 +17,7 @@ const AboutDetail = () => {
                 data-aos="fade-down"
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                  <img
+                  <img loading="lazy" 
                     src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/5URa2f2eNL.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"
@@ -29,7 +29,7 @@ const AboutDetail = () => {
                 data-aos="fade-up"
               >
                 <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                  <img
+                  <img loading="lazy" 
                     src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/urL3SRqwc8.webp"
                     alt="Product Image"
                     className="w-full h-auto rounded-lg scale-105"

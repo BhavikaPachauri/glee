@@ -5,7 +5,7 @@ const VisionMission = () => {
   return (
     <>
       <div className="bg-[#EFEFEF] relative z-[1] lg:pb-[37px] lg:pt-5 py-20">
-        <img
+        <img loading="lazy" 
           src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/QXx0jIccHU.webp"
           alt="GradientLine"
           className="absolute lg:-top-[36px] -top-20 left-0 w-full lg:-rotate-3 h-[87px]"
@@ -30,7 +30,7 @@ const VisionMission = () => {
               className="lg:w-[34.8%] relative z-[1] max-lg:order-1 lg:block hidden gradient-border"
               data-aos="fade-down"
             >
-              <img
+              <img loading="lazy" 
                 src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/s4rUh5WHds.webp"
                 alt="MissionVisionImg"
                 className="xl:max-w-[378px] w-full shadow-lg scale-[0.98] cursor-pointer rounded-[10px]"

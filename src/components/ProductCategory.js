@@ -51,7 +51,7 @@ const ProductCategory = () => {
             }}
           >
             <div className="relative overflow-hidden rounded-[15px] group cursor-pointer">
-              <img
+              <img loading="lazy" 
                 src={category.img}
                 alt={category.label}
                 className="rounded-[15px]"

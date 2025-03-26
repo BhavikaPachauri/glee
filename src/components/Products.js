@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setSingleProduct,
   setCategory,
-  setCategoryProducts,
 } from "../store/slices/productSlice";
 import ProductSlide from "./common/ProductSlide";
 import { MoreIcon1, NextArrow1, PrevArrow1 } from "./Icons";
@@ -93,7 +92,7 @@ const Products = () => {
           <div className="flex flex-wrap justify-between lg:gap-0 gap-8 mb-14">
             <div className="lg:w-[35%]" data-aos="fade-right">
               <div className="bg-[#f4f4f4] rounded-[10px] h-full">
-                <img
+                <img loading="lazy" 
                   src={selectedProduct.prod_image_url[0]}
                   className="mx-auto w-full h-full object-contain bg-transparent"
                   alt={selectedProduct.prod_brand}
@@ -306,7 +305,7 @@ const Products = () => {
                     <button className="text-white text-lg font-semibold absolute top-0 -left-full w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center duration-300 group-hover:left-0">
                       Product Details
                     </button>
-                    <img
+                    <img loading="lazy" 
                       src={product.prod_image_url[0]}
                       alt={product.prod_brand}
                       className="max-h-full"
