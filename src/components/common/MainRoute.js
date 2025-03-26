@@ -7,7 +7,7 @@ const ProductsPage = lazy(() => import("../pages/ProductsPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage"));
 const GleeProductPage = lazy(() => import("../pages/GleeProductUpload"));
 
-const Loading = () => <div></div>;
+const Loading = () => <div className="h-screen bg-[#1f488e]"></div>;
 
 const MainRoute = () => {
   return (
