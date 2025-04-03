@@ -225,10 +225,15 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <p className="text-center sm:text-[15px] text-[12px] text-white py-7">
+         <div className="flex md:flex-row flex-col md:gap-0 gap-2 md:justify-between justify-center py-5">
+         <p className="text-center sm:text-[15px] text-[12px] text-white">
             Copyright © <span id="year_change">{year} </span>
             Glee Biotech limited All rights reserved
           </p>
+          <p className="text-center sm:text-[15px] text-[12px] text-white">
+            <Link to="/terms">Terms & Conditions</Link> | Privacy Policy
+          </p>
+         </div>
         </div>
       </div>
     </>
