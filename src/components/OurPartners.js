@@ -78,7 +78,6 @@ const OurPartners = () => {
                   src={product.prod_image_url}
                   alt="cardimg"
                   width={100}
-                  // height={200}
                   className="object-fit-contain cursor-pointer aspect-square"
                 />
               </div>

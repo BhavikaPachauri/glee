@@ -6,7 +6,7 @@ import AboutUs from "../AboutUs";
 import Footer from "../common/Footer";
 import HomeProduct from "../HomeProduct";
 import Faqs from "../Faqs";
-import ProductCategory from "../ProductCategory";
+// import ProductCategory from "../ProductCategory";
 // import EventBanner from "../common/EventBanner";
 import CountdownPopup from "../common/CountdownPopup";
 
@@ -25,7 +25,7 @@ const HomePage = () => {
           {/* <EventBanner /> */}
           <MainHeader />
           <AboutUs />
-          <ProductCategory />
+          {/* <ProductCategory /> */}
           <HomeProduct />
           <Faqs />
           <Footer />
