@@ -5,9 +5,10 @@ import MainHeader from "../MainHeader";
 import AboutUs from "../AboutUs";
 import Footer from "../common/Footer";
 import HomeProduct from "../HomeProduct";
+import Credentials from "../Credentials";
+import Strengths from "../Strengths";
 import Faqs from "../Faqs";
-// import ProductCategory from "../ProductCategory";
-// import EventBanner from "../common/EventBanner";
+import Mission from "../Mission";
 import CountdownPopup from "../common/CountdownPopup";
 
 const HomePage = () => {
@@ -22,12 +23,13 @@ const HomePage = () => {
       <div>
         <NavBar />
         <div className="overflow-hidden">
-          {/* <EventBanner /> */}
           <MainHeader />
           <AboutUs />
-          {/* <ProductCategory /> */}
+          <Credentials />
           <HomeProduct />
+          <Strengths />
           <Faqs />
+          <Mission/>
           <Footer />
         </div>
       </div>

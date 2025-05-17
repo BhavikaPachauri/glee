@@ -76,33 +76,48 @@ export const ProductSlide = () => {
               }}
             >
               <div data-aos="fade-down">
-                <div className="bg-white rounded-lg p-3 min-h-[400px] cursor-pointer hover:scale-[0.98] hover:shadow-md transition-all duration-300 ease-linear">
-                  <div className="flex justify-center items-center h-48 bg-[#f4f4f4] rounded-[5px]">
-                    <img
-                      loading="lazy"
+                <div className="bg-white rounded-xl p-4 min-h-[400px] cursor-pointer transition-all duration-500 ease-in-out group border border-gray-100">
+                  <div className="relative overflow-hidden flex justify-center items-center h-48 bg-gradient-to-br from-[#f4f4f4] to-[#f8f8f8] rounded-lg group-hover:bg-gradient-to-br group-hover:from-[#f8f8f8] group-hover:to-[#f4f4f4]">
+                    <img loading="lazy" 
                       src={product.prod_image_url[0]}
                       alt={product.prod_brand}
-                      className="max-h-full"
+                      className="max-h-full transition-all duration-500 group-hover:scale-110"
                     />
                   </div>
-                  <h2 className="text-[20px] font-normal text-black mt-3.5">
-                    {product.prod_brand}
-                  </h2>
-                  <p className="text-[14px] text-[#59606C] mt-1.5">
-                    {product.prod_des[0]}
-                  </p>
+                  <div className="mt-5 space-y-3">
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-[22px] font-semibold text-black group-hover:text-[#1F488E] transition-colors duration-300">
+                        {product.prod_brand}
+                      </h2>
+                      <div className="w-8 h-8 rounded-full bg-[#1F488E]/10 flex items-center justify-center group-hover:bg-[#1F488E]/20 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#1F488E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p className="text-[15px] text-[#59606C] line-clamp-2 leading-relaxed">
+                      {product.prod_des[0]}
+                    </p>
+                    <div className="flex items-center gap-2 pt-2">
+                      <span className="inline-block px-4 py-1.5 text-sm font-medium text-[#1F488E] bg-[#1F488E]/10 rounded-full group-hover:bg-[#1F488E]/15 transition-colors duration-300">
+                        {product.prod_category}
+                      </span>
+                      <button className="inline-flex items-center gap-1.5 px-4 py-1.5 text-sm font-medium text-white bg-[#1F488E] rounded-full hover:bg-[#1F488E]/90 transition-all duration-300 transform hover:scale-105">
+                        View Details
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </Slider>
-        <div className="mt-6 justify-end gap-3.5 flex">
+        <div className="mt-6 flex justify-end gap-3.5">
           <button
-            className={`relative w-[32px] h-[32px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] cursor-pointer transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
-              prevClicked
-                ? "scale-110 bg-gradient-to-b from-[#1F488E] to-[#727272]"
-                : ""
-            }`}
+            className={`relative w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
             onClick={handlePrevClick}
             aria-label="Previous"
             type="button"
@@ -112,11 +127,7 @@ export const ProductSlide = () => {
             </div>
           </button>
           <button
-            className={`relative w-[32px] h-[32px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] cursor-pointer transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
-              nextClicked
-                ? "scale-110 bg-gradient-to-b from-[#1F488E] to-[#727272]"
-                : ""
-            }`}
+            className={`relative w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
             onClick={handleNextClick}
             aria-label="Next"
             type="button"
