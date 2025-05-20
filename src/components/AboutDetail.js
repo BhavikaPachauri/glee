@@ -1,68 +1,67 @@
 import React from "react";
 
-const AboutDetail = () => {
+const AboutDetails = () => {
   return (
-    <>
-      <div className="relative max-lg:py-14 z-[1]">
-        <img loading="lazy" 
-          src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/QXx0jIccHU.webp"
-          alt="GradientLine"
-          className="absolute lg:-bottom-12 -bottom-20 left-0 w-full lg:rotate-3 h-[87px]"
-        />
-        <div className="xl:max-w-[1365px] mx-auto px-3 lg:mt-[-90px]">
-          <div className="flex flex-wrap-reverse lg:gap-0 gap-5 items-center">
-            <div className="lg:w-1/2 flex lg:gap-5 gap-3 mx-auto">
-              <div
-                className="relative p-1.5 rounded-xl bg-gradient-border animate-gradient-border max-w-[280px] md:mt-[50px] mt-[25px]"
-                data-aos="fade-down"
-              >
-                <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                  <img loading="lazy" 
-                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/5URa2f2eNL.webp"
-                    alt="Product Image"
-                    className="w-full h-auto rounded-lg scale-105"
-                  />
-                </div>
+    <div className="bg-gradient-to-b from-white to-gray-50 lg:py-20 sm:py-16 py-12">
+      <div className="xl:max-w-[1280px] mx-auto px-3">
+        <div
+          className="flex flex-col lg:grid lg:grid-cols-2 gap-12 items-center"
+          data-aos="fade-up"
+        >
+          <div className="space-y-3 lg:text-start text-center">
+          <h2
+          className="text-[#1F488E] text-[26px] font-bold leading-[120%]"
+          data-aos="fade-down"
+        >
+          About Us
+        </h2>
+            <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
+              Glee Biotech is a growing pharmaceutical company with big goals
+              and a clear vision for the future. We want to make a real
+              difference in the critical care sector by offering high-quality
+              and reliable healthcare products. With the strong support of our
+              parent company, PDPL, we benefit from their large and
+              well-organized distribution network. This helps us reach
+              hospitals, clinics, and healthcare providers all over the country
+              quickly and smoothly.
+            </p>
+            <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
+              We can proudly boast of our pan-India presence, focused marketing
+              approach, and efficient distribution network that ensures the
+              timely delivery of specialized products across India. This keeps
+              us a step ahead of our competition.
+            </p>
+            <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
+              At Glee Biotech, we are focused on doing our best, bringing new
+              ideas, and improving the lives of patients with our honest and
+              dedicated approach to healthcare. We are committed to providing
+              high-quality healthcare solutions, with our products in the
+              critical care segment and medical consumables. We are Further
+              Spreading our Wings and consolidating our Portfolio by Introducing
+              High-Quality Products in Gastroenterology, Oncology, and Virology.
+            </p>
+          </div>
+          <div className="relative w-full">
+            <div className="relative z-10 rounded-2xl shadow-xl ">
+              <img
+                src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/1zgLbTjhS9.webp"
+                alt="Glee Biotech Healthcare"
+                className="w-full h-[500px] object-cover rounded-xl"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 rounded-b-xl">
+                <h3 className="text-white text-2xl font-semibold">
+                  Healthcare Excellence
+                </h3>
+                <p className="text-white/80 mt-2">
+                  Delivering Quality Care Nationwide
+                </p>
               </div>
-              <div
-                className="relative p-1.5 rounded-xl bg-gradient-border animate-gradient-border max-w-[280px] md:mb-[50px] mb-[25px]"
-                data-aos="fade-up"
-              >
-                <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-blue-400 via-blue-800 to-gray-400">
-                  <img loading="lazy" 
-                    src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/urL3SRqwc8.webp"
-                    alt="Product Image"
-                    className="w-full h-auto rounded-lg scale-105"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-[45%]">
-              <h2
-                className="text-black text-[34px] leading-[120%] mb-4 lg:text-start text-center"
-                data-aos="fade-left"
-              >
-                About Us
-              </h2>
-              <p
-                className="text-[#59606C] text-[16px] lg:text-start text-center"
-                data-aos="fade-left"
-              >
-                M/s Glee Biotech Ltd (GLEE), established in 2020 in Gurugram,
-                Haryana, is a leader in pharmaceuticals, specializing in
-                high-quality injectables and surgical solutions. Our 25,000
-                square feet warehouse guarantees top-notch quality. We are
-                committed to enhancing patient health with essential products
-                such as medicines, consumables, masks, and PPE kits, serving
-                critical care and anesthesia needs. GLEE is your trusted partner
-                in healthcare excellence.
-              </p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default AboutDetail;
+export default AboutDetails;

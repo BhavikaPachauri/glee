@@ -4,8 +4,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        herobanner:
-          "url('https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/1zgLbTjhS9.webp')",
         aboutbanner:
           "url('https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/mjQk6gi0Qk.webp')",
         history:

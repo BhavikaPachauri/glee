@@ -75,8 +75,8 @@ export const ProductSlide = () => {
                 selctedProduct(product);
               }}
             >
-              <div data-aos="fade-down">
-                <div className="bg-white rounded-xl p-4 min-h-[400px] cursor-pointer transition-all duration-500 ease-in-out group border border-gray-100">
+              <div data-aos="fade-down" className="pb-3">
+                <div className="bg-white rounded-xl p-4 min-h-[400px] cursor-pointer transition-all duration-500 ease-in-out group border border-gray-100 shadow-md hover:shadow-xl">
                   <div className="relative overflow-hidden flex justify-center items-center h-48 bg-gradient-to-br from-[#f4f4f4] to-[#f8f8f8] rounded-lg group-hover:bg-gradient-to-br group-hover:from-[#f8f8f8] group-hover:to-[#f4f4f4]">
                     <img loading="lazy" 
                       src={product.prod_image_url[0]}
@@ -86,7 +86,7 @@ export const ProductSlide = () => {
                   </div>
                   <div className="mt-5 space-y-3">
                     <div className="flex items-center justify-between">
-                      <h2 className="text-[22px] font-semibold text-black group-hover:text-[#1F488E] transition-colors duration-300">
+                      <h2 className="text-[20px] font-medium text-black group-hover:text-[#1F488E] transition-colors duration-300">
                         {product.prod_brand}
                       </h2>
                       <div className="w-8 h-8 rounded-full bg-[#1F488E]/10 flex items-center justify-center group-hover:bg-[#1F488E]/20 transition-colors duration-300">
@@ -95,7 +95,7 @@ export const ProductSlide = () => {
                         </svg>
                       </div>
                     </div>
-                    <p className="text-[15px] text-[#59606C] line-clamp-2 leading-relaxed">
+                    <p className="text-[14px] text-[#59606C] line-clamp-3 leading-normal">
                       {product.prod_des[0]}
                     </p>
                     <div className="flex items-center gap-2 pt-2">
@@ -115,7 +115,7 @@ export const ProductSlide = () => {
             </div>
           ))}
         </Slider>
-        <div className="mt-6 flex justify-end gap-3.5">
+        <div className="flex justify-end gap-3.5">
           <button
             className={`relative w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
             onClick={handlePrevClick}

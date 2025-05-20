@@ -263,7 +263,7 @@ const Products = () => {
     <div className="bg-[#F3F4F6]">
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
         <h3
-          className="lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-[#1F488E] text-center"
+          className="text-[#1F488E] lg:text-[42px] md:text-[36px] text-[32px] font-bold leading-[126%] mb-4 text-center"
           data-aos="fade-down"
         >
           Explore Our Range

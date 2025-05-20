@@ -21,14 +21,11 @@ const Mission = () => {
   };
 
   return (
-    <section className="w-full bg-gradient-to-b from-white to-[#FAF9FB] lg:py-20 py-12 relative overflow-hidden">
+    <section className="bg-whitelg:py-20 sm:py-16 py-12">
       <ToastContainer />
-      <div className="absolute top-0 right-0 w-72 h-72 bg-[#1F488E]/5 rounded-full translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#1F488E]/5 rounded-full -translate-x-1/2 translate-y-1/2"></div>
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      <div className="lg:max-w-[1280px] mx-auto px-3 relative">
         <div className="text-center mb-12">
-          <h2 className="text-[#1F488E] text-3xl md:text-4xl font-bold mb-1">
+          <h2 className="text-[#1F488E] lg:text-[42px] md:text-[36px] text-[32px] tracking-tight font-bold mb-1">
             Join Us in Our Mission
           </h2>
           <p className="text-[#59606C] text-lg max-w-2xl mx-auto">
@@ -44,13 +41,13 @@ const Mission = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
-              className="w-full px-6 py-4 rounded-xl border border-[#1F488E]/20 focus:border-[#1F488E] focus:ring-2 focus:ring-[#1F488E]/20 outline-none transition-all duration-300 text-[#59606C]"
+              className="w-full px-6 py-4 rounded-full border border-[#1F488E]/20 focus:border-[#1F488E] focus:ring-2 focus:ring-[#1F488E]/20 outline-none transition-all duration-300 text-[#59606C]"
               required
             />
           </div>
           <button
             type="submit"
-            className="px-8 py-4 bg-[#1F488E] text-white rounded-xl font-semibold hover:bg-[#1F488E]/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
+            className="inline-block px-8 py-3 bg-[#1F488E] text-white rounded-full font-semibold hover:bg-[#2C5BB8] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Subscribe
           </button>

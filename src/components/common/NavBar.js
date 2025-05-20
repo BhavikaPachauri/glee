@@ -70,10 +70,8 @@ const NavBar = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:911244014675"
-            className="max-sm:hidden relative inline-block text-white text-[15px] py-[9.4px] px-[21.85px] leading-[18.75px] rounded-full text-lg
-                       bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#727272] bg-[length:200%_200%] bg-left transition-all duration-500 ease-out
-                       hover:bg-right"
+            href="tel:+911244014675"
+            className="max-sm:hidden relative inline-block px-8 py-3 bg-[#1F488E] text-white rounded-full font-semibold hover:bg-[#2C5BB8] transform hover:scale-[1.01] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             +91-124-401-4675
           </a>

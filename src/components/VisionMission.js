@@ -2,59 +2,42 @@ import React from "react";
 
 const VisionMission = () => {
   return (
-    <>
-      <div className="bg-[#EFEFEF] relative z-[1] lg:pb-[37px] lg:pt-5 py-20">
-        <img
-          loading="lazy"
-          src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/QXx0jIccHU.webp"
-          alt="GradientLine"
-          className="absolute lg:-top-[36px] -top-20 left-0 w-full lg:-rotate-3 h-[87px]"
-        />
-        <div className="xl:max-w-[1110px] mx-auto px-3">
-          <div className="flex flex-wrap items-center max-lg:justify-center lg:gap-0 gap-10">
-            <div
-              className="xl:w-[32.5%] lg:w-[31%] max-lg:order-2 md:w-[47%] w-[90%]"
-              data-aos="fade-up"
-            >
-              <div className="relative bg-white p-5 min-h-[333px] flex justify-center items-center flex-col rounded-[10px] shadow-lg transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl cursor-pointer gradient-hover-card overflow-hidden">
-                <h2 className="text-black text-[34px] leading-[120%] mb-5 text-center">
-                  Vision
-                </h2>
-                <p className="text-[16px] text-[#59606C] leading-[125%] max-lg:text-center">
-                  Our Vision is Life to lives .. Touching lives globally through
-                  quality & affordable healthcare solutions.
-                </p>
-              </div>
-            </div>
-            <div
-              className="lg:w-[34.8%] relative z-[1] max-lg:order-1 lg:block hidden gradient-border overflow-hidden rounded-[12px]"
-              data-aos="fade-down"
-            >
-              <img
-                loading="lazy"
-                src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/s4rUh5WHds.webp"
-                alt="MissionVisionImg"
-                className="xl:max-w-[378px] w-full shadow-lg scale-[0.98] cursor-pointer rounded-[10px]"
-              />
-            </div>
-            <div
-              className="xl:w-[32.5%] lg:w-[31%] md:w-[47%] w-[90%] max-lg:order-3"
-              data-aos="fade-up"
-            >
-              <div className="relative bg-white p-5 min-h-[333px] flex justify-center items-center flex-col rounded-[10px] shadow-lg transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl cursor-pointer gradient-hover-card overflow-hidden">
-                <h2 className="text-black text-[34px] leading-[120%] mb-5 text-center">
-                  Mission
-                </h2>
-                <p className="text-[16px] text-[#59606C] leading-[125%] max-lg:text-center">
-                  To deliver high quality products and to become fastest growing
-                  healthcare organization.
-                </p>
-              </div>
-            </div>
+    <section className="bg-[#EFEFEF] py-12 sm:py-16 lg:py-20">
+      <div className="xl:max-w-[1280px] mx-auto px-3 flex flex-col gap-10">
+        <div className="bg-white rounded-2xl shadow-lg flex flex-col md:flex-row overflow-hidden">
+          <div className="md:w-1/2 w-full h-64 md:h-auto flex-shrink-0">
+            <img
+              src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/XkPMcNQ6fX.jpg"
+              alt="Vision"
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="md:w-1/2 w-full flex flex-col justify-center sm:p-8 p-4">
+            <h3 className="text-xs font-semibold text-gray-400 mb-2 tracking-widest uppercase">Our Vision</h3>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Vision</h2>
+            <p className="text-gray-600 text-base leading-relaxed mb-2">
+              Touching Lives Globally Through Quality & Affordable Healthcare Solutions Our vision is to touch lives globally by delivering quality and affordable healthcare solutions. We aim to make a meaningful impact on patient health and well-being, ensuring that our products reach those who need them the most.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl shadow-lg flex flex-col md:flex-row-reverse overflow-hidden">
+          <div className="md:w-1/2 w-full h-64 md:h-auto flex-shrink-0">
+            <img
+              src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/Yy7A1uG30x.jpg"
+              alt="Mission"
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="md:w-1/2 w-full flex flex-col justify-center sm:p-8 p-4">
+            <h3 className="text-xs font-semibold text-gray-400 mb-2 tracking-widest uppercase">Our Mission</h3>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Mission</h2>
+            <p className="text-gray-600 text-base leading-relaxed mb-2">
+              Our mission is to provide safe and effective healthcare products and become a leading name in the healthcare industry. We aim to bring new and better solutions to the market, always striving for high standards and focusing on the needs of patients everywhere. We are dedicated to growth, innovation, and making a real difference in people's lives through our trusted and reliable products. To provide trustworthy healthcare solutions and grow into one of the quickest-expanding companies in the field. We aim to innovate, uphold the highest standards, and address healthcare gaps for patients across the globe.
+            </p>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

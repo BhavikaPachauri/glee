@@ -37,7 +37,7 @@ const Faqs = () => {
 
   return (
     <section
-      className="relative"
+      className="relative bg-[#CFD7E4]"
     >
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1F488E]/5 via-transparent to-[#1F488E]/5"></div>

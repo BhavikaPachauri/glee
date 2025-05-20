@@ -6,7 +6,9 @@ import AboutDetail from "../AboutDetail";
 import WhoWeAre from "../WhoWeAre";
 import VisionMission from "../VisionMission";
 import Footer from "../common/Footer";
-import OurPartners from "../OurPartners";
+import WhyChooseus from "../WhyChooseus";
+import ServiceSlider from "../common/ServiceSlider";
+import Gallery from "../Gallery";
 
 const AboutPage = () => {
     const { pathname } = useLocation();
@@ -20,9 +22,12 @@ const AboutPage = () => {
             <div className="overflow-hidden">
             <AboutBanner />
             <AboutDetail />
+            <ServiceSlider/>
             <WhoWeAre />
+            <ServiceSlider/>
             <VisionMission />
-            <OurPartners/>
+            <WhyChooseus/>
+            <Gallery/>
             <Footer />
             </div>
         </>

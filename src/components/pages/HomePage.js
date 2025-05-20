@@ -10,6 +10,7 @@ import Strengths from "../Strengths";
 import Faqs from "../Faqs";
 import Mission from "../Mission";
 import CountdownPopup from "../common/CountdownPopup";
+import ServiceSlider from "../common/ServiceSlider";
 
 const HomePage = () => {
   const { pathname } = useLocation();
@@ -25,9 +26,11 @@ const HomePage = () => {
         <div className="overflow-hidden">
           <MainHeader />
           <AboutUs />
+          <ServiceSlider/>
+          <Strengths />
+          <ServiceSlider/>
           <Credentials />
           <HomeProduct />
-          <Strengths />
           <Faqs />
           <Mission/>
           <Footer />
