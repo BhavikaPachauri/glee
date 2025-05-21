@@ -15,7 +15,7 @@ const HomeProduct = () => {
             className="text-[#1F488E] text-3xl md:text-4xl font-bold"
             data-aos="fade-right"
           >
-            Our Products
+            Glee Biotech Products
           </h2>
           <div
             data-aos="fade-left"

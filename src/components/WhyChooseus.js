@@ -15,7 +15,7 @@ const WhyChooseus = () => {
     },
     {
       icon: <FaTruck className="w-10 h-10 text-[#1F488E]" />,
-      title: "PAN-India Distribution",
+      title: "PAN-India Presence",
       description: "Timely delivery across the country.",
     },
     {
