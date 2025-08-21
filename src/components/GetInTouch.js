@@ -3,6 +3,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Facebook, Instragram, LinkedIn, Watsaap } from "./Icons";
 import axios from "axios";
+import { GrLocationPin } from "react-icons/gr";
+import { MdOutlineMail } from "react-icons/md";
+import { FaPhoneFlip } from "react-icons/fa6";
 
 const GetInTouch = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -80,8 +83,7 @@ const GetInTouch = () => {
           className="text-center text-[18px] font-normal pb-[21px] mb-10 text-white border-b border-b-[#DBE2EE]"
           data-aos="fade-down"
         >
-          You can put your feedback messages sooner we will get reach out to
-          you.
+          We value your feedback and inquiries. Share your message with us, and our team will get back to you promptly. 
         </p>
         <div className="flex flex-wrap-reverse justify-between items-center lg:gap-0 gap-10">
           <div className="xl:w-[21x%] lg:w-[30%] w-full">
@@ -95,8 +97,7 @@ const GetInTouch = () => {
               className="text-white text-[18px] mb-[26px] lg:text-start text-center lg:max-w-[300px]"
               data-aos="fade-right"
             >
-              Connect with us for inquiries, support, or collaboration
-              opportunities.
+              Whether you have questions, need support, or wish to explore a collaboration, we’re here to help. 
             </p>
             <p
               className="text-[18px] text-white font-bold"
@@ -112,12 +113,11 @@ const GetInTouch = () => {
             </p>
             <a
               href="https://www.google.com/maps/place/SAS+Tower/@28.4409488,77.0367062,17z/data=!3m1!4b1!4m6!3m5!1s0x390d18695c471015:0xa44b7b144935cae4!8m2!3d28.4409488!4d77.0392811!16s%2Fg%2F11byp844cp?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-              className="text-white text-[15px] pb-[20px] hover:text-blue-500 transition-all duration-300 ease-linear"
+              className="text-white text-[15px] pb-[20px] hover:text-blue-500 transition-all duration-300 ease-linear flex "
               target="_blank"
               rel="noopener noreferrer"
             >
-              315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram,
-              Haryana- 122001
+             <GrLocationPin className="text-4xl font-bold me-2"/> 315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram, Haryana – 122001
             </a>
             <br />
             <p
@@ -128,11 +128,11 @@ const GetInTouch = () => {
             </p>
             <a
               href="https://www.google.com/maps/place/581,+Basement,+2,+Pace+City+I,+Sector+37,+Gurugram,+Haryana+122001"
-              className="text-white text-[15px] mb-[20px] hover:text-blue-500 transition-all duration-300 ease-linear"
+              className="text-white text-[15px] mb-[20px] hover:text-blue-500 transition-all duration-300 ease-linear flex"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Plot no.581, Basement Pace City 2, Sector 37, Industrial Area,
+            <GrLocationPin className="text-4xl font-bold me-2"/> Plot no.581, Basement Pace City 2, Sector 37, Industrial Area,
               Gurugram 122004
             </a>
             <p
@@ -143,9 +143,9 @@ const GetInTouch = () => {
             </p>
             <a
               href="mailto:info@gleebiotech.com"
-              className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear"
+              className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex"
             >
-              info@gleebiotech.com
+              <MdOutlineMail  className="text-2xl font-bold me-3" />info@gleebiotech.com
             </a>
             <p
               className="text-[18px] text-white font-bold mt-4"
@@ -155,9 +155,24 @@ const GetInTouch = () => {
             </p>
             <a
               href="tel:+911244014675"
+              className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex"
+            >
+              <FaPhoneFlip className="text-xl font-bold me-3" />+911244014675
+            </a>
+            <p
+              className="text-[18px] text-white font-bold mt-4"
+              data-aos="fade-right"
+            >
+              Working Hours
+            </p>
+            <a
+              href="tel:+911244014675"
               className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear"
             >
-              +911244014675
+             Monday – Saturday: 10.00 AM to 6:00 PM <br/>
+             Sunday: Closed  
+
+
             </a>
             <p
               className="text-white font-semibold text-[16px] mb-[26px] mt-5"

@@ -9,9 +9,16 @@ const Faqs = () => {
 
   const accordionData = [
     {
-      title: "What is GLEE Biotech Ltd. (GLEE)?",
-      content:
-        "GLEE Biotech Ltd. is the visionary creation of its esteemed promoters and a dedicated team, who collectively bring over 30 years of extensive experience in the pharmaceutical industry. It is one of the Fastest Growing Pharmaceutical Companies in the critical care Segment with an all-India presence.",
+      title: "What is the journey of Glee Biotech Ltd.",
+      content: `
+        <ul class="list-disc pl-5 space-y-2">
+          <li> - <strong>1993:</strong> Journey initiated in healthcare segment</li>
+          <li> - <strong>2020:</strong> Initiation of Glee Biotech Ltd to serve hospital business</li>
+          <li> - <strong>2023:</strong> WHO GMP & ISO 9001:2015 certified products initiation in critical care segment</li>
+          <li> - GLEE BIOTECH products initiated in major institutes in North and Central India</li>
+          <li> - <strong>2024-25:</strong> Glee Biotech Ltd took the big leap ALL INDIA with a PAN India launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care</li>
+        </ul>
+      `,
     },
     {
       title: "Where is GLEE Biotech located?",
@@ -26,7 +33,7 @@ const Faqs = () => {
     {
       title: "How does GLEE Biotech contribute to the healthcare ecosystem?",
       content:
-        "GLEE Biotech supports the healthcare ecosystem by Offering high-quality, reliable healthcare products. We have a diverse portfolio with quality products in critical care, Gastroenterology, Oncology, and virology.",
+        "GLEE Biotech supports the healthcare ecosystem by offering high-quality, reliable healthcare products. We have a diverse portfolio with quality products in critical care, Gastroenterology, Oncology, and Virology.",
     },
     {
       title: "What sets GLEE Biotech apart from its competitors?",
@@ -36,124 +43,16 @@ const Faqs = () => {
   ];
 
   return (
-    <section
-      className="relative bg-[#CFD7E4]"
-    >
+    <section className="relative bg-[#CFD7E4]">
+      {/* Background visuals */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1F488E]/5 via-transparent to-[#1F488E]/5"></div>
         <div className="absolute -top-20 -left-20 w-96 h-96 bg-[#1F488E]/5 rounded-full filter blur-3xl"></div>
         <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-[#1F488E]/5 rounded-full filter blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-[#1F488E]/5 via-transparent to-[#1F488E]/5 rounded-full filter blur-3xl"></div>
       </div>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-[#1F488E] rounded-full filter blur-[100px] opacity-10" />
-      <svg
-        className="absolute top-20 right-20 w-[30px] h-[30px] opacity-20 z-0 hidden md:block animate-float"
-        viewBox="0 0 60 60"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="30"
-          cy="30"
-          r="25"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-        <circle
-          cx="30"
-          cy="30"
-          r="15"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-      </svg>
 
-      <svg
-        className="absolute top-40 left-20 w-[60px] h-[20px] opacity-20 z-0 hidden md:block animate-float-delayed"
-        viewBox="0 0 100 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M20 0 h60 a20 20 0 0 1 20 20 a20 20 0 0 1 -20 20 h-60 a20 20 0 0 1 -20 -20 a20 20 0 0 1 20 -20"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-        <line x1="50" y1="0" x2="50" y2="40" stroke="#1F488E" strokeWidth="2" />
-      </svg>
-      <svg
-        className="absolute bottom-40 right-40 w-[60px] h-[30px] opacity-20 z-0 hidden md:block animate-float"
-        viewBox="0 0 80 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="10"
-          y="10"
-          width="60"
-          height="60"
-          rx="10"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-        <circle
-          cx="40"
-          cy="40"
-          r="20"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-      </svg>
-      <svg
-        className="absolute top-60 right-40 w-[60px] h-[20px] opacity-20 z-0 hidden md:block animate-float-delayed"
-        viewBox="0 0 120 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="20"
-          cy="20"
-          r="15"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-        <circle
-          cx="60"
-          cy="20"
-          r="15"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-        <circle
-          cx="100"
-          cy="20"
-          r="15"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-      </svg>
-      <svg
-        className="absolute bottom-20 left-40 w-[60px] h-[20px] opacity-20 z-0 hidden md:block animate-float"
-        viewBox="0 0 140 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M20 0 h100 a20 20 0 0 1 20 20 a20 20 0 0 1 -20 20 h-100 a20 20 0 0 1 -20 -20 a20 20 0 0 1 20 -20"
-          stroke="#1F488E"
-          strokeWidth="2"
-          fill="none"
-        />
-        <line x1="70" y1="0" x2="70" y2="40" stroke="#1F488E" strokeWidth="2" />
-      </svg>
+      {/* Content */}
       <div className="max-w-[984px] mx-auto px-3 md:py-20 py-12 relative">
         <h2
           id="faq-heading"
@@ -202,7 +101,7 @@ const Faqs = () => {
                 }`}
               >
                 <div className="pb-6 text-[#545454] sm:text-[18px] text-[16px] leading-relaxed border-t border-gray-100 mt-2">
-                  <p
+                  <div
                     className="pt-4"
                     dangerouslySetInnerHTML={{
                       __html: item.content,

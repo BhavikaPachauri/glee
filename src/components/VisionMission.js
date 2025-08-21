@@ -16,7 +16,8 @@ const VisionMission = () => {
             <h3 className="text-xs font-semibold text-gray-400 mb-2 tracking-widest uppercase">Our Vision</h3>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Vision</h2>
             <p className="text-gray-600 text-base leading-relaxed mb-2">
-              Touching Lives Globally Through Quality & Affordable Healthcare Solutions Our vision is to touch lives globally by delivering quality and affordable healthcare solutions. We aim to make a meaningful impact on patient health and well-being, ensuring that our products reach those who need them the most.
+              “Touching Lives Globally Through Quality & Affordable Healthcare Solutions"  
+              We aim to make a meaningful difference in patient well-being by ensuring our products reach those who need them most.
             </p>
           </div>
         </div>
@@ -32,7 +33,14 @@ const VisionMission = () => {
             <h3 className="text-xs font-semibold text-gray-400 mb-2 tracking-widest uppercase">Our Mission</h3>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Mission</h2>
             <p className="text-gray-600 text-base leading-relaxed mb-2">
-              Our mission is to provide safe and effective healthcare products and become a leading name in the healthcare industry. We aim to bring new and better solutions to the market, always striving for high standards and focusing on the needs of patients everywhere. We are dedicated to growth, innovation, and making a real difference in people's lives through our trusted and reliable products. To provide trustworthy healthcare solutions and grow into one of the quickest-expanding companies in the field. We aim to innovate, uphold the highest standards, and address healthcare gaps for patients across the globe.
+              To become a leading and trusted name in the healthcare industry by:
+              <br/>  
+              - Providing safe, effective, and Quality  healthcare products.<br/>    
+              - Maintaining the highest quality standards in everything we do.<br/>    
+              - Addressing healthcare gaps with patient-focused solutions.<br/>    
+              - Committing to continuous growth, innovation, and global reach.  
+
+
             </p>
           </div>
         </div>

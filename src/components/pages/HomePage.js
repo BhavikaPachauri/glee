@@ -29,7 +29,7 @@ const HomePage = () => {
           <ServiceSlider/>
           <Strengths />
           <ServiceSlider/>
-          <Credentials />
+          {/* <Credentials /> */}
           <HomeProduct />
           <Faqs />
           <Mission/>

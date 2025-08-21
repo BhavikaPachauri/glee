@@ -18,7 +18,7 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const dispatch = useDispatch();
 
-  const categories = ["All", "Injection",
+  const categories = [ "Injections",
     ];
 
   const itemsPerPage = 12;
@@ -266,14 +266,13 @@ const Products = () => {
           className="text-[#1F488E] lg:text-[42px] md:text-[36px] text-[32px] font-bold leading-[126%] mb-4 text-center"
           data-aos="fade-down"
         >
-          Explore Our Range
+          Our Injectable Range
         </h3>
         <p
           className="text-[#59606C] text-[16px] font-normal pb-4 border-b border-b-[#C6C6C6] text-center"
           data-aos="fade-down"
         >
-          Discover quality products tailored for your needs and lasting
-          performance.
+          Discover high-quality pharmaceutical products designed for performance, reliability, and better patient outcomes.
         </p>
         <div className="flex flex-wrap gap-4 justify-center py-6">
           {categories.map((category, index) => (

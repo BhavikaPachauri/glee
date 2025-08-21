@@ -16,29 +16,14 @@ const AboutDetails = () => {
           About Us
         </h2>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
-              Glee Biotech is a growing pharmaceutical company with big goals
-              and a clear vision for the future. We want to make a real
-              difference in the critical care sector by offering high-quality
-              and reliable healthcare products. With the strong support of our
-              parent company, PDPL, we benefit from their large and
-              well-organized distribution network. This helps us reach
-              hospitals, clinics, and healthcare providers all over the country
-              quickly and smoothly.
+              Glee Biotech Ltd. is a rapidly growing pharmaceutical company with a clear vision to make a real impact in the critical care sector by delivering high-quality, reliable, and affordable healthcare products.  
+              The company has a  strong back up support  of  parent company PDPL ( Plus Distribution Pvt Ltd ) , which ensures  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.  
             </p>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
-              We can proudly boast of our pan-India presence, focused marketing
-              approach, and efficient distribution network that ensures the
-              timely delivery of specialized products across India. This keeps
-              us a step ahead of our competition.
+              With our pan-India presence, targeted marketing strategies, and efficient logistics, we guarantee timely delivery of specialized products, keeping us a step ahead in a competitive market.  
             </p>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
-              At Glee Biotech, we are focused on doing our best, bringing new
-              ideas, and improving the lives of patients with our honest and
-              dedicated approach to healthcare. We are committed to providing
-              high-quality healthcare solutions, with our products in the
-              critical care segment and medical consumables. We are Further
-              Spreading our Wings and consolidating our Portfolio by Introducing
-              High-Quality Products in Gastroenterology, Oncology, and Virology.
+             At Glee Biotech, we combine integrity, commitment , and dedication to improve patient outcomes. While our expertise lies in critical care medicines and medical consumables, we are expanding our portfolio to include high-quality products in Gastroenterology, Oncology, and Virology.
             </p>
           </div>
           <div className="relative w-full">

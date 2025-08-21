@@ -6,7 +6,7 @@ const strengths = [
     title: "Our Legacy",
     description: (
       <>
-        "Glee Biotech has strong backing from our parent company,{" "}
+        Glee Biotech has strong backing from our parent company,{" "}
         <a
           href="https://plusdistributions.in/"
           target="_blank"
@@ -15,9 +15,9 @@ const strengths = [
         >
           PDPL (Plus Distribution Pvt. Ltd.)
         </a>
-        , a trusted and leading name in the pharmaceutical distribution industry
-        in India. With over 32 years of experience, PDPL has been delivering
-        healthy and empowering lives since its establishment in 1993."
+        , a trusted and leading name in the pharmaceutical distribution
+        industry in India. With over 32 years of experience, PDPL has been
+        delivering quality products and empowering lives since its establishment lives since its establishment in 1993.
       </>
     ),
     icon: (
@@ -38,8 +38,20 @@ const strengths = [
   },
   {
     title: "Our Expertise",
-    description:
-      "PDPL is known for its excellence in delivering high-quality pharmaceutical products nationwide. With their solid support, Glee Biotech benefits from a robust supply chain, extensive market reach, and a strong foundation in the healthcare sector. This partnership allows us to focus on innovation and growth while ensuring our products reach healthcare providers and patients efficiently and reliably.",
+    description: (
+      <ul className="list-disc list-inside space-y-1 text-[#1F488E]/80">
+        <li>Legacy of more than 30 years</li>
+        <li>-Associated with major hospital chains</li>
+        <li>-Owned Pharmacies in 37 Hospitals</li>
+        <li>-Catering more than 1000 ICU beds</li>
+        <li>
+          -Assured availability of our critical care range with 5 dedicated CSA
+          PAN India
+        </li>
+        <li>-WHO & GMP certified Products</li>
+        <li>-Affordable products</li>
+      </ul>
+    ),
     icon: (
       <svg
         className="w-6 h-6 text-[#1F488E]"
@@ -72,7 +84,9 @@ const StrengthCard = ({ title, description, icon, index }) => (
       </div>
       <h3 className="text-[#1F488E] text-2xl font-bold">{title}</h3>
     </div>
-    <p className="text-[#1F488E]/80 text-lg leading-relaxed text-justify">{description}</p>
+    <div className="text-[#1F488E]/80 text-lg leading-relaxed text-justify">
+      {description}
+    </div>
   </motion.div>
 );
 

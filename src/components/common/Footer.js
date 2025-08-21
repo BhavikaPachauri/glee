@@ -30,9 +30,16 @@ const Footer = () => {
                   className="sm:max-w-[300px] max-w-[220px] lg:hidden block"
                 />
               </a>
-              <p className="text-white text-[15px] lg:pe-10">
-                GLEE is committed to enhancing lives through quality healthcare
-                products.
+              <p className="text-white text-[15px] lg:pe-28">
+                <div className="flex items-center justify-center text-white">
+                <h3 className="text-xl font-medium ff_shrikhand text-nowrap">
+                  Life to Lives …
+                </h3>
+                <div className="w-20 h-20 flex items-center justify-center text-4xl">
+                  {/* {service.icon} */}
+                  <img src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/Y6Vkdsrk5I.png" alt="Service Icon" className="mt-2"  />
+                </div>
+              </div>
               </p>
               <div className="gap-6 lg:flex hidden">
                 <a
@@ -151,7 +158,7 @@ const Footer = () => {
             <div className="lg:w-[25%] sm:w-[80%] w-full flex flex-col justify-between max-lg:order-4">
               <ul className="flex flex-col sm:gap-[23px] gap-4">
                 <li className="font-semibold text-[#91B7C7] text-[20px] sm:pb-1.5 text-nowrap">
-                  CONTACT INFORMATION
+                  CONTACT US
                 </li>
                 <li className="gap-6 lg:hidden flex">
                   <a

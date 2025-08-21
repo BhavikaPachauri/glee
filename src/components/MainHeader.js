@@ -33,7 +33,8 @@ const MainHeader = () => {
           comprehensive healthcare solutions
         </h1>
         <div className="text-white/80 text-md sm:text-lg md:text-xl mb-8 mx-0 animate-fade-in-up delay-300 max-w-4xl text-justify sm:leading-relaxed leading-normal">
-          At Glee Biotech Ltd (GLEE), are carry on 30 years of pharmaceutical experience, We are further spreading our wings and consolidating our portfolio by introducing high-quality products in gastroenterology, oncology, and virology. Our team delivers high-quality, affordable, and life-saving products. Based in Gurugram, Haryana, we have a strong PAN-India presence and a dedicated focus on supporting high-risk critical care conditions.
+           Glee Biotech Ltd. is a rapidly growing pharmaceutical company with a clear vision to make a real impact in the critical care sector by delivering high-quality, reliable, and affordable healthcare products.  
+           The company has a  strong back up support  of  parent company PDPL ( Plus Distribution Pvt Ltd ) , which ensures  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.
         </div>
         <div className="flex flex-row sm:gap-6 gap-2 justify-start w-full max-w-md mx-0 animate-fade-in-up delay-400">
           <Link

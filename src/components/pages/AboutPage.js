@@ -6,7 +6,7 @@ import AboutDetail from "../AboutDetail";
 import WhoWeAre from "../WhoWeAre";
 import VisionMission from "../VisionMission";
 import Footer from "../common/Footer";
-import WhyChooseus from "../WhyChooseus";
+// import WhyChooseus from "../WhyChooseus";
 import ServiceSlider from "../common/ServiceSlider";
 import Gallery from "../Gallery";
 
@@ -26,7 +26,7 @@ const AboutPage = () => {
             <WhoWeAre />
             <ServiceSlider/>
             <VisionMission />
-            <WhyChooseus/>
+            {/* <WhyChooseus/> */}
             <Gallery/>
             <Footer />
             </div>

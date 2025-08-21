@@ -16,19 +16,19 @@ const WhyChooseus = () => {
     {
       icon: <FaTruck className="w-10 h-10 text-[#1F488E]" />,
       title: "PAN-India Presence",
-      description: "Timely delivery across the country.",
+      description: "Reliable and timely delivery nationwide.",
     },
     {
       icon: <FaCheckCircle className="w-10 h-10 text-[#1F488E]" />,
       title: "Quality Assurance",
       description:
-        "Partnering with trusted manufacturers to deliver genuine products.",
+        "Partnering with trusted manufacturers for genuine products.",
     },
     {
       icon: <FaLightbulb className="w-10 h-10 text-[#1F488E]" />,
       title: "Innovation and Expansion",
       description:
-        "Continuously expanding our portfolio to meet diverse healthcare needs.",
+        "Continuously enhancing our portfolio to meet diverse healthcare needs.",
     },
   ];
 
