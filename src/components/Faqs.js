@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AccordianArrow } from "./Icons";
+import { MdOutlineDoubleArrow } from "react-icons/md";
 
 const Faqs = () => {
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -10,35 +11,87 @@ const Faqs = () => {
   const accordionData = [
     {
       title: "What is the journey of Glee Biotech Ltd.",
-      content: `
-        <ul class="list-disc pl-5 space-y-2">
-          <li> - <strong>1993:</strong> Journey initiated in healthcare segment</li>
-          <li> - <strong>2020:</strong> Initiation of Glee Biotech Ltd to serve hospital business</li>
-          <li> - <strong>2023:</strong> WHO GMP & ISO 9001:2015 certified products initiation in critical care segment</li>
-          <li> - GLEE BIOTECH products initiated in major institutes in North and Central India</li>
-          <li> - <strong>2024-25:</strong> Glee Biotech Ltd took the big leap ALL INDIA with a PAN India launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care</li>
+      content: (
+        <ul className="pl-2 space-y-2">
+          <li className="flex items-start gap-2">
+            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
+            <span>
+              <strong>1993:</strong> Journey initiated in healthcare segment
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
+            <span>
+              <strong>2020:</strong> Initiation of Glee Biotech Ltd to serve hospital business
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
+            <span>
+              <strong>2023:</strong> WHO GMP & ISO 9001:2015 certified products initiation in critical care segment
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
+            <span>
+              GLEE BIOTECH products initiated in major institutes in North and Central India
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <MdOutlineDoubleArrow className="text-[#1F488E] " size={40}/>
+            <span>
+              <strong>2024-25:</strong> Glee Biotech Ltd took the big leap ALL INDIA with a PAN India launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care
+            </span>
+          </li>
         </ul>
-      `,
+      ),
     },
     {
       title: "Where is GLEE Biotech located?",
-      content:
-        "GLEE Biotech is located at 315, 3rd Floor, SAS Towers, Medicity, Sector 38, Gurugram, Haryana. For more information about our headquarters or operational facilities, please contact our support team or visit our website.",
+      content: (
+        <p>
+          GLEE Biotech is located at 315, 3rd Floor, SAS Towers, Medicity,
+          Sector 38, Gurugram, Haryana. For more information about our
+          headquarters or operational facilities, please contact our support
+          team or visit our website.
+        </p>
+      ),
     },
     {
       title: "How does GLEE Biotech ensure product quality?",
-      content:
-        "GLEE is dedicated to maintaining high quality and compliance standards by adhering to strict quality assurance protocols and regulatory requirements throughout all stages of manufacturing and supply. Our products are certified with WHO-GMP and ISO 9001:2015. Our primary goal is to provide quality medicines to our esteemed medical community at affordable prices.",
+      content: (
+        <p>
+          GLEE is dedicated to maintaining high quality and compliance standards
+          by adhering to strict quality assurance protocols and regulatory
+          requirements throughout all stages of manufacturing and supply. Our
+          products are certified with WHO-GMP and ISO 9001:2015. Our primary
+          goal is to provide quality medicines to our esteemed medical community
+          at affordable prices.
+        </p>
+      ),
     },
     {
       title: "How does GLEE Biotech contribute to the healthcare ecosystem?",
-      content:
-        "GLEE Biotech supports the healthcare ecosystem by offering high-quality, reliable healthcare products. We have a diverse portfolio with quality products in critical care, Gastroenterology, Oncology, and Virology.",
+      content: (
+        <p>
+          GLEE Biotech supports the healthcare ecosystem by offering
+          high-quality, reliable healthcare products. We have a diverse
+          portfolio with quality products in critical care, Gastroenterology,
+          Oncology, and Virology.
+        </p>
+      ),
     },
     {
       title: "What sets GLEE Biotech apart from its competitors?",
-      content:
-        "GLEE's unique combination of extensive industry experience, a broad product portfolio, and a focus on meaningful healthcare innovation sets it apart from other companies in the pharmaceutical and healthcare space.",
+      content: (
+        <p>
+          GLEE's unique combination of extensive industry experience, a broad
+          product portfolio, and a focused approach towards meaningful healthcare
+          & strong pan-India presence, extensive distribution network catering
+          to the needs of faster delivery when life is at stake, sets it apart
+          from other companies in the pharmaceutical and healthcare space.
+        </p>
+      ),
     },
   ];
 
@@ -101,12 +154,7 @@ const Faqs = () => {
                 }`}
               >
                 <div className="pb-6 text-[#545454] sm:text-[18px] text-[16px] leading-relaxed border-t border-gray-100 mt-2">
-                  <div
-                    className="pt-4"
-                    dangerouslySetInnerHTML={{
-                      __html: item.content,
-                    }}
-                  />
+                  <div className="pt-4">{item.content}</div>
                 </div>
               </div>
             </div>

@@ -29,7 +29,7 @@ const AboutDetails = () => {
           <div className="relative w-full">
             <div className="relative z-10 rounded-2xl shadow-xl ">
               <img
-                src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/1zgLbTjhS9.webp"
+                src="./img/Glee-background.webp"
                 alt="Glee Biotech Healthcare"
                 className="w-full h-[500px] object-cover rounded-xl"
               />

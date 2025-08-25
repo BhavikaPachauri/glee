@@ -117,7 +117,7 @@ const GetInTouch = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-             <GrLocationPin className="text-4xl font-bold me-2"/> 315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram, Haryana – 122001
+             <GrLocationPin className="text-4xl font-bold me-2" size={40}/> 315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram, Haryana – 122001
             </a>
             <br />
             <p
@@ -132,7 +132,7 @@ const GetInTouch = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <GrLocationPin className="text-4xl font-bold me-2"/> Plot no.581, Basement Pace City 2, Sector 37, Industrial Area,
+            <GrLocationPin className="text-4xl font-bold me-2" size={40}/> Plot no.581, Basement Pace City 2, Sector 37, Industrial Area,
               Gurugram 122004
             </a>
             <p
@@ -191,7 +191,7 @@ const GetInTouch = () => {
                 <Watsaap />
               </a>
               <a
-                href="https://www.instagram.com/glee_biotech/?hl=en"
+                href="https://www.instagram.com/glee_biotech?igsh=MTNscm85ZWt3M3F2ZA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-linear hover:-translate-y-2"

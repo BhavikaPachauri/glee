@@ -62,7 +62,7 @@ const NavBar = () => {
             max-lg:w-full max-lg:fixed max-lg:top-0 max-lg:min-h-screen 
             max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center bottom-0`}
         >
-          {renderNavLink("/", "Home")}
+          {/* {renderNavLink("/", "Home")} */}
           {renderNavLink("/aboutus", "About Us")}
           {renderNavLink("/products", "Products")}
           {renderNavLink("/contact", "Contact Us")}
@@ -73,7 +73,7 @@ const NavBar = () => {
             href="tel:+911244014675"
             className="max-sm:hidden relative inline-block px-8 py-3 bg-[#1F488E] text-white rounded-full font-semibold hover:bg-[#2C5BB8] transform hover:scale-[1.01] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            +91-124-401-4675
+            +91-124-4014-4675
           </a>
           <div
             onClick={() => setMenuOpen(!isMenuOpen)}

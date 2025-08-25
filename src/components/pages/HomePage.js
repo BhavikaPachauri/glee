@@ -25,7 +25,7 @@ const HomePage = () => {
         <NavBar />
         <div className="overflow-hidden">
           <MainHeader />
-          <AboutUs />
+          {/* <AboutUs /> */}
           <ServiceSlider/>
           <Strengths />
           <ServiceSlider/>

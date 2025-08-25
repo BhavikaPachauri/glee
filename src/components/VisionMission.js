@@ -1,5 +1,5 @@
 import React from "react";
-
+import { MdOutlineDoubleArrow } from "react-icons/md";
 const VisionMission = () => {
   return (
     <section className="bg-[#EFEFEF] py-12 sm:py-16 lg:py-20">
@@ -34,12 +34,11 @@ const VisionMission = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Mission</h2>
             <p className="text-gray-600 text-base leading-relaxed mb-2">
               To become a leading and trusted name in the healthcare industry by:
-              <br/>  
-              - Providing safe, effective, and Quality  healthcare products.<br/>    
-              - Maintaining the highest quality standards in everything we do.<br/>    
-              - Addressing healthcare gaps with patient-focused solutions.<br/>    
-              - Committing to continuous growth, innovation, and global reach.  
-
+              <br/>   
+              <div className="flex items-center gap-2"><MdOutlineDoubleArrow  />Providing safe, effective, and Quality  healthcare products.</div>
+              <div className="flex items-center gap-2"><MdOutlineDoubleArrow  />Maintaining the highest quality standards in everything we do.</div>
+              <div className="flex items-center gap-2"><MdOutlineDoubleArrow  />Addressing healthcare gaps with patient-focused solutions.</div>
+              <div className="flex items-center gap-2"><MdOutlineDoubleArrow  /> Committing to continuous growth and global reach.  </div>
 
             </p>
           </div>

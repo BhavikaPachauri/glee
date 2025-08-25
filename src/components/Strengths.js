@@ -1,5 +1,23 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { MdOutlineDoubleArrow } from "react-icons/md";
+
+// Variants for staggered list
+const listVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // har point ke beech delay
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  show: { opacity: 1, x: 0 },
+};
 
 const strengths = [
   {
@@ -17,70 +35,58 @@ const strengths = [
         </a>
         , a trusted and leading name in the pharmaceutical distribution
         industry in India. With over 32 years of experience, PDPL has been
-        delivering quality products and empowering lives since its establishment lives since its establishment in 1993.
+        delivering quality and affordable products since its inception in 1993.
       </>
-    ),
-    icon: (
-      <svg
-        className="w-6 h-6 text-[#1F488E]"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
     ),
   },
   {
     title: "Our Expertise",
     description: (
-      <ul className="list-disc list-inside space-y-1 text-[#1F488E]/80">
-        <li>Legacy of more than 30 years</li>
-        <li>-Associated with major hospital chains</li>
-        <li>-Owned Pharmacies in 37 Hospitals</li>
-        <li>-Catering more than 1000 ICU beds</li>
-        <li>
-          -Assured availability of our critical care range with 5 dedicated CSA
-          PAN India
-        </li>
-        <li>-WHO & GMP certified Products</li>
-        <li>-Affordable products</li>
-      </ul>
-    ),
-    icon: (
-      <svg
-        className="w-6 h-6 text-[#1F488E]"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
+      <motion.ul
+        className="space-y-2 text-[#1F488E]/80"
+        variants={listVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-      </svg>
+        {[
+          "Legacy of more than 30 years",
+          "Associated with major hospital chains",
+          "Owned Pharmacies in 37 Hospitals",
+          "Catering more than 1000 ICU beds",
+          "WHO & GMP certified Products",
+          "Assured availability of our critical care range with 5 dedicated CSA PAN India",
+          
+        ].map((point, i) => (
+          <motion.li
+            key={i}
+            variants={itemVariants}
+            className="flex items-start gap-2"
+          >
+            <MdOutlineDoubleArrow className="text-[#1F488E]" size={20} />
+            {point}
+          </motion.li>
+        ))}
+      </motion.ul>
     ),
   },
 ];
 
-const StrengthCard = ({ title, description, icon, index }) => (
+const cardVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.95 },
+  show: { opacity: 1, y: 0, scale: 1 },
+};
+
+const StrengthCard = ({ title, description }) => (
   <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay: index * 0.2 }}
-    className="cursor-pointer bg-white rounded-2xl sm:p-8 p-4 shadow-xl border border-[#1F488E]/10 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+    variants={cardVariants}
+    whileHover={{ scale: 1.03 }}
+    transition={{ type: "spring", stiffness: 120 }}
+    className="cursor-pointer bg-white rounded-2xl sm:p-8 p-4 shadow-xl border border-[#1F488E]/10 hover:-translate-y-1 transition-all duration-300"
   >
     <div className="flex items-center gap-4 sm:mb-6 mb-3">
-      <div className="w-14 h-14 rounded-full bg-[#1F488E]/10 flex items-center justify-center">
-        {icon}
+      <div className="w-14 h-14 rounded-full bg-[#1F488E]/10 flex items-center justify-center text-[#1F488E] text-xl font-bold">
+        {title[0]}
       </div>
       <h3 className="text-[#1F488E] text-2xl font-bold">{title}</h3>
     </div>
@@ -107,11 +113,17 @@ const Strengths = () => (
           Building on a legacy of excellence and innovation in healthcare
         </p>
       </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
         {strengths.map((strength, index) => (
-          <StrengthCard key={strength.title} {...strength} index={index} />
+          <StrengthCard key={index} {...strength} />
         ))}
-      </div>
+      </motion.div>
     </div>
   </section>
 );
