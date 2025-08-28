@@ -23,6 +23,11 @@ module.exports = {
       animation: {
         backtotop: "backtotop 1s linear infinite",
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],

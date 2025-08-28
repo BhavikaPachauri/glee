@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Loader from "./Loader";
 import TermsPage from "../pages/TermsPage";
+import GleeProducts from "../GleeProducts";
 
 const HomePage = lazy(() => import("../pages/HomePage"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
@@ -20,10 +21,11 @@ const MainRoute = () => {
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="GleeProducts" element={<GleeProducts/>}/>
         <Route path="aboutus" element={<AboutPage />} />
         <Route path="products" element={<ProductsPage />} />
         <Route path="contact" element={<ContactPage />} />
-        <Route path="produpload" element={<GleeProductPage />} />
+        {/* <Route path="/produpload" element={<GleeProductPage />} /> */}
         <Route path="/terms" element={<TermsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

@@ -66,6 +66,7 @@ const NavBar = () => {
           {renderNavLink("/aboutus", "About Us")}
           {renderNavLink("/products", "Products")}
           {renderNavLink("/contact", "Contact Us")}
+          {renderNavLink("/GleeProducts", "Upload Products")}
         </ul>
 
         <div className="flex items-center gap-3">
