@@ -65,7 +65,10 @@ const strengths = [
             variants={itemVariants}
             className="flex items-start gap-2"
           >
-            <MdOutlineDoubleArrow className="text-[#1F488E] mt-2" size={20} />
+            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1 w-5 h-5 flex-shrink-0" />
+          
+
+
             {point}
           </motion.li>
         ))}
