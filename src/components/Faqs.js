@@ -22,7 +22,7 @@ const Faqs = () => {
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
             <span>
-              <strong>2020 :</strong> Initiation of Glee Biotech Ltd to serve hospital business
+              <strong>2020 :</strong> Initiation of Glee Biotech Ltd. to serve hospital business
             </span>
           </li>
           <li className="flex items-start gap-2">
@@ -76,7 +76,7 @@ const Faqs = () => {
         <p>
           GLEE Biotech Ltd. supports the healthcare ecosystem by offering
           high-quality, reliable healthcare products. We have a diverse
-          portfolio with quality products in critical care,<b>Gastroenterology,
+          portfolio with quality products <b>Gastroenterology,
           Oncology, and Virology.</b> 
         </p>
       ),
