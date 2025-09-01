@@ -76,7 +76,7 @@ const Faqs = () => {
         <p>
           GLEE Biotech Ltd. supports the healthcare ecosystem by offering
           high-quality, reliable healthcare products. We have a diverse
-          portfolio with quality products <b>Gastroenterology,
+          portfolio with quality products in <b>critical care, Gastroenterology,
           Oncology, and Virology.</b> 
         </p>
       ),
