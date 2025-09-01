@@ -55,7 +55,7 @@ const strengths = [
           "Owned Pharmacies in 37 Hospitals",
           "Catering more than 1000 ICU beds",
           "WHO & GMP certified Products",
-          "Assured availability of our critical care range with 5 dedicated CSA PAN India",
+          "Assured availability of our critical care range with  dedicated CSA PAN India",
           
         ].map((point, i) => (
           <motion.li
@@ -110,7 +110,7 @@ const Strengths = () => (
           Our Strengths
         </h2>
         <p className="text-[#59606C] text-lg max-w-2xl mx-auto">
-          Building on a legacy of excellence and innovation in healthcare
+          Building on a legacy of excellence  in healthcare
         </p>
       </motion.div>
 
