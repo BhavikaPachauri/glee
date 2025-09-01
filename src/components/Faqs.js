@@ -16,31 +16,31 @@ const Faqs = () => {
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
             <span>
-              <strong>1993:</strong> Journey initiated in healthcare segment
+              <strong>1993 :</strong> Journey initiated in healthcare segment
             </span>
           </li>
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
             <span>
-              <strong>2020:</strong> Initiation of Glee Biotech Ltd to serve hospital business
+              <strong>2020 :</strong> Initiation of Glee Biotech Ltd to serve hospital business
             </span>
           </li>
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
             <span>
-              <strong>2023:</strong> WHO GMP & ISO 9001:2015 certified products initiation in critical care segment
+              <strong>2023 : WHO GMP & ISO 9001:2015</strong>  certified products initiation in critical care segment
             </span>
           </li>
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] mt-1" />
             <span>
-              GLEE BIOTECH products initiated in major institutes in North and Central India
+              Glee Biotech Ltd. products initiated in major institutes in North and Central India
             </span>
           </li>
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] " size={40}/>
             <span>
-              <strong>2024-25:</strong> Glee Biotech Ltd. took the big leap <b>ALL INDIA</b> with a <b>PAN INDIA</b> launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care
+              <strong>2024-25 :</strong> Glee Biotech Ltd. took the big leap <b>ALL INDIA</b> with a <b>PAN INDIA</b> launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care
             </span>
           </li>
         </ul>
@@ -64,7 +64,7 @@ const Faqs = () => {
           GLEE Biotech Ltd. is dedicated to maintaining high quality and compliance standards
           by adhering to strict quality assurance protocols and regulatory
           requirements throughout all stages of manufacturing and supply. Our
-          products are certified with WHO-GMP and ISO 9001:2015. Our primary
+          products are certified with <b>WHO-GMP</b> and <b>ISO 9001:2015</b>. Our primary
           goal is to provide quality medicines to our esteemed medical community
           at affordable prices.
         </p>
@@ -76,8 +76,8 @@ const Faqs = () => {
         <p>
           GLEE Biotech Ltd. supports the healthcare ecosystem by offering
           high-quality, reliable healthcare products. We have a diverse
-          portfolio with quality products in critical care, Gastroenterology,
-          Oncology, and Virology.
+          portfolio with quality products in critical care,<b>Gastroenterology,
+          Oncology, and Virology.</b> 
         </p>
       ),
     },
