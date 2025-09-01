@@ -3,14 +3,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryData = [
   {
-    title: (<p>MANTHAN : 5ᵗʰ - 8ᵗʰ 2025 February <br/> @ Sri Jagannath, Puri Orissa</p>),
+    title: (<p>MANTHAN : <br/> 5ᵗʰ - 8ᵗʰ 2025 February  @ Puri , Odisha</p>),
     description:
       "Leaders coming together for a brainstorming session on strategies and functional aspects of the organisation to march ahead. Showcased cutting-edge solutions and collaborated with industry leaders.",
     cover:
       "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/zVGYPr2IXY.png",
   },
   {
-    title: "ISCCM : 5ᵗʰ - 9ᵗʰ 2025 March @ Kochi",
+    title: ( <p>ISCCM : <br/>5ᵗʰ - 9ᵗʰ 2025 March @ Kochi</p>),
     description:
       "Indian Society for Critical Care Medicine Conference at Kochi, Kerala - Glee Biotech participated in a big way, organising a scientific session on: “BRIDGE - The Generation GAP” - An Interactive Open Mic Session featuring Senior Intensivists & Dynamic Next Gen Critical Care Experts.",
     cover:

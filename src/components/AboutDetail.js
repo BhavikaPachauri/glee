@@ -23,7 +23,7 @@ const AboutDetails = () => {
               With our pan-India presence, targeted marketing strategies, and efficient logistics, we guarantee timely delivery of specialized products, keeping us a step ahead in a competitive market.  
             </p>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
-             At Glee Biotech, we combine integrity, commitment , and dedication to improve patient outcomes. While our expertise lies in critical care medicines and medical consumables, we are expanding our portfolio to include high-quality products in Gastroenterology, Oncology, and Virology.
+             At Glee Biotech, we combine integrity, commitment , and dedication to improve patient outcomes. While our expertise lies in critical care medicines and medical consumables.<br/> we are expanding our portfolio to include high-quality products in <b>Gastroenterology, Oncology, and Virology</b> .
             </p>
           </div>
           <div className="relative w-full">
