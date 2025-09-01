@@ -29,7 +29,7 @@ const Mission = () => {
             Join Us in Our Mission
           </h2>
           <p className="text-[#59606C] text-lg max-w-2xl mx-auto">
-            At Glee Biotech Ltd. , we are more than just a pharmaceutical company – we
+            At Glee Biotech Ltd. , we are more than just a pharmaceutical company – <br></br> we
             are a partner in healthcare. Join us in our mission to improve lives
             and build a healthier tomorrow.
           </p>
