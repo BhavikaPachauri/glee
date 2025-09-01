@@ -22,6 +22,7 @@ const itemVariants = {
 const strengths = [
   {
     title: "Our Legacy",
+    img:"./img/legacy.png",
     description: (
       <>
         Glee Biotech has strong backing from our parent company,{" "}
@@ -41,6 +42,7 @@ const strengths = [
   },
   {
     title: "Our Expertise",
+    img:"./img/review.png",
     description: (
       <motion.ul
         className="space-y-2 text-[#1F488E]/80"
@@ -55,7 +57,7 @@ const strengths = [
           "Owned Pharmacies in 37 Hospitals",
           "Catering more than 1000 ICU beds",
           "WHO & GMP certified Products",
-          "Assured availability of our critical care range with  dedicated CSA PAN India",
+          "Assured availability of our critical  care range with  dedicated CSA PAN India",
           
         ].map((point, i) => (
           <motion.li
@@ -63,7 +65,7 @@ const strengths = [
             variants={itemVariants}
             className="flex items-start gap-2"
           >
-            <MdOutlineDoubleArrow className="text-[#1F488E]" size={20} />
+            <MdOutlineDoubleArrow className="text-[#1F488E] mt-2" size={20} />
             {point}
           </motion.li>
         ))}
@@ -77,7 +79,7 @@ const cardVariants = {
   show: { opacity: 1, y: 0, scale: 1 },
 };
 
-const StrengthCard = ({ title, description }) => (
+const StrengthCard = ({img, title, description }) => (
   <motion.div
     variants={cardVariants}
     whileHover={{ scale: 1.03 }}
@@ -86,7 +88,7 @@ const StrengthCard = ({ title, description }) => (
   >
     <div className="flex items-center gap-4 sm:mb-6 mb-3">
       <div className="w-14 h-14 rounded-full bg-[#1F488E]/10 flex items-center justify-center text-[#1F488E] text-xl font-bold">
-        {title[0]}
+        <img src={img} width={40}/>
       </div>
       <h3 className="text-[#1F488E] text-2xl font-bold">{title}</h3>
     </div>

@@ -47,7 +47,7 @@ const Faqs = () => {
       ),
     },
     {
-      title: "Where is GLEE Biotech located?",
+      title: "Where is GLEE Biotech Ltd located?",
       content: (
         <p>
           GLEE Biotech is located at 315, 3rd Floor, SAS Towers, Medicity,
@@ -58,7 +58,7 @@ const Faqs = () => {
       ),
     },
     {
-      title: "How does GLEE Biotech ensure product quality?",
+      title: "How does GLEE Biotech Ltd ensure product quality?",
       content: (
         <p>
           GLEE is dedicated to maintaining high quality and compliance standards
@@ -71,7 +71,7 @@ const Faqs = () => {
       ),
     },
     {
-      title: "How does GLEE Biotech contribute to the healthcare ecosystem?",
+      title: "How does GLEE Biotech Ltd contribute to the healthcare ecosystem?",
       content: (
         <p>
           GLEE Biotech supports the healthcare ecosystem by offering
@@ -82,7 +82,7 @@ const Faqs = () => {
       ),
     },
     {
-      title: "What sets GLEE Biotech apart from its competitors?",
+      title: "What sets GLEE Biotech Ltd apart from its competitors?",
       content: (
         <p>
           GLEE's unique combination of extensive industry experience, a broad
