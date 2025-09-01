@@ -85,7 +85,7 @@ const Faqs = () => {
       title: "What sets GLEE Biotech Ltd. apart from its competitors?",
       content: (
         <p>
-          GLEE Biotech Ltd. unique combination of extensive industry experience, a broad
+          GLEE Biotech Ltd. - A unique combination of extensive industry experience, a broad
           product portfolio, and a focused approach towards meaningful healthcare
           & strong pan-India presence, extensive distribution network catering
           to the needs of faster delivery when life is at stake, sets it apart
