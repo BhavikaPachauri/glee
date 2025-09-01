@@ -40,7 +40,7 @@ const Faqs = () => {
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] " size={40}/>
             <span>
-              <strong>2024-25:</strong> Glee Biotech Ltd took the big leap ALL INDIA with a PAN India launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care
+              <strong>2024-25:</strong> Glee Biotech Ltd. took the big leap <b>ALL INDIA</b> with a <b>PAN INDIA</b> launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care
             </span>
           </li>
         </ul>
@@ -50,7 +50,7 @@ const Faqs = () => {
       title: "Where is GLEE Biotech Ltd. located?",
       content: (
         <p>
-          GLEE Biotech is located at 315, 3rd Floor, SAS Towers, Medicity,
+          GLEE Biotech Ltd. is located at 315, 3rd Floor, SAS Towers, Medicity,
           Sector 38, Gurugram, Haryana. For more information about our
           headquarters or operational facilities, please contact our support
           team or visit our website.
@@ -61,7 +61,7 @@ const Faqs = () => {
       title: "How does GLEE Biotech Ltd. ensure product quality?",
       content: (
         <p>
-          GLEE is dedicated to maintaining high quality and compliance standards
+          GLEE Biotech Ltd. is dedicated to maintaining high quality and compliance standards
           by adhering to strict quality assurance protocols and regulatory
           requirements throughout all stages of manufacturing and supply. Our
           products are certified with WHO-GMP and ISO 9001:2015. Our primary
@@ -74,7 +74,7 @@ const Faqs = () => {
       title: "How does GLEE Biotech Ltd. contribute to the healthcare ecosystem?",
       content: (
         <p>
-          GLEE Biotech supports the healthcare ecosystem by offering
+          GLEE Biotech Ltd. supports the healthcare ecosystem by offering
           high-quality, reliable healthcare products. We have a diverse
           portfolio with quality products in critical care, Gastroenterology,
           Oncology, and Virology.
@@ -85,7 +85,7 @@ const Faqs = () => {
       title: "What sets GLEE Biotech Ltd. apart from its competitors?",
       content: (
         <p>
-          GLEE's unique combination of extensive industry experience, a broad
+          GLEE Biotech Ltd. unique combination of extensive industry experience, a broad
           product portfolio, and a focused approach towards meaningful healthcare
           & strong pan-India presence, extensive distribution network catering
           to the needs of faster delivery when life is at stake, sets it apart

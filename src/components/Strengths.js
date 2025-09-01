@@ -52,12 +52,12 @@ const strengths = [
         viewport={{ once: true }}
       >
         {[
-          "Legacy of more than 30 years",
-          "Associated with major hospital chains",
-          "Owned Pharmacies in 37 Hospitals",
-          "Catering more than 1000 ICU beds",
-          (<p><b>WHO & GMP</b> certified Products</p>),
-          "Assured availability of our critical  care range with  dedicated CSA PAN India",
+          "Legacy of more than 30 years.",
+          "Associated with major hospital chains.",
+          "Owned Pharmacies in 37 Hospitals.",
+          "Catering more than 1000 ICU beds.",
+          (<p><b>WHO & GMP</b> certified Products.</p>),
+          "Assured availability of our critical  care range with  dedicated CSA PAN India.",
           
         ].map((point, i) => (
           <motion.li
