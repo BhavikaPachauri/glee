@@ -3,16 +3,16 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryData = [
   {
-    title: (<p>MANTHAN : <br/> 5ᵗʰ - 8ᵗʰ 2025 February  @ Puri , Odisha</p>),
+    title: (<p>MANTHAN : <br/> 5ᵗʰ - 8ᵗʰ February 2025 @ Puri , Odisha</p>),
     description:
-      "Leaders coming together for a brainstorming session on strategies and functional aspects of the organisation to march ahead. Showcased cutting-edge solutions and collaborated with industry leaders.",
+      "Leaders coming together for a brainstorming session on strategies and functional aspects of the organization to move forward. Showcased cutting-edge solutions and collaborated with industry leaders.",
     cover:
       "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/zVGYPr2IXY.png",
   },
   {
-    title: ( <p>ISCCM : <br/>5ᵗʰ - 9ᵗʰ 2025 March @ Kochi</p>),
+    title: ( <p>ISCCM : <br/>5ᵗʰ - 9ᵗʰ March 2025 @ Kochi</p>),
     description:
-      "Indian Society for Critical Care Medicine Conference at Kochi, Kerala - Glee Biotech participated in a big way, organising a scientific session on: “BRIDGE - The Generation GAP” - An Interactive Open Mic Session featuring Senior Intensivists & Dynamic Next Gen Critical Care Experts.",
+      "Indian Society for Critical Care Medicine Conference at Kochi, Kerala - Glee Biotech participated in a prominent way, organizing a scientific session on: “BRIDGE - The Generation GAP” - An Interactive Open Mic Session featuring Senior Intensivists & Dynamic Next Gen Critical Care Experts.",
     cover:
       "./img/Background.jpg",
   },
@@ -25,7 +25,7 @@ const galleryData = [
   {
     title: (<p>ANNUAL BUDGET MEET : <br/> 5ᵗʰ – 7ᵗʰ March 2025  @ Sonepat</p>),
     description:
-      "Annual Budget meet was held @ SONEPAT, Haryana. Strategy for year 2025-2026 was rolled out to the entire Team of Glee Biotech. The management empowered the team with handing over car keys to employees, keeping their safety and well-being at the forefront.",
+      "Annual Budget Meet was held @ SONEPAT, Haryana. Strategy for year 2025-2026 was rolled out to the entire Team of Glee Biotech. The management empowered the team with by  handing over car keys to employees, keeping their safety and well-being at the forefront.",
     cover:
       "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/BJY0RUX74t.jpg",
   },
