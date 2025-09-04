@@ -20,8 +20,9 @@ const AboutDetails = () => {
               The company has a  strong backup support  of  parent company PDPL ( Plus Distribution Pvt Ltd. ) , which ensures  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.  
             </p>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
-              With our pan-India presence, targeted marketing strategies, and efficient logistics, we guarantee timely delivery of specialized products, keeping us a step ahead in a competitive market.  
+              With our PAN INDIA presence, targeted marketing strategies, and efficient logistics, we guarantee timely delivery of specialized products, keeping us a step ahead in a competitive market.  
             </p>
+            <br></br>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
              At Glee Biotech, we combine integrity, commitment, and dedication to improve patient outcomes. While our expertise lies in critical care medicines and medical consumables.<br/> We are expanding our portfolio to include high-quality products in <b>Gastroenterology, Oncology, and Virology</b> .
             </p>
