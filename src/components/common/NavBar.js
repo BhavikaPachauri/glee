@@ -70,10 +70,10 @@ const NavBar = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:+911244014675"
+            href="tel:+91-124-4014-4675"
             className="max-sm:hidden relative inline-block px-8 py-3 bg-[#1F488E] text-white rounded-full font-semibold hover:bg-[#2C5BB8] transform hover:scale-[1.01] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            +91-124-4014-4675
+            Call Us
           </a>
           <div
             onClick={() => setMenuOpen(!isMenuOpen)}

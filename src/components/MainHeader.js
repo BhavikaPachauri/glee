@@ -33,8 +33,7 @@ const MainHeader = () => {
           comprehensive healthcare solutions
         </h1>
         <div className=" text-white/80 text-md sm:text-lg md:text-xl mb-8 mx-0 animate-fade-in-up delay-300 max-w-4xl text-justify sm:leading-relaxed leading-normal">
-           Glee Biotech Ltd. is a rapidly growing pharmaceutical company with a clear vision to make a real impact in the critical care sector by delivering high-quality, reliable, and affordable healthcare products.  
-           The company has a  strong backup support  of  parent company PDPL <br></br> ( Plus Distribution Pvt Ltd. ) , which ensures  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.
+           Glee Biotech Ltd. is a rapidly growing pharmaceutical company with a clear vision to make a real impact in the critical care sector by delivering high-quality, reliable, and affordable healthcare products. Which ensures  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.
         </div>
         <div className="flex flex-row sm:gap-6 gap-2 justify-start w-full max-w-md mx-0 animate-fade-in-up delay-400">
           <Link
