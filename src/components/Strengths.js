@@ -20,24 +20,59 @@ const itemVariants = {
 };
 
 const strengths = [
+  // {
+  //   title: "Our Legacy",
+  //   img:"./img/legacy.png",
+  //   description: (
+  //     <>
+  //       Glee Biotech has strong backing from our parent company,{" "}
+  //       <a
+  //         href="https://plusdistributions.in/"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //         className="text-blue-400 hover:underline"
+  //       >
+  //         PDPL (Plus Distribution Pvt. Ltd.)
+  //       </a>
+  //       , a trusted and leading name in the pharmaceutical distribution
+  //       industry in India. With over 32 years of experience, PDPL has been
+  //       delivering quality and affordable products since its inception in 1993.
+  //     </>
+  //   ),
+  // },
   {
     title: "Our Legacy",
     img:"./img/legacy.png",
     description: (
-      <>
-        Glee Biotech has strong backing from our parent company,{" "}
-        <a
-          href="https://plusdistributions.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 hover:underline"
-        >
-          PDPL (Plus Distribution Pvt. Ltd.)
-        </a>
-        , a trusted and leading name in the pharmaceutical distribution
-        industry in India. With over 32 years of experience, PDPL has been
-        delivering quality and affordable products since its inception in 1993.
-      </>
+      <motion.ul
+        className="space-y-2 text-[#1F488E]/80"
+        variants={listVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        {[
+          "Legacy of more than 30 years.",
+          "Established in 2015 with 30+ years of combined pharma expertise.",
+          "Large warehousing & production capacity for wide distribution.",
+          "Trusted by major hospital groups (Park, Yatharth, Medeor, Jaipur Golden, etc.).",
+         
+          
+          
+        ].map((point, i) => (
+          <motion.li
+            key={i}
+            variants={itemVariants}
+            className="flex items-start gap-2"
+          >
+            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1 w-5 h-5 flex-shrink-0" />
+          
+
+
+            {point}
+          </motion.li>
+        ))}
+      </motion.ul>
     ),
   },
   {
@@ -52,11 +87,12 @@ const strengths = [
         viewport={{ once: true }}
       >
         {[
-          "Legacy of more than 30 years.",
           "Associated with major hospital chains.",
           "Owned Pharmacies in 37 Hospitals.",
-          "Catering more than 1000 ICU beds.",
+          "Catering to more than 1000 ICU beds.",
           (<p><b>WHO & GMP</b> certified Products.</p>),
+           "Focus on high-quality, regulatory compliance.",
+          "Strong presence in critical care, anesthesia, antibiotics, gastro, cardio, and neuro segments.",
           "Assured availability of our critical  care range with  dedicated CSA PAN India.",
           
         ].map((point, i) => (

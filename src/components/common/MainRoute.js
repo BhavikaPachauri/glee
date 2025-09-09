@@ -21,6 +21,7 @@ const MainRoute = () => {
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/glee-products" element={<GleeProducts />} />
         <Route path="aboutus" element={<AboutPage />} />
         <Route path="products" element={<ProductsPage />} />
         <Route path="contact" element={<ContactPage />} />
