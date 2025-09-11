@@ -113,9 +113,9 @@ const ImageFramer = () => {
                   className="absolute rounded-full overflow-hidden z-10"
                   style={{
                     width: "calc(80vw * 0.789)", // 356/451 ratio
-                    maxWidth: "356px",
+                    maxWidth: "345px",
                     height: "calc(80vw * 0.789)",
-                    maxHeight: "356px",
+                    maxHeight: "345px",
                     left: "50%",
                     top: "50%",
                     transform: "translate(-50%, -50%)",
@@ -130,9 +130,9 @@ const ImageFramer = () => {
                   alt="Frame"
                   className="absolute pointer-events-none z-20 w-full"
                   style={{
-                    height: "85.3%", 
-                    top: "9.8%", 
-                    left: "-5px",
+                    height: "100%", 
+                     
+                    left: "1px",
                     objectFit: "contain",
                   }}
                 />
