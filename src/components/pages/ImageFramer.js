@@ -126,7 +126,7 @@ const ImageFramer = () => {
 
                 {/* Frame overlay */}
                 <img
-                  src="/frame.png"
+                  src="/Frame.png"
                   alt="Frame"
                   className="absolute pointer-events-none z-20 w-full"
                   style={{
