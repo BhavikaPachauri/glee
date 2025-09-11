@@ -131,7 +131,7 @@ const ImageFramer = () => {
                   className="absolute pointer-events-none z-20 w-full"
                   style={{
                     height: "85.3%", 
-                    top: "10.4%", 
+                    top: "9.8%", 
                     left: "-5px",
                     objectFit: "contain",
                   }}
