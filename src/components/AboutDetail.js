@@ -17,7 +17,7 @@ const AboutDetails = () => {
         </h2>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
               Glee Biotech Ltd. is a rapidly growing pharmaceutical company with a clear vision to make a real impact in the critical care sector by delivering high-quality, reliable, and affordable healthcare products.  
-              The company has a  strong backup support  of  parent company PDPL ( Plus Distribution Pvt Ltd. ) , which ensures  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.  
+              The company has a  strong backup support,   which certifies  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.  
             </p>
             <p className="text-[#59606C] lg:text-[18px] text-[16px] leading-[128%]">
               With our PAN INDIA presence, targeted marketing strategies, and efficient logistics, we guarantee timely delivery of specialized products, keeping us a step ahead in a competitive market.  

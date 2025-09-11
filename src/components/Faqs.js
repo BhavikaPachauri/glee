@@ -40,7 +40,7 @@ const Faqs = () => {
           <li className="flex items-start gap-2">
             <MdOutlineDoubleArrow className="text-[#1F488E] " size={40}/>
             <span>
-              <strong>2024-25 :</strong> Glee Biotech Ltd. took the big leap <b>ALL INDIA</b> with a <b>PAN INDIA</b> launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care
+              <strong>2024-25 :</strong> Glee Biotech Ltd. took the big leap  with a <b>PAN INDIA</b> launch of team to promote critical care products, aiming to provide affordable healthcare solutions in critical care
             </span>
           </li>
         </ul>
@@ -61,7 +61,7 @@ const Faqs = () => {
       title: "How does GLEE Biotech Ltd. ensure product quality?",
       content: (
         <p>
-          GLEE Biotech Ltd. is dedicated to maintaining high quality and compliance standards
+          GLEE Biotech Ltd. is dedicated to maintain a high quality and compliance standards
           by adhering to strict quality assurance protocols and regulatory
           requirements throughout all stages of manufacturing and supply. Our
           products are certified with <b>WHO-GMP</b> and <b>ISO 9001:2015</b>. Our primary

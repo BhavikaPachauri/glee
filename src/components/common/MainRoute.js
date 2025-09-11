@@ -3,6 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Loader from "./Loader";
 import TermsPage from "../pages/TermsPage";
 import GleeProducts from "../GleeProducts";
+import ImageFramer from "../pages/ImageFramer";
 
 const HomePage = lazy(() => import("../pages/HomePage"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
@@ -28,6 +29,8 @@ const MainRoute = () => {
         {/* <Route path="/produpload" element={<GleeProductPage />} /> */}
         <Route path="/terms" element={<TermsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/image-framer" element={<ImageFramer />} />
+
       </Routes>
     </Suspense>
   );

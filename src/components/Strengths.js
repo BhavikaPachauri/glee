@@ -88,8 +88,8 @@ const strengths = [
       >
         {[
           "Associated with major hospital chains.",
-          "Owned Pharmacies in 37 Hospitals.",
-          "Catering to more than 1000 ICU beds.",
+          "Owned Pharmacies in 37+ Hospitals.",
+          "Catering to more than 1000+ ICU beds.",
           (<p><b>WHO & GMP</b> certified Products.</p>),
            "Focus on high-quality, regulatory compliance.",
           "Strong presence in critical care, anesthesia, antibiotics, gastro, cardio, and neuro segments.",
