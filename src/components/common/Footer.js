@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { CallIcon, LocationIcon, EmailIcon } from "../Icons";
+import { CallIcon, LocationIcon, EmailIcon, WebLogo } from "../Icons";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
@@ -19,18 +19,19 @@ const Footer = () => {
                 href="#"
                 className="text-white text-4xl font-bold leading-none text-center"
               >
-                <img loading="lazy" 
+                {/* <img loading="lazy" 
                   src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/ZajgnpYEp0.webp"
                   alt="GleeLogoSmall"
                   className="max-w-[133px] lg:block hidden"
-                />
+                /> */}
+                <WebLogo/>
                 <img loading="lazy" 
                   src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/vhb6buV8Oq.webp"
                   alt="GleeLogoSmall"
                   className="sm:max-w-[300px] max-w-[220px] lg:hidden block"
                 />
               </a>
-              <p className="text-white text-[15px] lg:pe-28">
+              <p className="text-white text-[15px] lg:pe-28 mt-[-40px]">
                 <div className="flex items-center justify-center text-white">
                 <h3 className="text-xl font-medium ff_shrikhand text-nowrap">
                   Life to Lives …
