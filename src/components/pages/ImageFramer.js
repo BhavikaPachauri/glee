@@ -113,9 +113,9 @@ const ImageFramer = () => {
                   className="absolute rounded-full overflow-hidden z-10"
                   style={{
                     width: "calc(80vw * 0.789)", // 356/451 ratio
-                    maxWidth: "345px",
+                    maxWidth: "350px",
                     height: "calc(80vw * 0.789)",
-                    maxHeight: "345px",
+                    maxHeight: "350px",
                     left: "50%",
                     top: "50%",
                     transform: "translate(-50%, -50%)",
@@ -126,7 +126,7 @@ const ImageFramer = () => {
 
                 {/* Frame overlay */}
                 <img
-                  src="./img/Frame.png"
+                  src="./img/frame1.png"
                   alt="Frame"
                   className="absolute pointer-events-none z-20 w-full"
                   style={{
