@@ -14,15 +14,15 @@ const AboutUs = () => {
           <div className="flex flex-wrap lg:gap-16 gap-8 items-center">
             <div className=" flex lg:gap-8 gap-6 mx-auto">
               <div
-                className="relative p-2 rounded-xl    md:mt-[50px] mt-[25px] transform hover:scale-105 transition-transform duration-300"
+                className="relative p-2 rounded-xl    md:mt-[50px] mt-[25px] "
              
               >
-                <div className="relative rounded-lg overflow-hidden ">
+                <div className="relative  ">
                   <img
                     loading="lazy"
                     src="./img/bgAbout.svg"
                     alt="Product Image"
-                    className="w-full h-full rounded-lg scale-105 hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full rounded-lg "
                   />
                 </div>
               </div>
