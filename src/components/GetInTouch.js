@@ -100,7 +100,7 @@ const GetInTouch = () => {
               Whether you have questions, need support, or wish to explore a collaboration, we’re here to help. 
             </p>
             <p
-              className="text-[18px] text-white font-bold"
+              className="text-[18px] mt-[-5px]  text-white font-bold"
               data-aos="fade-right"
             >
               Address
@@ -113,7 +113,7 @@ const GetInTouch = () => {
             </p>
             <a
               href="https://www.google.com/maps/place/SAS+Tower/@28.4409488,77.0367062,17z/data=!3m1!4b1!4m6!3m5!1s0x390d18695c471015:0xa44b7b144935cae4!8m2!3d28.4409488!4d77.0392811!16s%2Fg%2F11byp844cp?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-              className="text-white text-[15px] pb-[20px] hover:text-blue-500 transition-all duration-300 ease-linear flex "
+              className="text-white text-[15px] pb-[10px] hover:text-blue-500 transition-all duration-300 ease-linear flex "
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -121,7 +121,7 @@ const GetInTouch = () => {
             </a>
             <br />
             <p
-              className="text-[15px] text-white font-bold mt-3"
+              className="text-[15px] mt-[-10px] text-white font-bold "
               data-aos="fade-right"
             >
               Warehouse :{" "}
@@ -143,7 +143,7 @@ const GetInTouch = () => {
             </p>
             <a
               href="mailto:info@gleebiotech.com"
-              className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex"
+              className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex mb-4"
             >
              info@gleebiotech.com
             </a>
@@ -155,7 +155,7 @@ const GetInTouch = () => {
             </p>
             <a
               href="tel:+911244014675"
-              className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex"
+              className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex mb-4"
             >
             +911244014675
             </a>
