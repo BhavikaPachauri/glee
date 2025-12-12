@@ -128,7 +128,7 @@ const Strengths = () => (
         transition={{ duration: 0.5 }}
         className="text-center md:mb-12 mb-8"
       >
-        <h2 className="text-[#1F488E]  uppercase lg:text-[42px] md:text-[36px] text-[32px] font-bold mb-1">
+        <h2 className="text-[#10111A]  uppercase lg:text-[42px] md:text-[36px] text-[32px] font-bold mb-1">
           Our Strengths
         </h2>
         <p className="text-[#59606C] text-lg max-w-2xl mx-auto">

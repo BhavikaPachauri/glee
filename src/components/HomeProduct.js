@@ -12,7 +12,7 @@ const HomeProduct = () => {
       <div className="xl:max-w-[1280px] mx-auto px-3 w-full lg:py-20 sm:py-16 py-12">
         <div className="flex justify-between items-center mb-4">
           <h2
-            className="text-[#1F488E] text-3xl  uppercase md:text-4xl font-bold"
+            className="text-[#10111A] text-3xl  uppercase md:text-4xl font-bold"
             data-aos="fade-right"
           >
             Glee Biotech Products

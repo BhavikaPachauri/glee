@@ -109,7 +109,7 @@ const Faqs = () => {
       <div className="max-w-[984px] mx-auto px-3 md:py-20 py-12 relative">
         <h2
           id="faq-heading"
-          className="text-[#1F488E] drop-shadow-lg  uppercase text-3xl md:text-4xl font-bold leading-[126%] mb-4 text-center"
+          className="text-[#10111A] drop-shadow-lg  uppercase text-3xl md:text-4xl font-bold leading-[126%] mb-4 text-center"
           data-aos="fade-down"
         >
           Frequently Asked Questions
