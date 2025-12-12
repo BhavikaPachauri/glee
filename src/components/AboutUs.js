@@ -6,7 +6,7 @@ const AboutUs = () => {
       <div className="bg-white lg:py-24 sm:py-16 py-12">
         <div className="xl:max-w-[1200px] mx-auto px-3">
           <h2
-            className="text-[#1F488E] lg:hidden md:text-[36px] text-[32px] uppercase font-bold leading-[120%] mb-6 lg:text-start text-center"
+            className="text-[#10111A] lg:hidden md:text-[36px] text-[32px] uppercase font-bold leading-[120%] mb-6 lg:text-start text-center"
             data-aos="fade-left"
           >
             About Us
@@ -30,7 +30,7 @@ const AboutUs = () => {
             </div>
             <div className="lg:w-[45%] w-full">
               <h2
-                className="text-[#1F488E] lg:flex hidden lg:text-[42px]  uppercase font-bold leading-[120%] mb-10 mt-10 lg:text-start text-center"
+                className="text-[#10111A] lg:flex hidden lg:text-[42px]  uppercase font-bold leading-[120%] mb-10 mt-10 lg:text-start text-center"
                 data-aos="fade-left"
               >
                 About Us
