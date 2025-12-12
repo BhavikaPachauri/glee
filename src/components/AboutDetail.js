@@ -10,7 +10,7 @@ const AboutDetails = () => {
         >
           <div className="space-y-3 lg:text-start text-center">
           <h2
-          className="text-[#1F488E] text-[26px] font-bold leading-[120%]"
+          className="text-[#1F488E] text-[26px]  uppercase font-bold leading-[120%]"
           data-aos="fade-down"
         >
           About Us

@@ -22,6 +22,7 @@ export default function GleeProducts() {
       const res = await axios.post(API_URL, { action: "fetch" });
       if (res.data?.response?.list) {
         setProducts(res.data.response.list);
+        console.log(res.data.response.list)
       } else {
         setProducts([]);
       }
@@ -56,11 +57,11 @@ export default function GleeProducts() {
       const res = await axios.post(API_URL, data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-      alert(res.data.message || "Uploaded successfully ✅");
+      alert(res.data.message || "Uploaded successfully ");
       fetchProducts();
     } catch (err) {
       console.error("Upload error:", err.response?.data || err.message);
-      alert("Upload failed ❌");
+      alert("Upload failed ");
     }
     setLoading(false);
   };

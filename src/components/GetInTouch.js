@@ -74,7 +74,7 @@ const GetInTouch = () => {
     <div className="bg-getintouch bg-cover bg-blue-200 bg-no-repeat md:pt-16 xl:pb-[100px] lg:pb-28 py-14">
       <div className="xl:max-w-[1252px] mx-auto px-3">
         <h2
-          className="font-medium lg:text-[58px] md:text-[45px] sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
+          className="font-medium lg:text-[58px] md:text-[45px]  uppercase sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
           data-aos="fade-down"
         >
           Contact Us
@@ -117,7 +117,7 @@ const GetInTouch = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-             <GrLocationPin className="text-4xl font-bold me-2" size={40}/> 315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram, Haryana – 122001
+              315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram, Haryana – 122001
             </a>
             <br />
             <p
@@ -132,7 +132,7 @@ const GetInTouch = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <GrLocationPin className="text-4xl font-bold me-2" size={40}/> Plot no.581, Basement Pace City 2, Sector 37, Industrial Area,
+              Plot no.581, Basement Pace City 2, Sector 37, Industrial Area,
               Gurugram 122004
             </a>
             <p
@@ -145,7 +145,7 @@ const GetInTouch = () => {
               href="mailto:info@gleebiotech.com"
               className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex"
             >
-              <MdOutlineMail  className="text-2xl font-bold me-3" />info@gleebiotech.com
+             info@gleebiotech.com
             </a>
             <p
               className="text-[18px] text-white font-bold mt-4"
@@ -157,7 +157,7 @@ const GetInTouch = () => {
               href="tel:+911244014675"
               className="text-white text-[15px] hover:text-blue-500 transition-all duration-300 ease-linear flex"
             >
-              <FaPhoneFlip className="text-xl font-bold me-3" />+911244014675
+            +911244014675
             </a>
             <p
               className="text-[18px] text-white font-bold mt-4"

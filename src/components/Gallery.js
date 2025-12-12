@@ -34,6 +34,7 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  
 
   // Check screen size
   useEffect(() => {
@@ -51,7 +52,7 @@ const Gallery = () => {
     if (isPaused) return;
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % galleryData.length);
-    }, 4000);
+    }, 8000);
     return () => clearInterval(interval);
   }, [isPaused, currentIndex]);
 
@@ -66,7 +67,7 @@ const Gallery = () => {
     return (
       <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white py-8 px-4">
         <div className="max-w-sm mx-auto">
-          <h2 className="text-[#1F488E] text-2xl font-bold leading-tight text-center mb-6">
+          <h2 className="text-[#1F488E] text-2xl font-bold leading-tight  uppercase text-center mb-6">
             Events & Conferences
           </h2>
 
@@ -128,7 +129,7 @@ const Gallery = () => {
   return (
     <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white lg:py-20 md:py-16 py-12">
       <div className="xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] mx-auto px-3">
-        <h2 className="text-[#1F488E] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] font-bold leading-[126%] text-center lg:mb-12 md:mb-10 mb-8">
+        <h2 className="text-[#1F488E] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px]  uppercase font-bold leading-[126%] text-center lg:mb-12 md:mb-10 mb-8">
           Events & Conferences
         </h2>
 
@@ -197,7 +198,7 @@ const Gallery = () => {
 
               {/* Center Card */}
               <div className="w-80 xl:w-96 opacity-100 scale-110 z-10 transition-all duration-500">
-                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden ring-4 ring-[#1F488E]/20 h-[520px] flex flex-col">
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden  h-[520px] flex flex-col">
                   <div className="h-56">
                     <img
                       src={galleryData[currentIndex].cover}
@@ -269,12 +270,12 @@ const Gallery = () => {
         </div>
 
         {/* Dots */}
-        <div className="flex justify-center mt-6 md:mt-8 lg:mt-10 space-x-2">
+        <div className="flex justify-center mt-6 md:mt-8 lg:mt-16 space-x-2">
           {galleryData.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-200 ${
+              className={`w-2.5 h-2.5 md:w-2 md:h-2 rounded-full transition-all duration-200 ${
                 index === currentIndex
                   ? "bg-[#1F488E] scale-110"
                   : "bg-gray-300 hover:bg-gray-400"

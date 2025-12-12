@@ -63,6 +63,7 @@ const NavBar = () => {
             max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center bottom-0`}
         >
           {/* {renderNavLink("/", "Home")} */}
+          {renderNavLink("/", "Home")}
           {renderNavLink("/aboutus", "About Us")}
           {renderNavLink("/products", "Products")}
           {renderNavLink("/contact", "Contact Us")}

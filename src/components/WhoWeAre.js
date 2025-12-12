@@ -6,7 +6,7 @@ const WhoWeAre = () => {
       <div className="bg-history bg-no-repeat bg-cover lg:py-20 sm:py-16 py-12">
         <div className="xl:max-w-[1280px] mx-auto px-3">
             <h2
-                className="text-[#1F488E] lg:text-[42px] md:text-[36px] text-[32px] font-bold leading-[126%] text-center"
+                className="text-[#1F488E] lg:text-[42px] md:text-[36px] text-[32px] font-bold  uppercase leading-[126%] text-center"
                 data-aos="fade-down"
               >
                 Our Commitment

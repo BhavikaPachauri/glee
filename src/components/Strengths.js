@@ -20,26 +20,7 @@ const itemVariants = {
 };
 
 const strengths = [
-  // {
-  //   title: "Our Legacy",
-  //   img:"./img/legacy.png",
-  //   description: (
-  //     <>
-  //       Glee Biotech has strong backing from our parent company,{" "}
-  //       <a
-  //         href="https://plusdistributions.in/"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //         className="text-blue-400 hover:underline"
-  //       >
-  //         PDPL (Plus Distribution Pvt. Ltd.)
-  //       </a>
-  //       , a trusted and leading name in the pharmaceutical distribution
-  //       industry in India. With over 32 years of experience, PDPL has been
-  //       delivering quality and affordable products since its inception in 1993.
-  //     </>
-  //   ),
-  // },
+
   {
     title: "Our Legacy",
     img:"./img/legacy.png",
@@ -123,13 +104,13 @@ const StrengthCard = ({img, title, description }) => (
     variants={cardVariants}
     whileHover={{ scale: 1.03 }}
     transition={{ type: "spring", stiffness: 120 }}
-    className="cursor-pointer bg-white rounded-2xl sm:p-8 p-4 shadow-xl border border-[#1F488E]/10 hover:-translate-y-1 transition-all duration-300"
+    className="cursor-pointer bg-white rounded-2xl sm:p-6 p-4 shadow-xl border border-[#1F488E]/10 hover:-translate-y-1 transition-all duration-300"
   >
     <div className="flex items-center gap-4 sm:mb-6 mb-3">
       <div className="w-14 h-14 rounded-full bg-[#1F488E]/10 flex items-center justify-center text-[#1F488E] text-xl font-bold">
-        <img src={img} width={40}/>
+        <img src={img} width={30}/>
       </div>
-      <h3 className="text-[#1F488E] text-2xl font-bold">{title}</h3>
+      <h3 className="text-[#1F488E] text-2xl font-bold  uppercase">{title}</h3>
     </div>
     <div className="text-[#1F488E]/80 text-lg leading-relaxed text-justify">
       {description}
@@ -147,7 +128,7 @@ const Strengths = () => (
         transition={{ duration: 0.5 }}
         className="text-center md:mb-12 mb-8"
       >
-        <h2 className="text-[#1F488E] lg:text-[42px] md:text-[36px] text-[32px] font-bold mb-1">
+        <h2 className="text-[#1F488E]  uppercase lg:text-[42px] md:text-[36px] text-[32px] font-bold mb-1">
           Our Strengths
         </h2>
         <p className="text-[#59606C] text-lg max-w-2xl mx-auto">
