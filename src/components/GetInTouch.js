@@ -74,40 +74,40 @@ const GetInTouch = () => {
     <div className="bg-getintouch bg-cover bg-blue-200 bg-no-repeat md:pt-16 xl:pb-[100px] lg:pb-28 py-14">
       <div className="xl:max-w-[1252px] mx-auto px-3">
         <h2
-          className="font-medium lg:text-[58px] md:text-[45px]  uppercase sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
-          data-aos="fade-down"
+          className="font-medium  md:text-[38px]  uppercase sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
+          
         >
           Contact Us
         </h2>
         <p
-          className="text-center text-[18px] font-normal pb-[21px] mb-10 text-white border-b border-b-[#DBE2EE]"
-          data-aos="fade-down"
+          className="text-center text-[16px] font-normal pb-[21px] mb-10 text-white border-b border-b-[#DBE2EE]"
+          
         >
           We value your feedback and inquiries. Share your message with us, and our team will get back to you promptly. 
         </p>
         <div className="flex flex-wrap-reverse justify-between items-center lg:gap-0 gap-10">
           <div className="xl:w-[21x%] lg:w-[30%] w-full">
             <h2
-              className="text-white sm:text-[40px] text-[34px] font-medium leading-[120%] mb-4 lg:text-start text-center"
-              data-aos="fade-right"
+              className="text-white  text-[30px] font-medium leading-[120%] mb-4 lg:text-start text-center"
+              
             >
               Get In Touch
             </h2>
             <p
-              className="text-white text-[18px] mb-[26px] lg:text-start text-center lg:max-w-[300px]"
-              data-aos="fade-right"
+              className="text-white text-[16px] mb-[26px] lg:text-start text-center lg:max-w-[300px]"
+              
             >
               Whether you have questions, need support, or wish to explore a collaboration, we’re here to help. 
             </p>
             <p
               className="text-[18px] mt-[-5px]  text-white font-bold"
-              data-aos="fade-right"
+              
             >
               Address
             </p>
             <p
               className="text-[15px] text-white font-bold"
-              data-aos="fade-right"
+              
             >
               Corporate Office :{" "}
             </p>
@@ -122,7 +122,7 @@ const GetInTouch = () => {
             <br />
             <p
               className="text-[15px] mt-[-10px] text-white font-bold "
-              data-aos="fade-right"
+              
             >
               Warehouse :{" "}
             </p>
@@ -137,7 +137,7 @@ const GetInTouch = () => {
             </a>
             <p
               className="text-[18px] text-white font-bold mt-4"
-              data-aos="fade-right"
+              
             >
               Email
             </p>
@@ -149,7 +149,7 @@ const GetInTouch = () => {
             </a>
             <p
               className="text-[18px] text-white font-bold mt-4"
-              data-aos="fade-right"
+              
             >
               Phone
             </p>
@@ -161,7 +161,7 @@ const GetInTouch = () => {
             </a>
             <p
               className="text-[18px] text-white font-bold mt-4"
-              data-aos="fade-right"
+              
             >
               Working Hours
             </p>
@@ -176,11 +176,11 @@ const GetInTouch = () => {
             </a>
             <p
               className="text-white font-semibold text-[16px] mb-[26px] mt-5"
-              data-aos="fade-right"
+              
             >
               Also available on:
             </p>
-            <div className="flex gap-[38px]" data-aos="fade-right">
+            <div className="flex gap-[38px]" >
               <a
                 href="https://wa.me/7082109519
 "
@@ -219,7 +219,7 @@ const GetInTouch = () => {
           <div className="xl:w-[37%] lg:w-[50%] w-full" data-aos="fade-left">
             <div className="p-[6px] rounded-[31px] bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#ffffff] animate-gradient-border">
               <div className="sm:py-[34px] sm:px-[45px] p-4 bg-white rounded-[28px]">
-                <h2 className="text-[34px] text-center text-black mb-4">
+                <h2 className="text-[30px] text-center text-black mb-4">
                   Send a message
                 </h2>
                 <Formik

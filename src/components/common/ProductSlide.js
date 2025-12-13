@@ -70,14 +70,14 @@ export const ProductSlide = () => {
           {products.map((product, index) => (
             <div
               key={product.id}
-              className="px-1"
+              className="px-3"
               onClick={() => {
                 selctedProduct(product);
               }}
             >
               <div data-aos="fade-down" className="pb-3">
                 <div className="bg-white rounded-xl p-4 min-h-[400px] cursor-pointer transition-all duration-500 ease-in-out group border border-gray-100 shadow-md hover:shadow-xl">
-                  <div className="relative overflow-hidden flex justify-center items-center h-48 bg-gradient-to-br from-[#f4f4f4] to-[#f8f8f8] rounded-lg group-hover:bg-gradient-to-br group-hover:from-[#f8f8f8] group-hover:to-[#f4f4f4]">
+                  <div className="relative overflow-hidden flex justify-center   items-center h-48 bg-gradient-to-br from-[#f4f4f4] to-[#f8f8f8] rounded-lg group-hover:bg-gradient-to-br group-hover:from-[#f8f8f8] group-hover:to-[#f4f4f4]">
                     <img loading="lazy" 
                       src={product.prod_image_url[0]}
                       alt={product.prod_brand}
@@ -115,7 +115,7 @@ export const ProductSlide = () => {
             </div>
           ))}
         </Slider>
-        <div className="flex justify-end gap-3.5">
+        <div className="flex justify-end mt-4 gap-3.5">
           <button
             className={`relative w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
             onClick={handlePrevClick}

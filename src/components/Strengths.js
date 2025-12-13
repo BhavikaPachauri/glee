@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineDoubleArrow } from "react-icons/md";
+import { FaCircle } from "react-icons/fa6";
 
 // Variants for staggered list
 const listVariants = {
@@ -23,7 +24,7 @@ const strengths = [
 
   {
     title: "Our Legacy",
-    img:"./img/legacy.png",
+    img:"./img/legacy.svg",
     description: (
       <motion.ul
         className="space-y-2 text-[#1F488E]/80"
@@ -46,7 +47,7 @@ const strengths = [
             variants={itemVariants}
             className="flex items-start gap-2"
           >
-            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1 w-5 h-5 flex-shrink-0" />
+            <FaCircle  className="text-[#1F488E] mt-3 w-1 h-1 flex-shrink-0" />
           
 
 
@@ -58,7 +59,7 @@ const strengths = [
   },
   {
     title: "Our Expertise",
-    img:"./img/review.png",
+    img:"./img/expert.svg",
     description: (
       <motion.ul
         className="space-y-2 text-[#1F488E]/80"
@@ -82,10 +83,7 @@ const strengths = [
             variants={itemVariants}
             className="flex items-start gap-2"
           >
-            <MdOutlineDoubleArrow className="text-[#1F488E] mt-1 w-5 h-5 flex-shrink-0" />
-          
-
-
+            <FaCircle  className="text-[#1F488E] mt-3 w-1 h-1 flex-shrink-0" />
             {point}
           </motion.li>
         ))}
@@ -104,22 +102,22 @@ const StrengthCard = ({img, title, description }) => (
     variants={cardVariants}
     whileHover={{ scale: 1.03 }}
     transition={{ type: "spring", stiffness: 120 }}
-    className="cursor-pointer bg-white rounded-2xl sm:p-6 p-4 shadow-xl border border-[#1F488E]/10 hover:-translate-y-1 transition-all duration-300"
+    className="cursor-pointer bg-white rounded-2xl sm:p-6 p-4 shadow-xl border-2 border-[#C0DDFF] hover:-translate-y-1 transition-all duration-300"
   >
     <div className="flex items-center gap-4 sm:mb-6 mb-3">
-      <div className="w-14 h-14 rounded-full bg-[#1F488E]/10 flex items-center justify-center text-[#1F488E] text-xl font-bold">
-        <img src={img} width={30}/>
+      <div className="w-12 h-12  bg-[#F4F4F4] rounded-md flex items-center justify-center text-[#1F488E] text-xl font-bold">
+        <img src={img} width={20}/>
       </div>
-      <h3 className="text-[#1F488E] text-2xl font-bold  uppercase">{title}</h3>
     </div>
-    <div className="text-[#1F488E]/80 text-lg leading-relaxed text-justify">
+      <h3 className="text-[#1F488E] text-lg font-bold  ">{title}</h3>
+    <div className="text-black text-[16px] leading-relaxed text-justify">
       {description}
     </div>
   </motion.div>
 );
 
 const Strengths = () => (
-  <section className="w-full bg-[#1F488E]/20 lg:py-20 sm:py-16 py-12 relative overflow-hidden">
+  <section className="w-full bg-[#E5EFFF] lg:py-20 sm:py-16 py-12 relative overflow-hidden">
     <div className="lg:max-w-[1280px] mx-auto px-3 relative">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -128,7 +126,7 @@ const Strengths = () => (
         transition={{ duration: 0.5 }}
         className="text-center md:mb-12 mb-8"
       >
-        <h2 className="text-[#10111A]  uppercase lg:text-[42px] md:text-[36px] text-[32px] font-bold mb-1">
+        <h2 className="text-[#10111A]  text-[30px]  font-bold mb-1">
           Our Strengths
         </h2>
         <p className="text-[#59606C] text-lg max-w-2xl mx-auto">
