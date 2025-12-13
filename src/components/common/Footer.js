@@ -19,12 +19,12 @@ const Footer = () => {
                 href="#"
                 className="text-white text-4xl font-bold leading-none text-center"
               >
-                {/* <img loading="lazy" 
+                <img loading="lazy" 
                   src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/ZajgnpYEp0.webp"
                   alt="GleeLogoSmall"
                   className="max-w-[133px] lg:block hidden"
-                /> */}
-                <WebLogo/>
+                />
+                {/* <WebLogo/> */}
                 <img loading="lazy" 
                   src="https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/vhb6buV8Oq.webp"
                   alt="GleeLogoSmall"
@@ -200,10 +200,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="text-white text-[15px] flex gap-2 items-start"
+                    className="text-white text-[15px] flex gap-4 items-start"
                     href="tel: +911244014675"
                   >
-                    <CallIcon />
+                    <CallIcon  />
                     +911244014675
                   </a>
                 </li>
@@ -212,7 +212,7 @@ const Footer = () => {
                     href="mailto:info@gleebiotech.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-white text-[15px] flex gap-2 items-start"
+                    className="text-white text-[15px] flex gap-4 items-start"
                   >
                     <EmailIcon />
                     info@gleebiotech.com
@@ -220,12 +220,12 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="text-white text-[15px] flex gap-2 items-start"
+                    className="text-white text-[14px] flex gap-4 items-start"
                     target="_blank"
                     rel="noreferrer"
                     href="https://www.google.com/maps/place/Glee+Biotech+LTD/@28.4409584,77.0370194,17z/data=!3m2!4b1!5s0x390d1876c5f94b7f:0xd48f8b6e1eae4d79!4m6!3m5!1s0x390d19b6ea67792d:0xe28bd8ef251ecf0f!8m2!3d28.4409584!4d77.0395943!16s%2Fg%2F11pkd43f64?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
                   >
-                    <LocationIcon />
+                    <img src="./img/location.svg" alt="Location Icon"/>
                     315, 3rd Floor, SAS Towers, Medicity, Sector 38, Gurugram,
                     Haryana 122001
                   </a>

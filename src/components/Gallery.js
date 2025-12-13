@@ -67,9 +67,9 @@ const Gallery = () => {
     return (
       <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white py-8 px-4">
         <div className="max-w-sm mx-auto">
-          <h2 className="text-[#10111A] text-2xl font-bold leading-tight  uppercase text-center mb-6">
+          <h4 className="text-[#10111A] text-[30px] font-bold leading-tight  uppercase text-center mb-6">
             Events & Conferences
-          </h2>
+          </h4>
 
           <div className="relative" onTouchStart={() => setIsPaused(true)} onTouchEnd={() => setIsPaused(false)}>
             {/* Navigation Buttons */}
@@ -129,7 +129,7 @@ const Gallery = () => {
   return (
     <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white lg:py-20 md:py-16 py-12">
       <div className="xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] mx-auto px-3">
-        <h2 className="text-[#10111A] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px]  uppercase font-bold leading-[126%] text-center lg:mb-12 md:mb-10 mb-8">
+        <h2 className="text-[#10111A]  sm:text-[30px] text-[28px]  uppercase font-bold leading-[126%] text-center lg:mb-12 md:mb-10 mb-8">
           Events & Conferences
         </h2>
 

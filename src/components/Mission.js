@@ -25,7 +25,7 @@ const Mission = () => {
       <ToastContainer />
       <div className="lg:max-w-[1280px] mx-auto px-3 relative">
         <div className="text-center mb-12">
-          <h2 className="text-[#10111A]  md:text-[36px] text-[32px] tracking-tight font-bold mb-1">
+          <h2 className="text-[#10111A] text-[30px] tracking-tight font-bold mb-1">
             Join Us in Our Mission
           </h2>
           <p className="text-[#59606C] text-lg max-w-2xl mx-auto">

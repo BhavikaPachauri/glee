@@ -74,7 +74,7 @@ const GetInTouch = () => {
     <div className="bg-getintouch bg-cover bg-blue-200 bg-no-repeat md:pt-16 xl:pb-[100px] lg:pb-28 py-14">
       <div className="xl:max-w-[1252px] mx-auto px-3">
         <h2
-          className="font-medium  md:text-[38px]  uppercase sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
+          className="font-medium  md:text-[58px] mb-3 font-bold   sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
           
         >
           Contact Us
@@ -85,10 +85,10 @@ const GetInTouch = () => {
         >
           We value your feedback and inquiries. Share your message with us, and our team will get back to you promptly. 
         </p>
-        <div className="flex flex-wrap-reverse justify-between items-center lg:gap-0 gap-10">
+        <div className="flex flex-wrap-reverse justify-between  lg:gap-0 gap-10">
           <div className="xl:w-[21x%] lg:w-[30%] w-full">
             <h2
-              className="text-white  text-[30px] font-medium leading-[120%] mb-4 lg:text-start text-center"
+              className="text-white  text-[30px] font-medium font-bold leading-[120%] mb-4 lg:text-start text-center"
               
             >
               Get In Touch
@@ -219,7 +219,7 @@ const GetInTouch = () => {
           <div className="xl:w-[37%] lg:w-[50%] w-full" data-aos="fade-left">
             <div className="p-[6px] rounded-[31px] bg-gradient-to-r from-[#6aaeca] via-[#1F488E] to-[#ffffff] animate-gradient-border">
               <div className="sm:py-[34px] sm:px-[45px] p-4 bg-white rounded-[28px]">
-                <h2 className="text-[30px] text-center text-black mb-4">
+                <h2 className="text-[30px] text-center font-semibold text-black mb-4">
                   Send a message
                 </h2>
                 <Formik

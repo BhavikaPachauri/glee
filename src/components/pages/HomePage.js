@@ -5,7 +5,7 @@ import MainHeader from "../MainHeader";
 import AboutUs from "../AboutUs";
 import Footer from "../common/Footer";
 import HomeProduct from "../HomeProduct";
-import Credentials from "../Credentials";
+// import Credentials from "../Credentials";
 import Strengths from "../Strengths";
 import Faqs from "../Faqs";
 import Mission from "../Mission";

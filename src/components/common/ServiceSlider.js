@@ -71,14 +71,14 @@ const ServiceSlider = () => {
       <div className="max-w-[1920px]">
         <Slider {...settings} className="service-slider">
           {services.map((service, index) => (
-            <div key={index} className="px-4">
-              <div className="flex items-center justify-center text-white">
+            <div key={index} className="px-4  ">
+              <div className="flex items-center gap-40 justify-center text-white">
                 {/* <h3 className="text-xl font-medium ff_shrikhand text-nowrap">
                   {service.title}
                 </h3> */}
                 <div className="w-40 h-20 flex items-center justify-center text-4xl">
                   {/* {service.icon} */}
-                  <img src="./img/lifelives.png" alt="Service Icon" className="w-full h-full"  />
+                  <img src="./img/gleeLifeTolives.png" alt="Service Icon" className="w-full h-full"  />
                 </div>
               </div>
             </div>
