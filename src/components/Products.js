@@ -263,7 +263,7 @@ const Products = () => {
     <div className="bg-[#F3F4F6]">
       <div className="xl:max-w-[1420px] mx-auto px-3 py-8">
         <h3
-          className="text-[#10111A]   text-[32px]  uppercase font-bold leading-[126%] mb-4 text-center"
+          className="text-[#10111A]   text-[32px]   font-bold leading-[126%] mb-8 text-center"
           data-aos="fade-down"
         >
           Our Injectable Range

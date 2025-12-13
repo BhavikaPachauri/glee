@@ -8,7 +8,7 @@ const WhoWeAre = () => {
 
         <div className="xl:max-w-[1280px] mx-auto px-3">
             <h2
-                className="text-[#10111A]  text-[30px] font-bold  uppercase leading-[126%] text-center"
+                className="text-[#10111A]  text-[30px] font-bold   leading-[126%] text-center"
                 data-aos="fade-down"
               >
                 Our Commitment
