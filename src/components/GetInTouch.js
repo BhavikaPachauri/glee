@@ -74,7 +74,7 @@ const GetInTouch = () => {
     <div className="bg-getintouch bg-cover bg-blue-200 bg-no-repeat md:pt-6 xl:pb-[100px] lg:pb-28 py-14">
       <div className="xl:max-w-[1252px] mx-auto px-3">
         <h2
-          className="font-medium  md:text-[58px] mb-3 font-bold   sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
+          className="font-medium  md:text-[58px] mt-5  font-bold   sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
           
         >
           Contact Us
