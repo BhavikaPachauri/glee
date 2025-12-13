@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { NextArrow1, PrevArrow1 } from "./Icons";
 
 const galleryData = [
   {
@@ -77,15 +78,25 @@ const Gallery = () => {
               onClick={prevSlide}
               className="absolute left-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition"
             >
-              <ChevronLeft size={20} />
+                            <PrevArrow1 />
             </button>
 
-            <button
+            {/* <button
               onClick={nextSlide}
               className="absolute right-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition"
             >
-              <ChevronRight size={20} />
-            </button>
+               <NextArrow1 />
+            </button> */}
+            <button
+                        className={`relative w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
+                       onClick={nextSlide}
+                        aria-label="Next"
+                        type="button"
+                      >
+                        <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
+                          <NextArrow1 />
+                        </div>
+                      </button>
 
             {/* Single Card */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -129,7 +140,7 @@ const Gallery = () => {
   return (
     <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white lg:py-20 md:py-16 py-12">
       <div className="xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] mx-auto px-3">
-        <h2 className="text-[#10111A]  sm:text-[30px] text-[28px]  font-bold leading-[126%] text-center lg:mb-12 md:mb-10 mb-8">
+        <h2 className="text-[#10111A]  sm:text-[30px] text-[28px]  font-bold leading-[126%] text-center lg:mb-16 md:mb-16 mb-8">
           Events & Conferences
         </h2>
 
@@ -144,14 +155,16 @@ const Gallery = () => {
             onClick={prevSlide}
             className="absolute left-2 md:left-4 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 md:p-3 shadow-lg transition hover:scale-110"
           >
-            <ChevronLeft size={20} className="md:w-6 md:h-6" />
+           
+          <PrevArrow1 />
+             
           </button>
 
           <button
             onClick={nextSlide}
             className="absolute right-2 md:right-4 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 md:p-3 shadow-lg transition hover:scale-110"
           >
-            <ChevronRight size={20} className="md:w-6 md:h-6" />
+             <NextArrow1/>
           </button>
 
           {/* Cards Container */}
