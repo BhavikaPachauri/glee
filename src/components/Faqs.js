@@ -132,7 +132,7 @@ const Faqs = () => {
                     openAccordion === index
                       ? "text-[#1F488E] sm:pt-[21.5px] pt-4 pb-[12px]"
                       : "text-[#686868] sm:py-[21.5px] py-4"
-                  } sm:text-[20px] text-[16px] font-medium leading-[24px] transition-all duration-300 text-left`}
+                  } text-[16px] font-medium leading-[24px] transition-all duration-300 text-left`}
                 >
                   {item.title}
                 </div>
