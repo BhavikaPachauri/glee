@@ -4,6 +4,7 @@ import Loader from "./Loader";
 import TermsPage from "../pages/TermsPage";
 import GleeProducts from "../GleeProducts";
 import ImageFramer from "../pages/ImageFramer";
+import UploadCv from "../UploadCv";
 
 const HomePage = lazy(() => import("../pages/HomePage"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
@@ -30,6 +31,8 @@ const MainRoute = () => {
         <Route path="/terms" element={<TermsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
         <Route path="/image-framer" element={<ImageFramer />} />
+        <Route path="/uploadcv" element={<UploadCv/>} />
+    
 
       </Routes>
     </Suspense>
