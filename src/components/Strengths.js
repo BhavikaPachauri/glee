@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { MdOutlineDoubleArrow } from "react-icons/md";
 import { FaCircle } from "react-icons/fa6";
 
 // Variants for staggered list
