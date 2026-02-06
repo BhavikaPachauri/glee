@@ -1,7 +1,7 @@
 import "./App.css";
 import MainRoute from "./components/common/MainRoute";
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {useSelector } from "react-redux";
 import Loader from "./components/common/Loader";
 import AOS from "aos";
 import "aos/dist/aos.css";

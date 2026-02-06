@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { useSelector, useDispatch } from "react-redux";
 import { NextArrow1, PrevArrow1 } from "../Icons";
@@ -7,23 +7,23 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 export const ProductSlide = () => {
   const slider = React.useRef(null);
-  const [prevClicked, setPrevClicked] = useState(false);
-  const [nextClicked, setNextClicked] = useState(false);
+  // const [prevClicked, setPrevClicked] = useState(false);
+  // const [nextClicked, setNextClicked] = useState(false);
   const productSlice = useSelector((state) => state.product);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
   const { products } = productSlice;
   const handlePrevClick = () => {
-    setPrevClicked(true);
+    // setPrevClicked(true);
     slider?.current?.slickPrev();
-    setTimeout(() => setPrevClicked(false), 200);
+    // setTimeout(() => setPrevClicked(false), 200);
   };
 
   const handleNextClick = () => {
-    setNextClicked(true);
+    // setNextClicked(true);
     slider?.current?.slickNext();
-    setTimeout(() => setNextClicked(false), 200);
+    // setTimeout(() => setNextClicked(false), 200);
   };
   const settings = {
     dots: false,

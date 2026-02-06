@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProductSlide from "./common/ProductSlide";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { MoreIcon } from "./Icons";
 import { setCategory } from "../store/slices/productSlice";
 
