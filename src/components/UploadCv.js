@@ -37,33 +37,38 @@ function UploadCv() {
         formDataToSend.append(key, value);
       });
 
-      const res = await axios.post("https://app.unios.in/web/applicants", formDataToSend, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      const res = await axios.post(
+        "https://api1.plusdistribution.in/uploadcv",
+        formDataToSend,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
 
-      if (res.status === 201) {
+      // ✅ SUCCESS CHECK
+      if (res.data?.success === true) {
+        alert("Resume Uploaded Successfully");
+
         setResponseMsg("Application submitted successfully!");
         setFormData({
-            full_name: "",
-            email: "",
-            phone: "",
-            role: "",
-            message: "",
-            resume: null,
+          full_name: "",
+          email: "",
+          phone: "",
+          role: "",
+          message: "",
+          resume: null,
         });
         setFileName("No file chosen");
 
         setTimeout(() => {
           setResponseMsg("");
         }, 5000);
+      } else {
+        setResponseMsg("Failed to submit. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      setResponseMsg(" Failed to submit. Please try again.");
-
-      setTimeout(() => {
-        setResponseMsg("");
-      }, 5000);
+      setResponseMsg("Failed to submit. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -120,7 +125,7 @@ function UploadCv() {
 
           <div style={styles.group}>
             <label style={styles.label}>Role Interested in*</label>
-             <input
+            <input
               type="text"
               name="role"
               placeholder="Enter Your Role"
@@ -163,9 +168,7 @@ function UploadCv() {
             />
             <span style={styles.fileName}>{fileName}</span>
           </div>
-          <p style={styles.fileInfo}>
-            Accepted formats: PDF (Max 5 MB)
-          </p>
+          <p style={styles.fileInfo}>Accepted formats: PDF (Max 5 MB)</p>
         </div>
 
         <button type="submit" style={styles.submitBtn} disabled={loading}>

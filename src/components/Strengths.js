@@ -34,10 +34,10 @@ const strengths = [
         viewport={{ once: true }}
       >
         {[
-          "Legacy of more than 30 years.",
-          "Established in 2015 with 30+ years of combined pharma expertise.",
-          "Large warehousing & production capacity for wide distribution.",
-          "Trusted by major hospital groups (Park, Yatharth, Medeor, Jaipur Golden, etc.).",
+          "Legacy of more than 5 years.",
+          "Established in 3rd march 2020.",
+          "Large capacity for wide distribution.",
+          "Trusted by major hospital groups (Gangaram, Park, Yatharth, Medeor, Jaipur Golden, Metro, etc.).",
          
           
           
@@ -70,12 +70,11 @@ const strengths = [
       >
         {[
           "Associated with major hospital chains.",
-          "Owned Pharmacies in 37+ Hospitals.",
-          "Catering to more than 1000+ ICU beds.",
-          (<p><b>WHO & GMP</b> certified Products.</p>),
+          "Owned Pharmacies in Hospitals.",
+          "Catering to more than 10000+  hospital beds.",
            "Focus on high-quality, regulatory compliance.",
-          "Strong presence in critical care, anesthesia, antibiotics, gastro, cardio, and neuro segments.",
-          "Assured availability of our critical  care range with  dedicated CSA PAN India.",
+          "Strong presence in critical care, antibiotics, gastro, urology, and dermatology segments.",
+          "Assured availability of our comprehensive healthcare range with dedicated CSA PAN India.",
           
         ].map((point, i) => (
           <motion.li

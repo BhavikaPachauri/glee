@@ -1,7 +1,8 @@
 {
   "name": "glee-bio",
+  "homepage":"/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
     "@reduxjs/toolkit": "^2.3.0",

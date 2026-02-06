@@ -120,7 +120,7 @@ const GetInTouch = () => {
               315, 3rd Floor, SAS Towers, Medicity, Sector-38, Gurugram, Haryana – 122001
             </a>
             <br />
-            <p
+            {/* <p
               className="text-[15px] mt-[-10px] text-white font-bold "
               
             >
@@ -134,9 +134,9 @@ const GetInTouch = () => {
             >
               Plot no.581, Basement Pace City 2, Sector 37, Industrial Area,
               Gurugram 122004
-            </a>
+            </a> */}
             <p
-              className="text-[18px] text-white font-bold mt-4"
+              className="text-[18px]  text-white font-bold mt-[-10px]"
               
             >
               Email

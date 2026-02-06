@@ -28,7 +28,7 @@ const AboutDetails = () => {
         >
           About Us
         </h2>
-            <p className="text-[#59606C] lg:text-[16px] text-[16px] leading-[128%]">
+            {/* <p className="text-[#59606C] lg:text-[16px] text-[16px] leading-[128%]">
               Glee Biotech Ltd. is a rapidly growing pharmaceutical company with a clear vision to make a real impact in the critical care sector by delivering high-quality, reliable, and affordable healthcare products.  
               The company has a  strong backup support,   which certifies  extensive and well-organized distribution network  support  to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.  
             </p>
@@ -38,6 +38,16 @@ const AboutDetails = () => {
             
             <p className="text-[#59606C] lg:text-[16px] text-[16px] leading-[128%]">
              At Glee Biotech, we combine integrity, commitment, and dedication to improve patient outcomes. While our expertise lies in critical care medicines and medical consumables.<br/> We are expanding our portfolio to include high-quality products in <b>Gastroenterology, Oncology, and Virology</b> .
+            </p> */}
+            <p className="text-[#59606C] lg:text-[16px] text-[16px] leading-[128%]">
+             Glee Biotech Ltd. is a rapidly growing pharmaceutical company with a clear vision to make a real impact in the  healthcare sector by delivering high-quality, reliable, and affordable healthcare products. The company has a strong backup support, which certifies extensive and well-organized distribution network support to ensure swift, nationwide reach serving hospitals, clinics, and healthcare providers across India.  
+            </p>
+            <p className="text-[#59606C] lg:text-[16px] text-[16px] leading-[128%]">
+              With our PAN INDIA presence, targeted marketing strategies, and efficient logistics, we guarantee timely delivery of specialized products, keeping us a step ahead in a competitive market. 
+            </p>
+            
+            <p className="text-[#59606C] lg:text-[16px] text-[16px] leading-[128%]">
+             At Glee Biotech, we combine integrity, commitment, and dedication to improve patient outcomes. While our expertise lies in critical care medicines and medical consumables, and  We are expanding our portfolio to include high-quality products in <b>Gastroenterology, Virology, Dermatology, Urology, and the Comprehensive Healthcare sector.</b> .
             </p>
           </div>
           
