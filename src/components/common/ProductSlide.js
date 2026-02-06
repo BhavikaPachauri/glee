@@ -7,8 +7,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 export const ProductSlide = () => {
   const slider = React.useRef(null);
-  // const [prevClicked, setPrevClicked] = useState(false);
-  // const [nextClicked, setNextClicked] = useState(false);
+  const [prevClicked, setPrevClicked] = useState(false);
+  const [nextClicked, setNextClicked] = useState(false);
   const productSlice = useSelector((state) => state.product);
   const dispatch = useDispatch();
   const navigate = useNavigate();
