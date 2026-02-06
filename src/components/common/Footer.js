@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { CallIcon, LocationIcon, EmailIcon, WebLogo } from "../Icons";
+import { CallIcon,  EmailIcon } from "../Icons";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());

@@ -21,7 +21,7 @@ const AboutUs = () => {
                   <img
                     loading="lazy"
                     src="./img/bgAbout.svg"
-                    alt="Product Image"
+                    alt="About Us"
                     className="w-full h-full rounded-lg "
                   />
                 </div>

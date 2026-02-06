@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHeartbeat } from "react-icons/fa";
+// import { FaHeartbeat } from "react-icons/fa";
 const WhoWeAre = () => {
   return (
     <>

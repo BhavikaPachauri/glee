@@ -10,7 +10,7 @@ const HomePage = lazy(() => import("../pages/HomePage"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
 const ProductsPage = lazy(() => import("../pages/ProductsPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage"));
-const GleeProductPage = lazy(() => import("../pages/GleeProductUpload"));
+// const GleeProductPage = lazy(() => import("../pages/GleeProductUpload"));
 
 const Loading = () => (
   <div>

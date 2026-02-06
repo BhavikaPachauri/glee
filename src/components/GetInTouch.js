@@ -3,9 +3,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Facebook, Instragram, LinkedIn, Watsaap } from "./Icons";
 import axios from "axios";
-import { GrLocationPin } from "react-icons/gr";
-import { MdOutlineMail } from "react-icons/md";
-import { FaPhoneFlip } from "react-icons/fa6";
+// import { GrLocationPin } from "react-icons/gr";
+// import { MdOutlineMail } from "react-icons/md";
+// import { FaPhoneFlip } from "react-icons/fa6";
 
 const GetInTouch = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -322,6 +322,7 @@ const GetInTouch = () => {
           <div className="relative w-full rounded-[30px] bg-white">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4961.434870431194!2d77.03534980180912!3d28.441449846327092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19b6ea67792d%3A0xe28bd8ef251ecf0f!2sGlee%20Biotech%20LTD!5e0!3m2!1sen!2sin!4v1728017477577!5m2!1sen!2sin"
+              title="Google Map Location"
               width="100%"
               height="482px"
               loading="lazy"

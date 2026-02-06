@@ -104,7 +104,9 @@ const StrengthCard = ({img, title, description }) => (
   >
     <div className="flex items-center gap-4 sm:mb-6 mb-3">
       <div className="w-12 h-12  bg-[#F4F4F4] rounded-md flex items-center justify-center text-[#1F488E] text-xl font-bold">
-        <img src={img} width={20}/>
+        <img src={img} width={20}
+        alt=""
+        />
       </div>
     </div>
       <h3 className="text-[#1F488E] text-lg font-bold  ">{title}</h3>

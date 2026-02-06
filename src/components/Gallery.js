@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { NextArrow1, PrevArrow1 } from "./Icons";
 
 const galleryData = [
