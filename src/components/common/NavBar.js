@@ -88,7 +88,7 @@ const NavBar = () => {
             ></span>
             <span
               className={`transition-all duration-300 ease-linear rounded-3xl 
-                ${isMenuOpen ? "opacity-0" : "bg-[#002347] w-3/4 h-[4px]"}`}
+                ${isMenuOpen ? "opacity-0" : "bg-[#002347] w-3/4 h-[4px] ms-2"}`}
             ></span>
             <span
               className={`transition-all duration-300 ease-linear rounded-3xl 
