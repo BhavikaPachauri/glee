@@ -71,10 +71,10 @@ const GetInTouch = () => {
   }, [isSubmitted]);
 
   return (
-    <div className="bg-getintouch bg-cover bg-blue-200 bg-no-repeat md:pt-6 xl:pb-[100px] lg:pb-28 py-14">
+    <div className="bg-getintouch bg-cover bg-blue-200 bg-no-repeat md:pt-6 xl:pb-[100px] lg:pb-28 py-14 px-0 md:px-16 lg:px-5">
       <div className="xl:max-w-[1252px] mx-auto px-3">
         <h2
-          className="font-medium  md:text-[58px] mt-5  font-bold   sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
+          className="font-medium  md:text-[58px] mt-1 lg:mt-5 lg:mb-1 mb-5  font-bold   sm:text-[38px] text-[35px] text-center text-white leading-[125%]"
           
         >
           Contact Us
@@ -88,13 +88,13 @@ const GetInTouch = () => {
         <div className="flex flex-wrap-reverse justify-between  lg:gap-0 gap-10">
           <div className="xl:w-[21x%] lg:w-[30%] w-full">
             <h2
-              className="text-white  text-[30px] font-medium font-bold leading-[120%] mb-4 lg:text-start text-center"
+              className="text-white  text-[30px] font-medium font-bold leading-[120%] mb-4 lg:text-start "
               
             >
               Get In Touch
             </h2>
             <p
-              className="text-white text-[16px] mb-[26px] lg:text-start text-center lg:max-w-[300px]"
+              className="text-white text-[16px] mb-[26px] text-start  lg:max-w-[300px]"
               
             >
               Whether you have questions, need support, or wish to explore a collaboration, we’re here to help. 
