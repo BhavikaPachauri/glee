@@ -3,27 +3,27 @@ import { NextArrow1, PrevArrow1 } from "./Icons";
 
 const galleryData = [
   {
-    title: (<p>MANTHAN : <br/> 5ᵗʰ - 8ᵗʰ February 2025 @ Puri , Odisha</p>),
+    title: (<p>MANTHAN : <br /> 5ᵗʰ - 8ᵗʰ February 2025 @ Puri , Odisha</p>),
     description:
       "Leaders coming together for a brainstorming session on strategies and functional aspects of the organization to move forward. Showcased cutting-edge solutions and collaborated with industry leaders.",
     cover:
       "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/zVGYPr2IXY.png",
   },
   {
-    title: ( <p>ISCCM : <br/>5ᵗʰ - 9ᵗʰ March 2025 @ Kochi</p>),
+    title: (<p>ISCCM : <br />5ᵗʰ - 9ᵗʰ March 2025 @ Kochi</p>),
     description:
       "Indian Society for Critical Care Medicine Conference at Kochi, Kerala - Glee Biotech participated in a prominent way, organizing a scientific session on: “BRIDGE - The Generation GAP” - An Interactive Open Mic Session featuring Senior Intensivists & Dynamic Next Gen Critical Care Experts.",
     cover:
       "./img/Background.jpg",
   },
   {
-    title: (<p>CME (TERNA HOSPITAL) : <br/>20ᵗʰ April 2025 @ Navi Mumbai </p>),
+    title: (<p>CME (TERNA HOSPITAL) : <br />20ᵗʰ April 2025 @ Navi Mumbai </p>),
     description: "CME Programme on Antimicrobial Stewardship.",
     cover:
       "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/gpuDLsnU4I.png",
   },
   {
-    title: (<p>ANNUAL BUDGET MEET : <br/> 5ᵗʰ – 7ᵗʰ March 2025  @ Sonepat</p>),
+    title: (<p>ANNUAL BUDGET MEET : <br /> 5ᵗʰ – 7ᵗʰ March 2025  @ Sonepat</p>),
     description:
       "Annual Budget Meet was held @ SONEPAT, Haryana. Strategy for year 2025-2026 was rolled out to the entire Team of Glee Biotech. The management empowered the team with by  handing over car keys to employees, keeping their safety and well-being at the forefront.",
     cover:
@@ -34,14 +34,14 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  
+
 
   // Check screen size
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
     return () => window.removeEventListener('resize', checkScreenSize);
@@ -52,7 +52,7 @@ const Gallery = () => {
     if (isPaused) return;
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % galleryData.length);
-    }, 8000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [isPaused, currentIndex]);
 
@@ -65,46 +65,45 @@ const Gallery = () => {
   // Mobile single card view
   if (isMobile) {
     return (
-      <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white py-8 px-4">
+      <section className=" relative   w-full bg-gradient-to-b from-[#f6f8fb] to-white py-8 px-4">
         <div className="max-w-sm mx-auto">
           <h4 className="text-[#10111A] text-[30px] font-bold leading-tight  text-center mb-6">
             Events & Conferences
           </h4>
+           <button
+            className={`absolute bottom-0 left-[36vw] sm:left-[44vw] mb-3  w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
+            onClick={prevSlide}
+            aria-label="Next"
+            type="button"
+          >
+            <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
+               <PrevArrow1 />
+            </div>
+          </button>
+
+          <button
+            className={`absolute bottom-0 right-[36vw] sm:right-[44vw] mb-3  w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
+            onClick={nextSlide}
+            aria-label="Next"
+            type="button"
+          >
+            <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
+              <NextArrow1 />
+            </div>
+          </button>
 
           <div className="relative" onTouchStart={() => setIsPaused(true)} onTouchEnd={() => setIsPaused(false)}>
             {/* Navigation Buttons */}
-            <button
-              onClick={prevSlide}
-              className="absolute -left-10 lg:left-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition"
-            >
-              <PrevArrow1 />
-            </button>
 
-            <button
-              onClick={nextSlide}
-              className="absolute -right-10 md:right-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition "
-            >
-              
-               <NextArrow1 />
-            </button>
-            {/* <button
-                        className={`relative w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
-                       onClick={nextSlide}
-                        aria-label="Next"
-                        type="button"
-                      >
-                        <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
-                          <NextArrow1 />
-                        </div>
-                      </button> */}
+
 
             {/* Single Card */}
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-white h-[350px] rounded-2xl shadow-xl overflow-hidden mb-8">
               <div className="h-48">
                 <img
                   src={galleryData[currentIndex].cover}
                   alt={galleryData[currentIndex].title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-48 object-cover"
                 />
               </div>
               <div className="p-4">
@@ -119,16 +118,15 @@ const Gallery = () => {
           </div>
 
           {/* Dots */}
-          <div className="flex justify-center mt-4 space-x-2">
+          <div className="hidden lg:block flex justify-center mt-4 space-x-2">
             {galleryData.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                  index === currentIndex
+                className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentIndex
                     ? "bg-[#1F488E] scale-110"
                     : "bg-gray-300 hover:bg-gray-400"
-                }`}
+                  }`}
               />
             ))}
           </div>
@@ -138,7 +136,7 @@ const Gallery = () => {
   }
 
   return (
-    <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white lg:py-20 md:py-16 py-12">
+    <section className="w-full bg-gradient-to-b from-[#f6f8fb] to-white lg:py-20 md:py-16 py-12 ">
       <div className="xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] mx-auto px-3">
         <h2 className="text-[#10111A]  sm:text-[30px] text-[28px]  font-bold leading-[126%] text-center lg:mb-16 md:mb-16 mb-8">
           Events & Conferences
@@ -155,20 +153,20 @@ const Gallery = () => {
             onClick={prevSlide}
             className="absolute left-2 md:left-4 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 md:p-3 shadow-lg transition hover:scale-110"
           >
-           
-          <PrevArrow1 />
-             
+
+            <PrevArrow1 />
+
           </button>
 
           <button
             onClick={nextSlide}
             className="absolute right-2 md:right-4 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 md:p-3 shadow-lg transition hover:scale-110"
           >
-             <NextArrow1/>
+            <NextArrow1 />
           </button>
 
           {/* Cards Container */}
-          <div className="relative w-full max-w-6xl lg:h-[520px] md:h-[460px] h-[400px] flex items-center justify-center">
+          <div className="relative w-full max-w-6xl lg:h-[520px] md:h-[460px] h-[400px] flex items-center justify-center px-10">
             <div className="hidden lg:flex items-center justify-center gap-6 xl:gap-8 w-full">
               {/* Left Card - Only visible on large screens */}
               <div className="w-72 xl:w-80 opacity-50 scale-95 transition-all duration-500">
@@ -181,7 +179,7 @@ const Gallery = () => {
                       src={
                         galleryData[
                           (currentIndex - 1 + galleryData.length) %
-                            galleryData.length
+                          galleryData.length
                         ].cover
                       }
                       alt="Previous event"
@@ -193,7 +191,7 @@ const Gallery = () => {
                       {
                         galleryData[
                           (currentIndex - 1 + galleryData.length) %
-                            galleryData.length
+                          galleryData.length
                         ].title
                       }
                     </p>
@@ -201,7 +199,7 @@ const Gallery = () => {
                       {
                         galleryData[
                           (currentIndex - 1 + galleryData.length) %
-                            galleryData.length
+                          galleryData.length
                         ].description
                       }
                     </p>
@@ -288,11 +286,10 @@ const Gallery = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-2.5 h-2.5 md:w-2 md:h-2 rounded-full transition-all duration-200 ${
-                index === currentIndex
+              className={`w-2.5 h-2.5 md:w-2 md:h-2 rounded-full transition-all duration-200 ${index === currentIndex
                   ? "bg-[#1F488E] scale-110"
                   : "bg-gray-300 hover:bg-gray-400"
-              }`}
+                }`}
             />
           ))}
         </div>

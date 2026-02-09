@@ -48,14 +48,14 @@ const MainHeader = () => {
         <div className="flex flex-row sm:gap-6 gap-2 justify-start w-full max-w-md mx-0 animate-fade-in-up delay-400">
           <Link
             to="/contact"
-            className="group bg-[#1F488E] text-white whitespace-nowrap px-8 sm:py-4 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full text-center sm:w-auto hover:scale-105"
+            className="group bg-[#1F488E] text-white whitespace-nowrap px-4 md:px-6 lg:px-8 sm:py-4 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full text-center sm:w-auto hover:scale-105"
           >
             Get In Touch
             {/* <span className="sm:inline-block hidden transition-transform group-hover:translate-x-1 motion-reduce:transform-none ml-2">→</span> */}
           </Link>
           <Link
             to="/aboutus"
-            className="group whitespace-nowrap border-2 border-white text-white px-8 sm:py-4 py-2 rounded-full font-semibold hover:bg-white/10 transition-all text-center duration-300 w-full sm:w-auto hover:scale-105"
+            className="group whitespace-nowrap border-2 border-white text-white px-4 md:px-6 lg:px-8 sm:py-4 py-2 rounded-full font-semibold hover:bg-white/10 transition-all text-center duration-300 w-full sm:w-auto hover:scale-105"
           >
             Learn More
             {/* <span className="sm:inline-block hidden transition-transform group-hover:translate-x-1 motion-reduce:transform-none ml-2">→</span> */}
