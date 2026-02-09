@@ -31,8 +31,8 @@ const Footer = () => {
                   className="sm:max-w-[300px] max-w-[220px] lg:hidden block"
                 />
               </a>
-              <p className="text-white text-[15px] lg:pe-28 mt-[-40px]">
-                <div className="flex items-center justify-center text-white">
+              <p className="text-white text-[15px] lg:pe-28 mt-[-30px] lg:mt-[-40px]">
+                <div className="flex  items-center justify-start lg:justify-center text-white">
                 <h3 className="text-xl font-medium ff_shrikhand text-nowrap">
                   Life to Lives …
                 </h3>

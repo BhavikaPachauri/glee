@@ -25,7 +25,7 @@ const HomeProduct = () => {
           >
             <Link
               to="/products"
-              className="text-[15px] font-normal text-[#1F52A9] flex items-center gap-1 justify-center group"
+              className="text-[15px] font-normal text-[#1F52A9] flex items-center gap-1 justify-cente me-4 group"
             >
               See all
               <span>

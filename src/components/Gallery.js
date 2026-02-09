@@ -75,18 +75,19 @@ const Gallery = () => {
             {/* Navigation Buttons */}
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition"
+              className="absolute -left-10 lg:left-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition"
             >
-                            <PrevArrow1 />
+              <PrevArrow1 />
             </button>
 
-            {/* <button
-              onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition"
-            >
-               <NextArrow1 />
-            </button> */}
             <button
+              onClick={nextSlide}
+              className="absolute -right-10 md:right-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-white text-[#1F488E] rounded-full p-2 shadow-lg transition "
+            >
+              
+               <NextArrow1 />
+            </button>
+            {/* <button
                         className={`relative w-[40px] h-[40px] rounded-full p-[2.5px] bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-pointer transition-all duration-300 ease-linear group hover:shadow-lg hover:scale-105`}
                        onClick={nextSlide}
                         aria-label="Next"
@@ -95,7 +96,7 @@ const Gallery = () => {
                         <div className="w-full h-full bg-white rounded-full flex items-center justify-center group transition-all duration-300 ease-linear">
                           <NextArrow1 />
                         </div>
-                      </button>
+                      </button> */}
 
             {/* Single Card */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">

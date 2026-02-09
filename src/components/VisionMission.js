@@ -9,7 +9,7 @@ const VisionMission = () => {
             {/* Vision Section */}
             <div className="p-6 sm:p-8 text-center shadow-2xl bg-white rounded-lg flex flex-col order-1 lg:order-1 lg:mt-[20%] lg:h-[370px]">
               <h2 className="text-2xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">Vision</h2>
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify flex-grow">
+              <p className="text-gray-700 text-[18px] leading-relaxed text-justify flex-grow">
                 "Touching Lives Globally Through Quality & Affordable Healthcare Solutions".
                 We aim to make a meaningful difference in patient well-being by ensuring our products reach those who need them most.
               </p>
@@ -32,7 +32,7 @@ const VisionMission = () => {
             {/* Mission Section */}
             <div className="p-6 sm:p-8 text-center shadow-2xl bg-white rounded-lg flex flex-col order-3 lg:order-3 lg:mt-[20%] lg:h-[370px]">
               <h2 className="text-2xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">Mission</h2>
-              <div className="text-gray-700 text-sm sm:text-base leading-relaxed text-left flex-grow">
+              <div className="text-gray-700 text-[18px] leading-relaxed text-left flex-grow">
                 <p className="mb-3 sm:mb-4">To provide high-quality, affordable healthcare solutions that meet patient needs and improve lives worldwide.</p>
                 {/* <div className="space-y-2 sm:space-y-1">
                   <div className="flex items-start gap-2 sm:gap-3">

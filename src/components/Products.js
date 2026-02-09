@@ -65,7 +65,7 @@ const Products = () => {
             </button>
             <div className="w-full">
               <h2
-                className="text-[#1F488E] sm:text-[40px] text-[30px] leading-[120%] text-center text-nowrap sm:mb-[15px] mb-2"
+                className="text-[#1F488E] sm:text-[40px] text-[30px] leading-[120%] text-center font-semibold text-nowrap sm:mb-[15px] mb-2"
                 data-aos="fade-down"
               >
                 Product Details
