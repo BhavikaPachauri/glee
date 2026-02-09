@@ -8,7 +8,12 @@ const MainHeader = () => {
         <img
         src="./img/GleeBg.png"
         alt="Glee Home Backgroung  "
-        className="absolute inset-0 w-full h-full object-cover"
+        className="hidden lg:block absolute inset-0 w-full h-full object-cover"
+        />
+        <img
+        src="./img/MobileBg.png"
+        alt="Glee Home Backgroung  "
+        className="lg:hidden absolute inset-0 w-full h-full object-cover"
         />
         {/* <video
           autoPlay
@@ -24,17 +29,17 @@ const MainHeader = () => {
         </video> */}
         {/* <div className="absolute inset-0 bg-gradient-to-r from-[#1F488E]/90 via-[#1F488E]/85 to-[#1F488E]/90" /> */}
       </div>
-      <div className="w-full lg:max-w-[1280px] mx-auto text-left  z-10 relative flex flex-col items-start">
+      <div className="w-full px-10 lg:px-5  lg:max-w-[1280px] mx-auto text-left  z-10 relative flex flex-col items-start">
         <div className="flex flex-col items-start md:mb-6 mb-3">
           <div className="uppercase tracking-widest text-white/90 font-bold mb-2 text-base md:text-lg animate-fade-in-up delay-100">
             GLEE BIOTECH LTD.
           </div>
           <div className="h-1 w-20 rounded-full bg-gradient-to-r from-white to-white/50 mb-2 animate-fade-in-up delay-150" />
         </div>
-        <div className="text-2xl md:text-3xl font-lg text-white/90 max-w-2xl mb-2 animate-fade-in-up delay-200  tracking-wide">
+        <div className="text-lg md:text-xl lg:text-3xl font-lg text-white/90 max-w-2xl mb-2 animate-fade-in-up delay-200  tracking-wide">
           We Are Committed To Excellence In
         </div>
-        <h1 className="text-2xl md:text-4xl font-bold  text-white/90 animate-fade-in-up max-w-3xl delay-200   sm:mb-6 mb-2 leading-tight drop-shadow-lg animate-fade-in-up delay-250 text-left">
+        <h1 className="text-xl md:text-2xl lg:text-4xl font-bold  text-white/90 animate-fade-in-up max-w-3xl delay-200   sm:mb-6 mb-2 leading-tight drop-shadow-lg animate-fade-in-up delay-250 text-left">
           Comprehensive Healthcare Solutions
         </h1>
         <div className=" text-white/80 text-md sm:text-md  mb-8 mx-0 animate-fade-in-up delay-300 max-w-2xl text-justify sm:leading-relaxed leading-normal">
