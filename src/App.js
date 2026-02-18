@@ -44,13 +44,13 @@ function App() {
 
   return (
     <>
-      
       {loading ? (
         <Loader />
+        
       ) : (
         <>
           <div>
-            
+            <CountdownPopup/>  
             <MainRoute />
             <button
               className={`${
@@ -62,7 +62,7 @@ function App() {
             >
               <BackToTop />
             </button>
-              <CountdownPopup/>
+             
               
           </div>
         </>

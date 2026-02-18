@@ -2,14 +2,14 @@ import { CalendarDays } from "lucide-react";
 import { useState, useEffect, useMemo } from "react";
 
 const CountdownPopup = () => {
-  const [isOpen, setIsOpen] = useState(true);
+   const [isOpen, setIsOpen] = useState(false);
 
-  // 🎯 Event Date (IST Safe)
-  const eventDate = useMemo(
-    () => new Date("2026-02-27T00:00:00+05:30").getTime(),
-    []
-  );
+  // 🎯 Event Date
+  const eventDate = useMemo(() => {
+    return new Date("2026-02-27T00:00:00+05:30").getTime();
+  }, []);
 
+  // ⏳ Calculate Time
   const calculateTimeLeft = () => {
     const now = Date.now();
     const difference = eventDate - now;
@@ -24,23 +24,51 @@ const CountdownPopup = () => {
     };
   };
 
-  const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
 
+  // ✅ Check sessionStorage (Only show once per session)
   useEffect(() => {
+    const hasShown = sessionStorage.getItem("countdownShown");
+
+    if (!hasShown) {
+      setIsOpen(true);
+      sessionStorage.setItem("countdownShown", "true");
+    }
+  }, []);
+
+  // ⏱ Countdown Interval
+  useEffect(() => {
+    if (!isOpen) return;
+
     const interval = setInterval(() => {
       const updatedTime = calculateTimeLeft();
       setTimeLeft(updatedTime);
 
-      if (!updatedTime) clearInterval(interval);
+      if (!updatedTime) {
+        clearInterval(interval);
+        setIsOpen(false);
+      }
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [eventDate]);
+  }, [eventDate, isOpen]);
+
+  // 🔥 Auto close after 2 seconds
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const timer = setTimeout(() => {
+      setIsOpen(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [isOpen]);
 
   if (!isOpen || !timeLeft) return null;
 
+
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 px-4">
+    <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 px-4">
       <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl p-6 sm:p-8 text-center">
 
         {/* Close Button */}
@@ -73,8 +101,8 @@ const CountdownPopup = () => {
         {/* Partner Info */}
           {/* Sub Text */}
         <p className="text-sm sm:text-base text-gray-700 mb-4">
-          <strong>Glee Biotech Ltd.</strong> is proud Academic Partner <br />
-          <strong>@ ISCCM 2026</strong>
+          <strong>Glee Biotech Ltd.</strong> is proud Academic Partner at <br />
+          <strong> ISCCM 2026</strong>
         </p>
 
 
@@ -96,7 +124,7 @@ const CountdownPopup = () => {
           </span>
           <span className="text-gray-300">|</span>
           <span className="font-semibold text-gray-800">
-            Stall 9 & 10
+           at Stall 9 & 10
           </span>
         </div>
 

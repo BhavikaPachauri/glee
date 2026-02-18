@@ -106,7 +106,7 @@ const Faqs = () => {
       </div>
 
       {/* Content */}
-      <div className="max-w-[984px] mx-auto px-3 md:py-20 py-12 relative">
+      <div className="max-w-[984px] mx-auto px-3 md:py-10 py-12 relative">
         <h2
           id="faq-heading"
           className="text-[#666]   text-[30px] font-bold leading-[126%] mb-8 text-center"

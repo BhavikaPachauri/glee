@@ -18,8 +18,8 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const dispatch = useDispatch();
 
-  const categories = [ "Injections",
-    ];
+  const categories = ["Injections",
+  ];
 
   const itemsPerPage = 12;
   const totalPages = Math.ceil(categoryWiseProducts.length / itemsPerPage);
@@ -93,7 +93,7 @@ const Products = () => {
           <div className="flex flex-wrap justify-between lg:gap-0 gap-8 mb-14">
             <div className="lg:w-[35%]" data-aos="fade-right">
               <div className="bg-[#f4f4f4] rounded-[10px] h-full">
-                <img loading="lazy" 
+                <img loading="lazy"
                   src={selectedProduct.prod_image_url[0]}
                   className="mx-auto w-full h-full object-contain bg-transparent"
                   alt={selectedProduct.prod_brand}
@@ -107,19 +107,17 @@ const Products = () => {
               <div className="flex mb-4 gap-4">
                 <button
                   className={`relative pt-2 pb-1 text-base font-normal text-black after:absolute after:transition-all after:duration-300 after:h-1 after:rounded-[4px] 
-          after:bg-gradient-to-r after:from-[#6aaeca] after:via-[#1F488E] after:to-[#727272] after:left-0 after:-bottom-0 ${
-            activeTab === "description" ? "after:right-0" : "after:right-full"
-          }`}
+          after:bg-gradient-to-r after:from-[#6aaeca] after:via-[#1F488E] after:to-[#727272] after:left-0 after:-bottom-0 ${activeTab === "description" ? "after:right-0" : "after:right-full"
+                    }`}
                   onClick={() => setActiveTab("description")}
                 >
                   Description
                 </button>
                 <button
                   className={`relative pt-2 pb-1 text-base font-normal text-black after:absolute after:transition-all after:duration-300 after:h-1 after:rounded-[4px] 
-                    after:bg-gradient-to-r after:from-[#6aaeca] after:via-[#1F488E] after:to-[#727272] after:left-0 after:-bottom-0 ${
-                      activeTab === "details"
-                        ? "after:right-0"
-                        : "after:right-full"
+                    after:bg-gradient-to-r after:from-[#6aaeca] after:via-[#1F488E] after:to-[#727272] after:left-0 after:-bottom-0 ${activeTab === "details"
+                      ? "after:right-0"
+                      : "after:right-full"
                     }`}
                   onClick={() => setActiveTab("details")}
                 >
@@ -132,7 +130,7 @@ const Products = () => {
                     <strong>Description:</strong>
                   </h3>
                   {selectedProduct.prod_des &&
-                  selectedProduct.prod_des.length > 0 ? (
+                    selectedProduct.prod_des.length > 0 ? (
                     selectedProduct.prod_des.map((desc, index) => (
                       <p
                         key={index}
@@ -160,7 +158,7 @@ const Products = () => {
                       <strong>Description:</strong>
                     </h3>
                     {selectedProduct.prod_des &&
-                    selectedProduct.prod_des.length > 0 ? (
+                      selectedProduct.prod_des.length > 0 ? (
                       selectedProduct.prod_des.map((desc, index) => (
                         <p
                           key={index}
@@ -189,7 +187,7 @@ const Products = () => {
                       <strong>Benefits:</strong>
                     </h3>
                     {selectedProduct.prod_benefits &&
-                    selectedProduct.prod_benefits.length > 0 ? (
+                      selectedProduct.prod_benefits.length > 0 ? (
                       selectedProduct.prod_benefits.map((benefit, index) => (
                         <p
                           key={index}
@@ -210,7 +208,7 @@ const Products = () => {
                       <strong>Side Effects:</strong>
                     </h3>
                     {selectedProduct.prod_side_effects &&
-                    selectedProduct.prod_side_effects.length > 0 ? (
+                      selectedProduct.prod_side_effects.length > 0 ? (
                       selectedProduct.prod_side_effects.map((effect, index) => (
                         <p
                           key={index}
@@ -231,7 +229,7 @@ const Products = () => {
                       <strong>Uses:</strong>
                     </h3>
                     {selectedProduct.prod_uses &&
-                    selectedProduct.prod_uses.length > 0 ? (
+                      selectedProduct.prod_uses.length > 0 ? (
                       selectedProduct.prod_uses.map((use, index) => (
                         <p
                           key={index}
@@ -250,10 +248,13 @@ const Products = () => {
               )}
             </div>
           </div>
-          <h3 className="text-[34px] text-black py-6" data-aos="fade-right">
-            Related Products
-          </h3>
-          <ProductSlide />
+
+          <div className="hidden md:block">
+            <h3 className="text-[34px] text-black py-6" data-aos="fade-right">
+              Related Products
+            </h3>
+            <ProductSlide />
+          </div>
         </div>
       </div>
     );
@@ -282,11 +283,10 @@ const Products = () => {
                 setActiveTab1(category);
                 dispatch(setCategory(category));
               }}
-              className={`px-[30px] py-[9.2px] rounded-[30px] text-[16px] font-normal border border-solid ${
-                activeTab1 === category
+              className={`px-[30px] py-[9.2px] rounded-[30px] text-[16px] font-normal border border-solid ${activeTab1 === category
                   ? "bg-[#1F488E] border-[#1F488E] text-white"
                   : "bg-transparent text-black border-black"
-              } transition duration-300`}
+                } transition duration-300`}
             >
               {category}
             </button>
@@ -302,7 +302,7 @@ const Products = () => {
               <div className="px-1 mb-8" data-aos="fade-zoom">
                 <div className="bg-white rounded-xl p-4 min-h-[400px] cursor-pointer transition-all duration-500 ease-in-out group hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
                   <div className="relative overflow-hidden flex justify-center items-center h-48 bg-gradient-to-br from-[#f4f4f4] to-[#f8f8f8] rounded-lg group-hover:bg-gradient-to-br group-hover:from-[#f8f8f8] group-hover:to-[#f4f4f4]">
-                    <img loading="lazy" 
+                    <img loading="lazy"
                       src={product.prod_image_url[0]}
                       alt={product.prod_brand}
                       className="max-h-full transition-all duration-500 group-hover:scale-110"
@@ -341,11 +341,10 @@ const Products = () => {
         </div>
         <div className="flex justify-center items-center mt-6">
           <button
-            className={`relative w-[35px] h-[35px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
-              currentPage === 1
+            className={`relative w-[35px] h-[35px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${currentPage === 1
                 ? "bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-not-allowed"
                 : "bg-gradient-to-b from-[#1F488E] to-[#727272]"
-            }`}
+              }`}
             onClick={goToPreviousPage}
             disabled={currentPage === 1}
           >
@@ -356,22 +355,20 @@ const Products = () => {
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
-              className={`px-4 py-2 mx-1 rounded-full w-[35px] flex justify-center items-center h-[35px] ${
-                currentPage === i + 1
+              className={`px-4 py-2 mx-1 rounded-full w-[35px] flex justify-center items-center h-[35px] ${currentPage === i + 1
                   ? "bg-[#1F488E] text-white"
                   : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-200"
-              }`}
+                }`}
               onClick={() => goToPage(i + 1)}
             >
               {i + 1}
             </button>
           ))}
           <button
-            className={`relative w-[35px] h-[35px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${
-              currentPage === totalPages
+            className={`relative w-[35px] h-[35px] rounded-full p-[2.5px] bg-gradient-to-b from-[#AAABAB] to-[#AAABAB] transition-all duration-300 ease-linear group hover:bg-gradient-to-b hover:from-[#1F488E] hover:to-[#727272] ${currentPage === totalPages
                 ? "bg-gradient-to-b from-[#1F488E] to-[#727272] cursor-not-allowed "
                 : "bg-gradient-to-b from-[#1F488E] to-[#727272]"
-            }`}
+              }`}
             onClick={goToNextPage}
             disabled={currentPage === totalPages}
           >
