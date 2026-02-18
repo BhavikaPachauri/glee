@@ -34,35 +34,35 @@ const ServiceSlider = () => {
   const services = [
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
     {
       title: "Life to Lives...",
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: "./img/gleeLifeTolives.png"
     },
   ];
 

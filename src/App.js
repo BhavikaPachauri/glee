@@ -1,5 +1,6 @@
 import "./App.css";
 import MainRoute from "./components/common/MainRoute";
+import CountdownPopup from "./components/common/CountdownPopup";
 import React, { useEffect, useState } from "react";
 import {useSelector } from "react-redux";
 import Loader from "./components/common/Loader";
@@ -7,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { BackToTop } from "./components/Icons";
 import Maintenance from "./components/Maintenance";
+
 
 function App() {
   // --------------------back-to-top-----------------------------
@@ -42,11 +44,13 @@ function App() {
 
   return (
     <>
+      
       {loading ? (
         <Loader />
       ) : (
         <>
           <div>
+            
             <MainRoute />
             <button
               className={`${
@@ -58,9 +62,12 @@ function App() {
             >
               <BackToTop />
             </button>
+              <CountdownPopup/>
+              
           </div>
         </>
       )}
+    
     </>
   );
 }

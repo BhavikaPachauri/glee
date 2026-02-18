@@ -28,7 +28,7 @@ const galleryData = [
       "Annual Budget Meet was held @ SONEPAT, Haryana. Strategy for year 2025-2026 was rolled out to the entire Team of Glee Biotech. The management empowered the team with by  handing over car keys to employees, keeping their safety and well-being at the forefront.",
     cover:
       "https://pdpl-stuff.s3.ap-south-1.amazonaws.com/dynamic/ksshospitals.com/BJY0RUX74t.jpg",
-  },
+  }
 ];
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
